@@ -16,16 +16,16 @@ import WorldSnakeSvg from '~/components/icons/WorldSnakeSvg.vue'
 import MedicalSvg from '~/components/icons/MedicalSvg.vue'
 
 useSeoMeta({
-  title: 'Servicio Web Profesional en Colombia',
-  description: 'Ofrecemos hosting gratis el primer año con un diseño web único.',
-  ogSiteName: 'Paginas Profesionales',
-  ogTitle: 'Servicio Web Profesional en Colombia',
-  ogDescription: 'Ofrecemos hosting gratis el primer año con un diseño web único. Aprovecha esta oferta antes de que se termine.',
+  title: 'Dr. Puerta',
+  description: 'Cirujano plástico',
+  ogSiteName: 'Dr. Puerta',
+  ogTitle: 'Dr. Puerta',
+  ogDescription: 'Dr. Puerta',
   ogImage: '/meta/inicio-web-profesional.webp',
-  ogUrl: 'https://paginasprofesionales.co',
+  ogUrl: 'https://drpuerta.com',
   ogLocale: 'es_CO',
-  twitterTitle: 'Servicio Web Profesional en Colombia',
-  twitterDescription: 'Ofrecemos hosting gratis el primer año con un diseño web único. Aprovecha esta oferta antes de que se termine.',
+  twitterTitle: 'Dr. Puerta',
+  twitterDescription: 'Dr. Puerta',
   twitterImage: '/meta/inicio-web-profesional.webp',
   twitterCard: 'summary_large_image',
 })
