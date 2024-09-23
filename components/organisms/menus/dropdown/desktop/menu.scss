@@ -1,0 +1,110 @@
+.menu {
+  padding: 0;
+
+  .items {
+    display: flex;
+    padding: 0;
+    gap: 20px;
+
+    .item {
+      display: flex;
+      cursor: pointer;
+      color: var(--heading);
+      position: relative;
+      stroke: var(--heading);
+      line-height: 2.2rem;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        .arrow-icon {
+          transform: rotate(90deg);
+        }
+
+        .sub-items {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      
+      .title {
+        font-size: 1.2rem;
+      }
+    
+      .arrow-icon {
+        margin-left: 8px;
+        width: 1.1rem;
+        transition: transform 0.3s ease;
+      }
+  
+      .sub-items { 
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0;
+        list-style-type: none;
+        transform: translateY(16px);
+        border-style: solid;
+        border-color: var(--background-opposite);
+        border-width: 1px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 16px;
+        border-top-left-radius: 16px;
+        margin: 1.1rem 0.9rem 1rem;
+        background-color: var(--background);
+        z-index: 101;
+        transition: opacity 0.3s, visibility 0.3s;
+        opacity: 0;
+        visibility: hidden;
+        
+        .sub-item {
+          .link {
+            display: flex;
+            justify-content: flex-start;
+            z-index: 1000;
+            color: var(--heading);
+            font-size: 16px;
+            padding: 8px 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            white-space: nowrap;
+            text-decoration: none;
+            background-color: 'none';
+
+            .icon {
+              width: 24px;
+              outline: none;
+              border: none;
+            }
+
+            &:hover {
+              background-color: var(--background-base);
+            }
+
+            p {
+              margin-left: 1rem;
+              font-weight: 500;
+            }
+          }
+
+          &:first-child {
+            a:hover {
+              border-top-left-radius: 16px;
+            }
+          }
+      
+          &:last-child {
+            a:hover {
+              border-bottom-right-radius: 16px;
+            }
+          }
+        }
+      }
+
+      .sub-items.clicked {
+        display: none;
+      }
+    }
+  }
+}

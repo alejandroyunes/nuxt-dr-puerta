@@ -1,0 +1,140 @@
+.contact-form {
+  width: 100%;
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .modal-inner {
+    position: relative;
+    max-width: var(--tablet-width);
+    width: 100%;
+
+    .form {
+      margin: 0 auto;
+      max-width: var(--tablet-width);
+      padding: 40px 45px 30px;
+      box-shadow: var(--shadow-card);
+      
+      .formkit-form .formkit-actions {
+        display: none;
+      }
+
+      .formkit-messages {
+        list-style-type: none;
+        color: var(--danger);
+        padding: 8px 0 0 0;
+        text-align: center;
+      }
+
+      .form-group-inline {
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+
+        @media screen and (max-width: 758px) {
+          flex-direction: column;
+          gap: 0;
+        }
+      }
+
+      .form-group {
+        position: relative;
+        margin: 20px 0 28px;
+        width: 100%;
+
+        label {
+          position: absolute;
+          top: -11px;
+          padding: 0px 5px;
+          background-color: var(--background);
+          left: 10px;
+          font-size: .9rem;
+          color: var(--background-opposite);
+        }
+
+        .formkit-outer {
+
+          .formkit-wrapper {
+
+            .formkit-inner {
+              display: flex;
+              align-items: center;
+
+              input:-webkit-autofill {
+                -webkit-text-fill-color: var(--heading);
+                -webkit-box-shadow: 0 0 0 100px var(--background) inset;
+              }
+
+              input,
+              textarea {
+                cursor: pointer;
+                padding: 10px;
+                width: 100%;
+                border-radius: 4px;
+                color: var(--heading);
+                background-color: transparent;
+                border: 1px solid var(--border);
+                border-radius: 5px;
+                height: 44px;
+                font-size: 1rem;
+
+                &:hover {
+                  background-color: var(--background);
+                  outline: none;
+                }
+
+                &::placeholder {
+                  color: var(--gray-base);
+                  font-size: .9rem;
+                }
+              }
+
+              textarea {
+                height: 120px;
+              }
+
+            }
+          }
+
+          .formkit-messages {
+            text-align: left;
+            padding-left: 5px;
+            margin-bottom: -15px;
+          }
+
+        }
+      }
+
+      .btn-submit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primary);
+        color: var(--white);
+        margin-top: 32px;
+        width: 100%;
+        max-width: 300px;
+        padding: 15px;
+        border-radius: 48px;
+        border: none;
+        cursor: pointer;
+        margin: 0 auto;
+
+        span {
+          padding-left: 12px;
+          font-size: 1rem;
+        }
+      }
+
+      .btn-disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+      }
+
+      @media screen and (max-width: 758px) {
+        padding: 20px 20px 30px;
+      }
+    }
+  }
+}

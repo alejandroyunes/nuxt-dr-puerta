@@ -1,0 +1,201 @@
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80vw;
+  height: auto;
+  will-change: transform;
+  background-color: var(--background);
+  overflow-y: auto;
+
+  .top-nav-header {
+    display: flex;
+    padding: 0 18px;
+    font-size: 24px;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-base);
+
+    .top-nav-logo {
+      img {
+        height: 100%;
+        width: 148px;
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+      }
+    }
+
+    .animation-exit {
+      display: flex;
+      cursor: pointer;
+      background-color: var(--background-opposite-base);
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+
+      .exit-icon {
+        fill: var(--background);
+      }
+    }
+
+  }
+
+  .top-nav-content {
+    display: grid;
+    align-items: center;
+    height: 100%;
+    background-color: var(--background);
+
+    .top-nav-list {
+      font-size: 16px;
+      background-color: var(--background);
+      padding: 4px 0 8px;
+      margin-top: 24px;
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        border: none;
+
+      }
+
+      li {
+        .item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 6px;
+          color: var(--heading);
+          cursor: pointer;
+          padding: 0 20px 40px;
+          font-size: 18px;
+          
+          @media (max-width: 768px) {
+            padding: 10px 10px 6px 20px;
+          }
+  
+          &:hover {
+            background-color: var(--background-base);
+          }
+  
+          svg {
+            width: 24px;
+            margin:0 1rem 0 1.5rem;
+  
+            @media (max-width: 768px) {
+              margin:0 1rem 0 .5rem;
+            }
+          }
+          
+          .comment-icon {
+            height: 26px;
+          }
+        }
+      }
+    }
+
+    .top-nav-contact {
+      border-top: 1px solid var(--background-opposite-base);
+      background-color: var(--background);  
+      padding-bottom: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .contact-info-content {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 24px;
+
+        p, a {
+          font-weight: 600;
+          font-size: 15px;
+          color: var(--heading);
+        }
+  
+        .icon {
+          width: 24px;
+          margin-right: 10px;
+        }
+    
+        @media (max-width: 1024px) {
+          padding: 0 24px;
+        }
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        padding: 0;
+        list-style: none;
+        margin-top: 16px;
+        
+        .item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          color: var(--background);
+          background-color: var(--background-opposite-base);
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          
+          a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+          }
+    
+          svg {
+            fill: var(--background);
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+    
+  &.top-slide-in {
+    animation: topSlideIn 0.5s forwards;
+    z-index: 11;
+  }
+
+  &.top-slide-out {
+    animation: topSlideOut 0.5s forwards;
+    z-index: 11;
+  }
+
+  @keyframes topSlideIn {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes topSlideOut {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+
+  @media (max-width: 900px) {
+    right: -80vw;
+    width: 80vw;
+  }
+}
+

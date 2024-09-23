@@ -1,0 +1,31 @@
+.title-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  color: var(--heading);
+  padding: 148px 20px 0;
+  text-align: center;
+
+  .title {
+    font-size: 2rem;
+    line-height: 3.1rem;
+    padding-bottom: .5rem;
+  }
+
+  .description {
+    font-weight: 300;
+    font-size: 1.2rem;
+    max-width: var(--tablet-width);
+  }
+
+  @media (max-width: 756px) {
+    padding: 120px 20px 0;
+
+    .description {
+      line-height: 1.6rem;
+      padding-top: 16px;
+    }
+  }
+}

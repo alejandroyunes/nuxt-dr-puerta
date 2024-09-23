@@ -1,0 +1,30 @@
+.subtitle-description {
+  padding: 40px 20px 0;
+  margin: 0 auto;
+  max-width: var(--tablet-width);
+  text-align: center;
+
+  .subtitle {
+    font-size: 2.3rem;
+    color: var(--heading);
+    line-height: 2.6rem;
+    padding-bottom: .5rem;
+  }
+
+  .description {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--text);
+    max-width: var(--tablet-width);
+  }
+
+  .extra-top-space {
+    padding-top: 40px;
+  
+    @media (max-width: 900px) {
+      padding-top: 0;
+    }
+  }
+}
+

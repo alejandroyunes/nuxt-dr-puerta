@@ -1,0 +1,59 @@
+.investigation {
+  display: flex;
+  gap: 20px;
+  margin: 40px auto 0;
+  max-width: var(--tablet-width);
+  padding: 0 20px;
+  
+  .item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 10px 0;
+      color: var(--heading);
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 10px 0;
+      color: var(--heading);
+    }
+
+    p {
+      margin: 10px 0;
+      color: var(--text);
+    } 
+
+    .download-pdf {
+      color: var(--primary);
+      font-weight: 600;
+      margin: 10px 0;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .image {
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+
+    .item {
+      width: 100%;
+    }
+  }
+}

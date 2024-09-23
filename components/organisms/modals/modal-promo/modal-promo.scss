@@ -1,0 +1,171 @@
+.modal-promo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-transparent);
+  z-index: 11;
+
+  .modal-inner {
+    background-color: var(--background);
+    padding: 10px 45px 48px;
+    border-radius: 15px;
+    box-shadow: var(--shadow-card);
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--border);
+    margin: 0 20px;
+
+    .btn-close {
+      cursor: pointer;
+      position: absolute;
+      top: 16px;
+      right: 24px;
+      font-size: 2rem;
+      color: var(--background);
+      background-color: var(--background-opposite-base);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      line-height: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        fill: var(--background);
+      }
+    }
+  
+    .form {
+      margin-top: 40px;
+      width: 100%;
+
+      .formkit-form .formkit-actions {
+        display: none;
+      }
+    
+      .formkit-messages {
+        list-style-type: none;
+        color: var(--danger);
+        padding: 8px 0 0 0;
+        text-align: center;
+      }
+    
+      .form-group {
+        position: relative;
+        margin: 20px 0 40px;
+        width: 100%;
+        
+        label {
+          position: absolute;
+          top: -11px;
+          padding: 0px 5px;
+          background-color: var(--background);
+          left: 10px;
+          font-size: .9rem;
+          color: var(--background-opposite);
+        }
+    
+        .formkit-outer {
+    
+          .formkit-wrapper {
+    
+            .formkit-inner {
+              display: flex;
+              align-items: center;
+    
+              input:-webkit-autofill {
+                -webkit-text-fill-color: var(--heading);
+                -webkit-box-shadow: 0 0 0 100px var(--background) inset;
+              }
+    
+              input,
+              textarea {
+                cursor: pointer;
+                padding: 10px;
+                width: 100%;
+                border-radius: 4px;
+                color: var(--heading);
+                background-color: transparent;
+                border: 1px solid var(--gray);
+                border-radius: 5px;
+                height: 44px;
+                font-size: 1rem;
+    
+                &:hover {
+                  background-color: var(--background);
+                  outline: none;
+                }
+    
+                &::placeholder {
+                  color: var(--gray-base);
+                  font-size: .9rem;
+                }
+              }
+              textarea {
+                height: 120px;
+              }
+            }
+          }
+    
+          .formkit-messages {
+            text-align: left;
+            padding-left: 5px;
+            margin-bottom: -15px;
+          }
+    
+        }
+      }
+  
+      .modal-description {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--heading);
+        text-align: center;
+        margin-bottom: 28px;
+        line-height: 2.5rem;
+      }
+    
+      .btn-submit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primary);
+        color: var(--white);
+        margin-top: 32px;
+        width: 100%;
+        max-width: 300px;
+        padding: 15px;
+        border-radius: 48px;
+        border: none;
+        cursor: pointer;
+        margin: 0 auto;
+        
+        span {
+          padding-left: 12px;
+          font-size: 1rem;
+        }
+      }
+    
+      .btn-disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+      }
+    }
+  
+    @media screen and (max-width: 758px) {
+      padding: 20px 20px 32px;
+    }
+  }
+}

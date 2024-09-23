@@ -1,0 +1,32 @@
+.billboard-2 {
+  width: 100%;
+  padding-top: 100px;
+
+  .bg {
+    background: linear-gradient(to top, rgba(8, 7, 7, 0.8), rgba(38, 31, 31, 0.555)),
+    url('/images/doctor.webp') center/cover no-repeat;
+    min-height: 240px;
+
+    .title {
+      font-weight: bold;
+      color: var(--white);
+      font-size: 3rem;
+      max-width: var(--tablet-width);
+      text-align: right;
+      margin: 0 auto;
+      padding: 48px 20px 0;
+
+    }
+  
+    .description {
+      color: var(--white);
+      font-size: 1.5rem;
+      text-align: right;
+      margin: 0 auto;
+      max-width: var(--tablet-width);
+      padding: 8px 20px;
+    }
+  
+  }
+}
+
