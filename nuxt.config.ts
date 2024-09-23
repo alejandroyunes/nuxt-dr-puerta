@@ -13,7 +13,7 @@ export default defineNuxtConfig({
 app: {
   head: {
     htmlAttrs: { lang: 'es' },
-    title: 'Servicios Web Profesionales en Colombia | Páginas Profesionales',
+    title: 'Dr. Puerta Otorrinolaringología',
     titleTemplate: '%s',
     link: [
       {
