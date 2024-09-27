@@ -59,7 +59,7 @@ const toggleSliderTopNav = () => {
           alt="Logo Dr. Puerta"
           densities="x1"
           class="logo"
-          sizes="100vw sm:50vw md:190px"
+          sizes="100vw sm:50vw md:168px"
         />
       </NuxtLink>
 

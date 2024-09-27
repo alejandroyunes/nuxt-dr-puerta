@@ -52,7 +52,7 @@ export default defineI18nConfig(() => ({
       footerContact: 'Contact',
       footerOffice: 'office',
       footerTel: 'landline',
-      footerCopyright: 'Dr Jorge Puerta. All rights reserved.',
+      footerCopyright: 'Dr Jorge Puerta.',
       //Curriculum
       curriculumTitle: 'University Studies',
       curriculumDescription: 'Medical and Surgeon University of Antioquia 1990 - 1996',
@@ -172,7 +172,7 @@ export default defineI18nConfig(() => ({
       footerContact: 'Contacto',
       footerOffice: 'oficina',
       footerTel: 'Fijo',
-      footerCopyright: 'Dr Jorge Puerta. Todos los derechos reservados.',
+      footerCopyright: 'Dr Jorge Puerta.',
       //Curriculum
       curriculumTitle: 'Estudios Universitarios',
       curriculumDescription: 'Médico y Cirujano Universidad de Antioquia 1990 - 1996',
