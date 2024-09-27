@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import './icon-cards.scss'
+import './icon-cards.scss'	
+
+import Button from '~/components/atoms/buttons/default/index.vue'
+
 type IconTitleProps = {
   data: {
     icon: Component
@@ -17,22 +20,27 @@ const { data } = defineProps<IconTitleProps>()
 
   <section class="icon-cards">
 
-    <div class="card" v-for="(item, index) in data" :key="index">
+    <div class="cards-container">
 
-      <component class="image" :is="item.icon" :aria-label="item.iconAlt"/>
+      <div class="card" v-for="(item, index) in data" :key="index">
 
-      <div class="details">
-        <h3 class="title">
-          {{ $t(item.title) }}
-        </h3>
+        <component class="image" :is="item.icon" :aria-label="item.iconAlt"/>
 
-        <span class="description">
-          {{ $t(item.description) }}
-        </span>
+          <div class="details">
+          <h3 class="title">
+            {{ $t(item.title) }}
+          </h3>
+
+          <span class="description">
+            {{ $t(item.description) }}
+          </span>
+        </div>
       </div>
 
     </div>
-    
+
+    <Button :text="$t('contactCta')" class="studies-cta" :link="'/estudios'" />
+
   </section>
 
 </template>
