@@ -58,6 +58,7 @@ const toggleSliderTopNav = () => {
           src="/logo.webp"
           alt="Logo Dr. Puerta"
           densities="x1"
+          class="logo"
         />
       <!-- </NuxtLink> -->
 
