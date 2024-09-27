@@ -53,13 +53,13 @@ const toggleSliderTopNav = () => {
     </div>
 
     <div class="container">
-      <NuxtLink to="/" class="logo">
+      <!-- <NuxtLink to="/" class="logo"> -->
         <NuxtPicture
           src="/logo.webp"
-          alt="Logo de Dr. Puerta"
+          alt="Logo Dr. Puerta"
           densities="x1"
         />
-      </NuxtLink>
+      <!-- </NuxtLink> -->
 
       <div class="details">
 
