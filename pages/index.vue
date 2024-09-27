@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import Billboard from '~/components/organisms/billboards/billboard-1/index.vue'
 import SubTitle from '~/components/atoms/subtitle-description/index.vue'
 import IconCards from '~/components/organisms/cards/icon-cards/index.vue'
@@ -15,18 +16,20 @@ import HandPlusSvg from '~/components/icons/HandPlusSvg.vue'
 import WorldSnakeSvg from '~/components/icons/WorldSnakeSvg.vue'
 import MedicalSvg from '~/components/icons/MedicalSvg.vue'
 
+const { t } = useI18n()
+
 useSeoMeta({
-  title: 'Dr. Puerta',
-  description: 'Cirujano plástico',
-  ogSiteName: 'Dr. Puerta',
-  ogTitle: 'Dr. Puerta',
-  ogDescription: 'Dr. Puerta',
-  ogImage: '/meta/inicio-web-profesional.webp',
-  ogUrl: 'https://drpuerta.com',
-  ogLocale: 'es_CO',
-  twitterTitle: 'Dr. Puerta',
-  twitterDescription: 'Dr. Puerta',
-  twitterImage: '/meta/inicio-web-profesional.webp',
+  title: t('homeTitle'),
+  description: t('homeDescription'),
+  ogSiteName: t('homeName'),
+  ogTitle: t('homeTitle'),
+  ogDescription: t('homeDescription'),
+  ogImage: t('homeImage'),
+  ogUrl: t('homeUrl'),
+  ogLocale: t('siteLocale'),
+  twitterTitle: t('homeTitle'),
+  twitterDescription: t('homeDescription'),
+  twitterImage: t('homeImage'),
   twitterCard: 'summary_large_image',
 })
 

@@ -25,21 +25,21 @@
 
     .card-icon {
       margin: 0 auto;
-      padding: 10px;
+      padding-top: 16px;
+      svg {
+        width: 100px;
+        height: 100%;
+      }
     }
 
-    svg {
-      width: 100px;
-      margin: 0 auto;
-      height: 100%;
-    }
+
 
     .details {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      padding-bottom: 24px;
+      padding: 8px 0 24px 0;
       
       .details-content {
         display: flex;

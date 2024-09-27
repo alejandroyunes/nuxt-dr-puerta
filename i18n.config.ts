@@ -120,7 +120,14 @@ export default defineI18nConfig(() => ({
       contactEmail: 'Email',
       contactPhone: 'Phone',
       contactMessage: 'Message',
-      
+
+      siteLocale: 'en_US',
+      //home page
+      homeTitle: 'Dr. Jorge Puerta',
+      homeDescription: 'Medical and Surgeon, specialist in Otorhinolaryngology of the University of Antioquia.',
+      homeName: 'Dr. Puerta homepage',
+      homeImage: '/images/woman.webp',
+      homeUrl: 'https://drpuerta.com',
     },
     es: {
       surgery: 'Cirugía',
@@ -241,6 +248,15 @@ export default defineI18nConfig(() => ({
       contactEmail: 'Email',
       contactPhone: 'Teléfono',
       contactMessage: 'Mensaje',
+
+      //SEO
+      siteLocale: 'es_CO',
+      //pagina de inicio
+      homeTitle: 'Dr. Jorge Puerta',
+      homeDescription: 'Médico y Cirujano, especialista en Otorrinolaringología de la Universidad de Antioquia.',
+      homeName: 'Dr. Puerta',
+      homeImage: '/images/woman.webp',
+      homeUrl: 'https://drpuerta.com',
     },
   },
 }))

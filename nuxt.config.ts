@@ -1,7 +1,7 @@
 import { defineNuxtConfig } from "nuxt/config"
 
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   css: ["~/assets/main.scss"],
   modules: [    
   '@formkit/nuxt',
@@ -24,7 +24,7 @@ app: {
     ],
   },
   rootAttrs: {
-    id: 'paginas-profesionales',
+    id: 'dr-puerta',
   },
 },
 image: {
@@ -40,7 +40,19 @@ image: {
   },
 },
 i18n: {
-  vueI18n: './i18n.config.ts' // if you are using custom path, default
+  langDir: "locales/",
+  locales: [
+    {
+      iso: "es-CO",
+      code: "es",
+      file: "es.json",
+    },
+    {
+      iso: "en-US",
+      code: "en",
+      file: "en.json",
+    },
+  ],
 },
   compatibilityDate: "2024-07-11",
 })
