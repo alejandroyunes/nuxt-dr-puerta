@@ -12,7 +12,6 @@
     color: var(--heading);
     flex-direction: column;
     background-color: transparent;
-    min-height: 260px;
 
     &:first-child {
       background-color: var(--primary);
@@ -32,6 +31,7 @@
     svg {
       width: 100px;
       margin: 0 auto;
+      height: 100%;
     }
 
     .details {

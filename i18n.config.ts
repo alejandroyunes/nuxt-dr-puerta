@@ -4,8 +4,8 @@ export default defineI18nConfig(() => ({
   messages: {
     en: {
       surgery: 'Facial',
-      surgeryTitle: 'Plástica Facial',
-      surgeryDescription: 'More than 23 years of experience and more than 5000 surgeries performed successfully.',
+      surgeryTitle: 'Plastic Surgery',
+      surgeryDescription: 'With over 23 years of experience and more than 5,000 successful surgeries completed.',
       contact: 'Contact',
       billboard1Alt: 'image of a woman',
       estudios: 'Studies',

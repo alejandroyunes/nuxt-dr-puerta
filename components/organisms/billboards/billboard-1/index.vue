@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import './billboard-1.scss'
 import Buttons from '~/components/atoms/buttons/default/index.vue'
-import ModalPromo from '~/components/organisms/modals/modal-promo/index.vue'
+import ContactModal from '~/components/organisms/modals/contact/index.vue'
 
 const isModalOpen = ref(false)
 
@@ -35,6 +35,6 @@ const toggleModal = () => {
       class="image"
     />
 
-    <ModalPromo v-if="isModalOpen" :toggleModal="toggleModal"/>
+    <ContactModal v-if="isModalOpen" :toggleModal="toggleModal"/>
   </section>
 </template>
