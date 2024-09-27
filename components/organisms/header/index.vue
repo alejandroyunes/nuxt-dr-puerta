@@ -48,7 +48,7 @@ const toggleSliderTopNav = () => {
 
       <div class="column">
         <TelephoneSvg class="icon" />
-        <p>{{ $t('footerTel') }}: <a href="tel:+6042685436">+6 04 268 5436</a> – Cel: <a href="3188981046">318 898 1046</a></p>
+        <p><span>{{ $t('footerTel') }}:</span> <a href="tel:+6042685436">+6 04 268 5436</a> – Cel: <a href="3188981046">318 898 1046</a></p>
       </div>
     </div>
 
