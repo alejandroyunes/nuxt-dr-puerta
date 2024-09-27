@@ -1,8 +1,12 @@
 {
+  "home": "Home",
+  "studies": "Studies",
+  "contact": "Contact",
+
   "surgery": "Facial",
   "surgeryTitle": "Plastic Surgery",
   "surgeryDescription": "With over 23 years of experience and more than 5,000 successful surgeries completed.",
-  "contact": "Contact",
+  "contactCta": "Contact",
   "billboard1Alt": "image of a woman",
   "estudios": "Studies",
   "estudiosDescription": "Studies made by Dr. Jorge Puerta in his professional career",

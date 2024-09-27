@@ -1,8 +1,11 @@
 { 
+  "home": "Inicio",
+  "studies": "Estudios",
+
   "surgery": "Cirugía",
   "surgeryTitle": "Plástica Facial",
   "surgeryDescription": "Más de 23 años de trayectoria y más de 5000 cirugías realizadas con éxito.",
-  "contact": "Contactar",
+  "contactCta": "Contactar",
   "billboard1Alt": "imagen de mujer",
   "estudios": "Estudios",
   "estudiosDescription": "Estudios realizados por el Dr. Jorge Puerta en su trayectoria profesional",

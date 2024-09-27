@@ -40,7 +40,14 @@ image: {
   },
 },
 i18n: {
+  //lazy: true, // true might be not fully supported
+  // baseUrl: process.env.BASE_URL || "https://something",
   langDir: "locales/",
+  defaultLocale: "es",
+  detectBrowserLanguage: false,
+  strategy: "no_prefix",
+  lazy: false,
+  baseUrl: "/",
   locales: [
     {
       iso: "es-CO",
@@ -51,7 +58,7 @@ i18n: {
       iso: "en-US",
       code: "en",
       file: "en.json",
-    },
+    }
   ],
 },
   compatibilityDate: "2024-07-11",

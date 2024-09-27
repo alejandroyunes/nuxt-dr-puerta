@@ -2,9 +2,8 @@
 import { ref } from 'vue'
 
 import './menu.scss'
-import GraphicDesignSvg from '~/components/icons/menu/GraphicDesign.vue'
+
 import ArrowDownSvg from '~/components/icons/ArrowDownSvg.vue'
-import WebDesignSvg from '~/components/icons/menu/WebDesignSvg.vue'
 
 import UniversitySvg from '~/components/icons/UnivercitySvg.vue'
 import DiplomaSvg from '~/components/icons/DiplomadoSvg.vue'
@@ -43,7 +42,7 @@ const supportLinks = [
       
       <NuxtLink to="/">
         <li class="item">
-          <h3 class="title">Inicio</h3>
+          <h3 class="title">{{ $t('home') }}</h3>
           <ArrowDownSvg class="icon arrow-icon" />
         </li>
       </NuxtLink>
