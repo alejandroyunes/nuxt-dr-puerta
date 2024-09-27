@@ -34,14 +34,6 @@
             margin-right: 10px;
           }
         }
-
-      @media (max-width: 1024px) {
-        padding: 0 24px;
-      }
-
-      @media (max-width: 824px) {
-        display: none;
-      }
     }
 
     .container {
@@ -59,7 +51,7 @@
       .logo {
         img {
           height: 100%;
-          width: 148px;
+          width: 172px;
           display: flex;
           align-items: center;
           justify-content: baseline;
@@ -110,17 +102,10 @@
           margin-right: .4rem;
           padding: 20px 0;
           cursor: pointer;
-  
+          
           .sun,
           .moon {
-            margin-right: 16px;
-            
-            @media (max-width: 768px) {
-              margin: 0 10px;
-            }
-          }
-          @media (max-width: 768px) {
-            margin-right: 0;
+            margin-right: 10px;
           }
         }
   
@@ -142,23 +127,43 @@
   
     } 
 
-    @media (max-width: 824px) {
+    @media (max-width: 848px) {
       padding: 0;
       background-color: transparent;
       backdrop-filter: blur(5px);
+
+      .contact-top {
+        display: none;
+      }
+
       .container {
-        padding: 0 20px;
-        margin: 10px 10px 0;
+        padding: 0 10px;
+        margin: 14px 10px 0;
+
+        .logo {
+          img {
+            width: 140px;
+          }
+        }
 
         .details {
           .language-switcher {
-            margin-right: 0;
 
             button {
-              padding: 4px 10px;
+              padding: 8px 12px;
             }
           }
         }
        }
+      }
+
+    @media (max-width: 450px) {
+      .container {
+        .details {
+          .dark-mode-icons {
+            display: none;
+          }
+        }
+      }
     }
   }
