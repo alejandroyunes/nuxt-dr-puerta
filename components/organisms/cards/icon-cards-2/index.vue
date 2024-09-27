@@ -32,6 +32,7 @@ const { data } = defineProps<IconTitleProps>()
             {{ $t(item.title) }}
           </h3>
         </div>
+        
         <ButtonTransparentEffect :text="$t(item.btnText)" :link="item.link" />
       </div>
 

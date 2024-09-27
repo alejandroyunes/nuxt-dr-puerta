@@ -2,12 +2,11 @@
 import './header.scss'
 const { locale, setLocale } = useI18n()
 import { ref } from 'vue'
-import { setDarkMode } from '~/utils/utils'
 
+import UseSetTheme from '~/components/hooks/useSetTheme.vue'
 import SliderTopNav from '~/components/organisms/menus/sliders/top-nav/index.vue'
 import Dropdown from '~/components/organisms/menus/dropdown/desktop/index.vue'
-import SunSvg from '~/components/icons/header/SunSvg.vue'
-import MoonSvg from '~/components/icons/header/MoonSvg.vue'
+
 import Button from '~/components/atoms/buttons/default/index.vue'
 
 import HamburgerVerticalSvg from '~/components/icons/header/HamburgerSvg.vue'
@@ -15,20 +14,16 @@ import LocationSvg from '~/components/icons/LocationSvg.vue'
 import TelephoneSvg from '~/components/icons/TelephoneSvg.vue'
 
 const isSliderTopNavOpen = ref<boolean | undefined>(undefined)
-const isDarkMode = ref(false)
+
 
 onMounted(() => {
   const theme = localStorage.getItem('theme')
 
-  if (theme === 'dark') {
-    isDarkMode.value = true
-  }
+  // if (theme === 'dark') {
+  //   isDarkMode.value = true
+  // }
 })
 
-const handleTheme = () => {
-  isDarkMode.value = !isDarkMode.value
-  setDarkMode(isDarkMode.value)
-}
 
 const toggleSliderTopNav = () => {
   isSliderTopNavOpen.value = !isSliderTopNavOpen.value
@@ -70,10 +65,7 @@ const toggleSliderTopNav = () => {
           <button :class="{ 'active': locale === 'es' }" @click="setLocale('es')">es</button>
         </div>
 
-        <div class="dark-mode-icons" @click="handleTheme()">
-          <MoonSvg v-if="!isDarkMode" class="icon sun" aria-label="Cambiar tema del sitio web" />
-          <SunSvg v-else class="icon moon" aria-label="Cambiar tema del sitio web" />
-        </div>
+        <UseSetTheme class="dark-mode-icons" />
 
         <Dropdown class="desktop-only" />
 

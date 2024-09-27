@@ -130,6 +130,7 @@
       .social-links {
         display: flex;
         justify-content: center;
+        align-items: center;
         gap: 16px;
         padding: 0;
         list-style: none;
@@ -160,6 +161,11 @@
             width: 20px;
             height: 20px;
           }
+        }
+
+        .top-nav-icons {
+          display: flex;
+          align-items: center;
         }
       }
     }

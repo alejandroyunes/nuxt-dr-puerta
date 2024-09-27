@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 import './top-nav.scss'
 
+import UseSetTheme from '~/components/hooks/useSetTheme.vue'
+
 //icons
 import ExitSvg from '@/components/icons/ExitSvg.vue'
 import UniversitySvg from '~/components/icons/UnivercitySvg.vue'
@@ -93,7 +95,10 @@ const socialLinks = [
             <component :is="socialLink.icon" />
           </NuxtLink>
           </li>
+
+          <UseSetTheme class="top-nav-icons" />
         </ul>
+
       </div>
 
     </div>
