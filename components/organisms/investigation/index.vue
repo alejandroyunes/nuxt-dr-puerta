@@ -92,7 +92,7 @@ const studies2 = [
 
       <h2>{{ $t(studies2[0].title ?? '') }}</h2>
       <p>{{ $t(studies2[0].description ?? '') }}</p>
-      <p class="download-pdf">{{ $t('studiesDownload') }}</p>
+      <!-- <p class="download-pdf">{{ $t('studiesDownload') }}</p> -->
 
     </div>
   </article>
