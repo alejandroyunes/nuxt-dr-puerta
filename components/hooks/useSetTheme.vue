@@ -7,8 +7,13 @@ import { setDarkMode } from '~/utils/utils'
 const isDarkMode = ref(false)
 
 const handleTheme = () => {
-  isDarkMode.value = !isDarkMode.value
-  setDarkMode(isDarkMode.value)
+  if(localStorage.getItem('theme') === 'dark') {
+    isDarkMode.value = false
+    setDarkMode(isDarkMode.value)
+  } else {
+    isDarkMode.value = true
+    setDarkMode(isDarkMode.value)
+  }
 }
 
 </script>

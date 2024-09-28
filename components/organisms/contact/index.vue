@@ -35,7 +35,6 @@
           </div>
         </NuxtLink>
 
-
         <NuxtLink to="https://www.waze.com/ul?ll=@4.6387594%2C-75.6011931%2C15z?navigate=yes&zoom=17" target="_blank">
           <div class="column">
             <WazeSvg class="icon" />
