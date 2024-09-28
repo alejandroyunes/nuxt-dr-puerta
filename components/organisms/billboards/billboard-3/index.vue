@@ -12,8 +12,8 @@ import './billboard-3.scss'
     </div>
 
     <div class="column">
-      <h2 class="title">{{ $t('billboard3Title') }}</h2>
-      <p class="description">{{ $t('billboard3Subtitle') }}</p>
+      <h2 class="title">{{ $t('billboard4Title') }}</h2>
+      <p class="description">{{ $t('billboard4Subtitle') }}</p>
     </div>
   </section>
 </template>

@@ -2,7 +2,7 @@
   max-width: var(--max-width);
   margin: 40px auto 0;
 
-  
+
   .cards-container {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -50,17 +50,6 @@
       }
     }
   
-    .studies-cta {
-      padding: 0 48px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      button {
-        min-width: 200px;
-        margin: 0 auto;
-      }
-    }
-  
     @media (max-width: 1025px) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
       padding: 0 24px;
@@ -91,11 +80,11 @@
     }
   }
 
-  .studies-cta {
-    margin: 40px auto 0;
+  .read-more-cta {
     padding: 0 48px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 40px auto 0;
   }
 }
