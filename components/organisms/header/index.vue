@@ -24,13 +24,11 @@ const config = inject(Symbol.for('FormKitConfig')) as { locale: string } | undef
 
 const setLanguage = (language: string) => {
   locale.value = language
-  // localStorage.setItem('locale', language)
 
   if (config !== undefined) {
     config.locale = language
   }
 }
-
 
 </script>
 

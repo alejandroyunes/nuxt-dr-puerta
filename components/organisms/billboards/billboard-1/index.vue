@@ -33,6 +33,7 @@ const toggleModal = () => {
       :alt="$t('billboard1Alt')"
       densities="x1"
       class="image"
+      sizes="100vw md:100vw lg:100vw"
     />
 
     <ContactModal v-if="isModalOpen" :toggleModal="toggleModal"/>
