@@ -89,8 +89,8 @@ const iconCards2 = [
 <template>
   <Billboard />
 
-  <SubTitle marginTop :title="$t('studies')"
-    :description="$t('estudiosDescription')" />
+  <SubTitle marginTop title="studies"
+    description="estudiosDescription" />
   
     <IconCards :data="iconCards" />
 

@@ -20,8 +20,8 @@ useSeoMeta({
 
 <template>
   <Title
-    title="Dr. Jorge Puerta"
-    description="footerDescription" />
+    title="drPuertaFull"
+    description="drPuertaDescription" />
 
   <Curriculum />
 

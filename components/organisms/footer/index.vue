@@ -25,9 +25,9 @@
 
     <div class="footer-content">
       <div class="item">
-        <h3 class="">{{ $t('footerTitle') }}</h3>
+        <h3 class="">{{ $t('drPuertaFull') }}</h3>
         
-        <p>{{ $t('footerDescription') }}</p>
+        <p>{{ $t('drPuertaDescription') }}</p>
 
         <div class="social-links">
           <NuxtLink v-for="link in socialLinks" :to="link.to" target="_blank">
@@ -57,6 +57,6 @@
       </div>
     </div>
 
-    <p class="copyright">&copy; {{ currentYear }} {{ $t('footerCopyright') }}</p>
+    <p class="copyright">&copy; {{ currentYear }} {{ $t('drPuertaFull') }}</p>
   </footer>
 </template>

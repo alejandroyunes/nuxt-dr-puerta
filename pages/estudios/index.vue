@@ -20,8 +20,8 @@ useSeoMeta({
 
 <template>
   <Title
-    :title="$t('studiesTitle')"
-    :description="$t('studiesTitleDescription')" />
+    title="studies"
+    description="studiesTitleDescription" />
 
   <Investigation />
 </template>

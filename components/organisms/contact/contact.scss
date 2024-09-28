@@ -16,7 +16,7 @@
     .contact-info-content {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 80px;
       color: var(--heading);
 
       p {
@@ -46,7 +46,6 @@
 
   @media (max-width: 1024px) {
     flex-direction: column;
- 
 
     .contact-info-wrapper {
       width: 100%;

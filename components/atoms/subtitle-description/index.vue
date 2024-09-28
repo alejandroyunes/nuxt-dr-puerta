@@ -14,9 +14,9 @@ const { title, description, marginTop } = defineProps<Props>()
 <template>
   <section class="subtitle-description">
 
-    <h2 class="subtitle" :class="{ 'extra-top-space': marginTop }">{{ title }}</h2>
+    <h2 class="subtitle" :class="{ 'extra-top-space': marginTop }">{{ $t(title ?? '') }}</h2>
 
-    <p class="description">{{ description }}</p>
+    <p class="description">{{ $t(description ?? '') }}</p>
 
   </section>
 </template>

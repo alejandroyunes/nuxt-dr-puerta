@@ -2,6 +2,8 @@
   "home": "Inicio",
   "studies": "Estudios",
   "drPuerta": "Dr. Puerta",
+  "drPuertaFull": "Dr. Jorge Puerta",
+  "drPuertaDescription": "Médico y Cirujano, especialista en Otorrinolaringología de la Universidad de Antioquia.",
   "diplomado": "Diplomado",
   "postgraduate": "Posgrado",
   "contact": "Contacto",
@@ -12,7 +14,7 @@
   "surgeryTitle": "Plástica Facial",
   "surgeryDescription": "Más de 23 años de trayectoria y más de 5000 cirugías realizadas con éxito.",
   "billboard1Alt": "imagen de mujer",
-  "estudiosDescription": "Estudios realizados por el Dr. Jorge Puerta en su trayectoria profesional",
+  "estudiosDescription": "Estudios realizados por el Dr. Jorge Puerta en su trayectoria profesional.",
 
   "iconCardsTitle": "Títulos Universitarios",
   "iconCardsDescription": "Médico y Cirujano Universidad de Antioquia 1990 - 1996.",
@@ -45,17 +47,9 @@
   "iconCards2Button3": "Leer más",
   "iconCards2Alt3": "Icono de diplomado",
 
-  "footerTitle": "Dr. Jorge Puerta",
-  "footerDescription": "Médico y Cirujano, especialista en Otorrinolaringología de la Universidad de Antioquia.",
   "footerLinks": "Enlaces",
-  "footerLink1": "Inicio",
-  "footerLink2": "Dr. Puerta",
-  "footerLink3": "Estudios",
-  "footerLink4": "Contáctanos",
-  "footerContact": "Contacto",
   "footerOffice": "oficina",
   "footerTel": "Fijo",
-  "footerCopyright": "Dr Jorge Puerta.",
 
   "curriculumTitle": "Estudios Universitarios",
   "curriculumDescription": "Médico y Cirujano Universidad de Antioquia 1990 - 1996",
@@ -93,9 +87,8 @@
   "experienceDescription11": "Rinoplastia en pacientes con nariz Leporina con injertos Aloplásticos. Presentado en el XXXIV Congreso Nacional de Otorrinolaringología, Cirugía de Cabeza y Cuello, maxilofacial y Estética Facial. Medellín, Mayo de 2008.",
   "experienceDescription12": "Transplante de Cara Experimental Técnica Microvascular Modelo Docente de Microcirugía en Cabeza y Cuello. Premio al Mejor Trabajo de Investigación en Cirugía plástica Facial Marzo 2009. Presentado en el XIII Congreso Nacional de Cirugía plástica Facial. Medellín, Marzo de 2008.",
   
-  "studiesTitle": "Estudios",
-  "studiesTitleDescription": "Estudios realizados por el Dr. Jorge Puerta en su trayectoria profesional",
-  
+
+  "studiesTitleDescription": "Estudio realizado por el Dr. Jorge Puerta sobre el uso de ácido hialurónico de estado sólido para tratar arrugas.",
   "studiesFig": "Vol. 128, No. 4 Suplemento a la Cirugía Plástica y Reconstructiva®",
   "studiesTitle1": "Acido Hialurónico de Estado Sólido: Un Sistema de Entrega Novel para Hacer Tratamientos Precisos y Rápidos de Arrugas Finas y Profundas",
   "studiesTitle2": "Geoffrey C. Gurtner, MD; Michael T. Longaker, MD, MBA; Jorge Puerta, MD; Kenneth N. Horne, MS; Jayakumar Rajadas, PhD",

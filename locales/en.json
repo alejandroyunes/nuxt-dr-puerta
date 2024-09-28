@@ -2,6 +2,8 @@
   "home": "Home",
   "studies": "Studies",
   "drPuerta": "Dr. Puerta",
+  "drPuertaFull": "Dr. Jorge Puerta",
+  "drPuertaDescription": "Medical and Surgeon, specialist in Otorhinolaryngology of the University of Antioquia.",
   "diplomado": "Diplomado",
   "postgraduate": "Posgrado",
   "contact": "Contact",
@@ -12,7 +14,7 @@
   "surgeryTitle": "Plastic Surgery",
   "surgeryDescription": "With over 23 years of experience and more than 5,000 successful surgeries completed.",
   "billboard1Alt": "image of a woman",
-  "estudiosDescription": "Studies made by Dr. Jorge Puerta in his professional career",
+  "estudiosDescription": "Studies made by Dr. Jorge Puerta in his professional career.",
 
   "iconCardsTitle": "University Titles",
   "iconCardsDescription": "Medical and Surgeon University of Antioquia 1990 - 1996.",
@@ -43,8 +45,6 @@
   "iconCards2Button3": "Read more",
   "iconCards2Alt3": "Icon of diploma",
 
-  "footerTitle": "Dr. Jorge Puerta",
-  "footerDescription": "Medical and Surgeon, specialist in Otorhinolaryngology of the University of Antioquia.",
   "footerLinks": "Links",
   "footerOffice": "office",
   "footerTel": "landline",
@@ -86,7 +86,6 @@
   "experienceDescription11": "Rhinoplasty in patients with leporine nose with aloplastic grafts. Presented at the XXXIV National Congress of Otorhinolaryngology, Head and Neck Surgery, Maxilofacial and Facial Aesthetic Surgery. Medellín, May 2008.",
   "experienceDescription12": "Experimental Facial Transplant Technique Microvascular Model Teacher of Microsurgery in Head and Neck. Prize for the best research work in plastic surgery. Presented at the XIII National Congress of Plastic Surgery. Medellín, March 2008.",
 
-  "studiesTitle": "Studies",
   "studiesTitleDescription": "Study made by Dr. Jorge Puerta about the use of solid-state hyaluronic acid to treat wrinkles.",
   "studiesFig": "Vol. 128, No. 4 Supplement to Plastic and Reconstructive Surgery®",
   "studiesTitle1": "Solid-State Hyaluronic Acid: A Novel Delivery System To Enable the Precise and Rapid Treatment of Fine and Deep Wrinkles",
