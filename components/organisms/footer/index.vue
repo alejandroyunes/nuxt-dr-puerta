@@ -39,15 +39,15 @@
       <div class="item">
         <h3 class="">{{ $t('footerLinks') }}</h3>
           <ul>
-            <li><NuxtLink to="/">{{ $t('footerLink1') }}</NuxtLink></li>
-            <li><NuxtLink to="/dr-puerta">{{ $t('footerLink2') }}</NuxtLink></li>
-            <li><NuxtLink to="/estudios">{{ $t('footerLink3') }}</NuxtLink></li>
-            <li><NuxtLink to="/contacto">{{ $t('footerLink4') }}</NuxtLink></li>
+            <li><NuxtLink to="/">{{ $t('home') }}</NuxtLink></li>
+            <li><NuxtLink to="/dr-puerta">{{ $t('drPuerta') }}</NuxtLink></li>
+            <li><NuxtLink to="/estudios">{{ $t('studies') }}</NuxtLink></li>
+            <li><NuxtLink to="/contacto">{{ $t('contact') }}</NuxtLink></li>
         </ul>
       </div>
       
       <div class="item">
-        <h3 class="">{{ $t('footerContact') }}</h3>
+        <h3 class="">{{ $t('contactUs') }}</h3>
         <ul>
           <li>+6 04 268 5436</li>
           <li> 318 898 1046.</li>

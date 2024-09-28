@@ -18,14 +18,14 @@ const itemClicked = () => {
 }
 
 const supportLinks = [
-{
-    title: 'Dr. Puerta',
+  {
+    title: 'home',
     link: '/dr-puerta',
     icon: UniversitySvg,
     iconAlt: 'Diseño web',
   },
   {
-    title: 'footerLink3',
+    title: 'studies',
     link: '/estudios',
     icon: DiplomaSvg,
     iconAlt: 'Diseño gráfico'
@@ -48,7 +48,7 @@ const supportLinks = [
       </NuxtLink>
 
       <li class="item">
-        <h3 class="title">Dr. Puerta</h3>
+        <h3 class="title">{{ $t('drPuerta') }}</h3>
         <ArrowDownSvg class="icon arrow-icon" />
 
         <ul :class="['sub-items', { 'clicked': isClicked }]" @click="itemClicked">

@@ -104,29 +104,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-
-      .contact-info-content {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        margin-top: 24px;
-
-        p, a {
-          font-weight: 600;
-          font-size: 15px;
-          color: var(--heading);
-        }
-  
-        .icon {
-          width: 24px;
-          margin-right: 10px;
-        }
-    
-        @media (max-width: 1024px) {
-          padding: 0 24px;
-        }
-      }
-
+      height: 100%;
+      
       .social-links {
         display: flex;
         justify-content: center;

@@ -18,25 +18,25 @@ const { toggle, isOpen } = defineProps<{
 
 const navLinks = [
   {
-    title: 'footerLink1',
+    title: 'home',
     link: '/',
     icon: HomeSvg,
     iconAlt: 'Diseño web',
   },
   {
-    title: 'Dr. Puerta',
+    title: 'drPuerta',
     link: '/dr-puerta',
     icon: UniversitySvg,
     iconAlt: 'Diseño web',
   },
   {
-    title: 'footerLink3',
+    title: 'studies',
     link: '/estudios',
     icon: DiplomaSvg,
     iconAlt: 'Diseño gráfico'
   },
   {
-    title: 'footerLink4',
+    title: 'contact',
     link: '/contacto',
     icon: DiplomaSvg,
     iconAlt: 'ícono de Contacto'

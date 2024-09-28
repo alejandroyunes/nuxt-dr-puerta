@@ -15,16 +15,6 @@ import TelephoneSvg from '~/components/icons/TelephoneSvg.vue'
 
 const isSliderTopNavOpen = ref<boolean | undefined>(undefined)
 
-
-onMounted(() => {
-  const theme = localStorage.getItem('theme')
-
-  // if (theme === 'dark') {
-  //   isDarkMode.value = true
-  // }
-})
-
-
 const toggleSliderTopNav = () => {
   isSliderTopNavOpen.value = !isSliderTopNavOpen.value
 }
@@ -70,7 +60,7 @@ const toggleSliderTopNav = () => {
         <Dropdown class="desktop-only" />
 
         <NuxtLink to="/contacto">
-          <Button :text="$t('footerLink4')" class="contact-button desktop-only" aria-label="Ir a la sección de contacto" />
+          <Button :text="$t('contact')" class="contact-button desktop-only" aria-label="Ir a la sección de contacto" />
         </NuxtLink>
 
         <div class="hamburger-menu mobile-only" @click="toggleSliderTopNav">

@@ -41,13 +41,13 @@ const iconCards = [
     iconAlt: 'iconCardsAlt',
   },
   {
-    title: 'iconCardsTitle2',
+    title: 'postgraduate',
     icon: GraduationSvg,
     description: 'iconCardsDescription2',
     iconAlt: 'iconCardsAlt2',
   },
   {
-    title: 'Diplomado',
+    title: 'diplomado',
     icon: DiplomaSvg,
     description: 'iconCardsDescription3',
     iconAlt: 'iconCardsAlt3',
@@ -89,7 +89,7 @@ const iconCards2 = [
 <template>
   <Billboard />
 
-  <SubTitle marginTop :title="$t('estudios')"
+  <SubTitle marginTop :title="$t('studies')"
     :description="$t('estudiosDescription')" />
   
     <IconCards :data="iconCards" />

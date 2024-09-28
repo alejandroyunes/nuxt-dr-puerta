@@ -1,22 +1,25 @@
 { 
   "home": "Inicio",
   "studies": "Estudios",
+  "drPuerta": "Dr. Puerta",
+  "diplomado": "Diplomado",
+  "postgraduate": "Posgrado",
+  "contact": "Contacto",
+  "contactUs": "Contáctanos",
 
   "surgery": "Cirugía",
   "surgeryTitle": "Plástica Facial",
   "surgeryDescription": "Más de 23 años de trayectoria y más de 5000 cirugías realizadas con éxito.",
-  "contactCta": "Contactar",
   "billboard1Alt": "imagen de mujer",
-  "estudios": "Estudios",
   "estudiosDescription": "Estudios realizados por el Dr. Jorge Puerta en su trayectoria profesional",
 
   "iconCardsTitle": "Títulos Universitarios",
   "iconCardsDescription": "Médico y Cirujano Universidad de Antioquia 1990 - 1996.",
   "iconCardsAlt": "Icono de universidad",
-  "iconCardsTitle2": "Posgrado",
+
   "iconCardsDescription2": "Especialización en Otorrinolaringología 1997-2000.",
   "iconCardsAlt2": "Icono de graduación",
-  "iconCardsTitle3": "Diplomado",
+
   "iconCardsDescription3": "Diplomado en Docencia Universitaria, Universidad de Antioquia 2007.",
   "iconCardsAlt3": "Icono de diplomado",
   "iconCardsTitle4": "Universidad de Antioquia",
