@@ -10,6 +10,32 @@
   "contactUs": "Contact Us",
   "readMore": "Read more",
 
+
+  "siteLocale": "en_US",
+  "homeTitle": "Dr. Jorge Puerta",
+  "homeDescription": "Medical and Surgeon, specialist in Otorhinolaryngology of the University of Antioquia.",
+  "homeName": "Dr. Puerta homepage",
+  "homeImage": "/images/woman.webp",
+  "homeUrl": "https://drpuerta.com",
+
+  "estudiosMetaTitle": "Studies",
+  "estudiosMetaDescription": "Studies made by Dr. Jorge Puerta in his professional career.",
+  "estudiosMetaName": "Studies",
+  "estudiosMetaImage": "/images/woman.webp",
+  "estudiosMetaUrl": "https://drpuerta.com/estudios",
+
+  "drPuertaMetaTitle": "Dr. Jorge Puerta",
+  "drPuertaMetaDescription": "Medical and Surgeon, specialist in Otorhinolaryngology of the University of Antioquia.",
+  "drPuertaMetaName": "Dr. Puerta",
+  "drPuertaMetaImage": "/images/woman.webp",
+  "drPuertaMetaUrl": "https://drpuerta.com/dr-puerta",
+
+  "contactoMetaTitle": "Contact",
+  "contactoMetaDescription": "Contact with Dr. Jorge Puerta",
+  "contactoMetaName": "Contact",
+  "contactoMetaImage": "/images/woman.webp",
+  "contactoMetaUrl": "https://drpuerta.com/contacto",
+
   "surgery": "Facial",
   "surgeryTitle": "Plastic Surgery",
   "surgeryDescription": "With over 23 years of experience and more than 5,000 successful surgeries completed.",
@@ -112,13 +138,5 @@
   "contactName": "Name",
   "contactEmail": "Email",
   "contactPhone": "Phone",
-  "contactMessage": "Message",
-
-  "siteLocale": "en_US",
-
-  "homeTitle": "Dr. Jorge Puerta",
-  "homeDescription": "Medical and Surgeon, specialist in Otorhinolaryngology of the University of Antioquia.",
-  "homeName": "Dr. Puerta homepage",
-  "homeImage": "/images/woman.webp",
-  "homeUrl": "https://drpuerta.com"
+  "contactMessage": "Message"
 }

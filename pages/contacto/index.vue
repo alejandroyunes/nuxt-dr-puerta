@@ -1,21 +1,23 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import Contact from '~/components/organisms/contact/index.vue'
 
+const { t } = useI18n()
+
 useSeoMeta({
-  title: 'Contacte al Soporte Técnico de Paginas Profesionales | Asistencia Rápida y Eficiente',
-  description: 'Complete nuestro formulario para una resolución rápida de sus problemas.',
-  ogSiteName: 'Paginas Profesionales',
-  ogTitle: 'Contacte al Soporte Técnico de Paginas Profesionales | Asistencia Rápida y Eficiente',
-  ogDescription: 'Complete nuestro formulario para una resolución rápida de sus problemas.',
-  ogImage: '/meta/default.webp',
-  ogUrl: 'https://paginasprofesionales.co/contacta-con-soporte',
-  ogLocale: 'es_CO',
-  twitterTitle: 'Contacte al Soporte Técnico de Paginas Profesionales | Asistencia Rápida y Eficiente',
-  twitterDescription: 'Complete nuestro formulario para una resolución rápida de sus problemas.',
-  twitterImage: '/meta/default.webp',
+  title: t('contactoMetaTitle'),
+  description: t('contactoMetaDescription'),
+  ogSiteName: t('contactoMetaName'),
+  ogTitle: t('contactoMetaTitle'),
+  ogDescription: t('contactoMetaDescription'),
+  ogImage: t('contactoMetaImage'),
+  ogUrl: t('contactoMetaUrl'),
+  ogLocale: t('siteLocale'),
+  twitterTitle: t('contactoMetaTitle'),
+  twitterDescription: t('contactoMetaDescription'),
+  twitterImage: t('contactoMetaImage'),
   twitterCard: 'summary_large_image',
 })
-
 </script>
 
 <template>

@@ -39,7 +39,7 @@ const { data } = defineProps<IconTitleProps>()
 
     </div>
 
-    <Button :text="$t('readMore')" class="read-more-cta" :link="'/studies'" />
+    <Button :text="$t('readMore')" class="read-more-cta" :link="'/estudios'" />
 
   </section>
 

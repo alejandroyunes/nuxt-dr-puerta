@@ -19,17 +19,17 @@ import MedicalSvg from '~/components/icons/MedicalSvg.vue'
 const { t } = useI18n()
 
 useSeoMeta({
-  title: t('homeTitle'),
-  description: t('homeDescription'),
-  ogSiteName: t('homeName'),
-  ogTitle: t('homeTitle'),
-  ogDescription: t('homeDescription'),
-  ogImage: t('homeImage'),
-  ogUrl: t('homeUrl'),
+  title: t('homeMetaTitle'),
+  description: t('homeMetaDescription'),
+  ogSiteName: t('homeMetaName'),
+  ogTitle: t('homeMetaTitle'),
+  ogDescription: t('homeMetaDescription'),
+  ogImage: t('homeMetaImage'),
+  ogUrl: t('homeMetaUrl'),
   ogLocale: t('siteLocale'),
-  twitterTitle: t('homeTitle'),
-  twitterDescription: t('homeDescription'),
-  twitterImage: t('homeImage'),
+  twitterTitle: t('homeMetaTitle'),
+  twitterDescription: t('homeMetaDescription'),
+  twitterImage: t('homeMetaImage'),
   twitterCard: 'summary_large_image',
 })
 

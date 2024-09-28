@@ -1,18 +1,23 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
 import Title from '~/components/atoms/title-description/index.vue'
 import Curriculum from '~/components/organisms/curriculum/index.vue'
+
+const { t } = useI18n()
+
 useSeoMeta({
-  title: 'Blog | Noticias, Análisis y Tendencias Sobre Tecnología y Desarrollo Web',
-  description: 'Mantente al día con las últimas noticias sobre innovaciones en tecnología y desarrollo web.',
-  ogSiteName: 'Paginas Profesionales',
-  ogTitle: 'Blog | Noticias, Análisis y Tendencias Sobre Tecnología y Desarrollo Web',
-  ogDescription: 'Mantente al día con las últimas noticias sobre innovaciones en tecnología y desarrollo web.',
-  ogImage: '/meta/default.webp',
-  ogUrl: 'https://paginasprofesionales.co/blog',
-  ogLocale: 'es_CO',
-  twitterTitle: 'Blog | Noticias, Análisis y Tendencias Sobre Tecnología y Desarrollo Web',
-  twitterDescription: 'Mantente al día con las últimas noticias sobre innovaciones en tecnología y desarrollo web.',
-  twitterImage: '/meta/default.webp',
+  title: t('drPuertaMetaTitle'),
+  description: t('drPuertaMetaDescription'),
+  ogSiteName: t('drPuertaMetaName'),
+  ogTitle: t('drPuertaMetaTitle'),
+  ogDescription: t('drPuertaMetaDescription'),
+  ogImage: t('drPuertaMetaImage'),
+  ogUrl: t('drPuertaMetaUrl'),
+  ogLocale: t('siteLocale'),
+  twitterTitle: t('drPuertaMetaTitle'),
+  twitterDescription: t('drPuertaMetaDescription'),
+  twitterImage: t('drPuertaMetaImage'),
   twitterCard: 'summary_large_image',
 })
 

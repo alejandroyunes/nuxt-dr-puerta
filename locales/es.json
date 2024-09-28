@@ -10,6 +10,31 @@
   "contactUs": "Contáctanos",
   "readMore": "Leer más",
 
+  "siteLocale": "es_CO",
+  "homeMetaTitle": "Dr. Jorge Puerta",
+  "homeMetaDescription": "Médico y Cirujano, especialista en Otorrinolaringología de la Universidad de Antioquia.",
+  "homeMetaName": "Dr. Puerta",
+  "homeMetaImage": "/images/woman.webp",
+  "homeMetaUrl": "https://drpuerta.com",
+
+  "estudiosMetaTitle": "Estudios",
+  "estudiosMetaDescription": "Estudios realizados por el Dr. Jorge Puerta en su trayectoria profesional.",
+  "estudiosMetaName": "Estudios",
+  "estudiosMetaImage": "/images/woman.webp",
+  "estudiosMetaUrl": "https://drpuerta.com/estudios",
+
+  "drPuertaMetaTitle": "Dr. Jorge Puerta",
+  "drPuertaMetaDescription": "Médico y Cirujano, especialista en Otorrinolaringología de la Universidad de Antioquia.",
+  "drPuertaMetaName": "Dr. Puerta",
+  "drPuertaMetaImage": "/images/woman.webp",
+  "drPuertaMetaUrl": "https://drpuerta.com/dr-puerta",
+
+  "contactoMetaTitle": "Contacto",
+  "contactoMetaDescription": "Contacto con el Dr. Jorge Puerta",
+  "contactoMetaName": "Contacto",
+  "contactoMetaImage": "/images/woman.webp",
+  "contactoMetaUrl": "https://drpuerta.com/contacto",
+
   "surgery": "Cirugía",
   "surgeryTitle": "Plástica Facial",
   "surgeryDescription": "Más de 23 años de trayectoria y más de 5000 cirugías realizadas con éxito.",
@@ -114,13 +139,5 @@
   "contactName": "Nombre",
   "contactEmail": "Email",
   "contactPhone": "Teléfono",
-  "contactMessage": "Mensaje",
-
-  "siteLocale": "es_CO",
-
-  "homeTitle": "Dr. Jorge Puerta",
-  "homeDescription": "Médico y Cirujano, especialista en Otorrinolaringología de la Universidad de Antioquia.",
-  "homeName": "Dr. Puerta",
-  "homeImage": "/images/woman.webp",
-  "homeUrl": "https://drpuerta.com"
+  "contactMessage": "Mensaje"
 }
