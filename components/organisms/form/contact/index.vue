@@ -45,13 +45,23 @@ const submitHandler = async (createForm: Props) => {
             <div class="form-group-inline">
               <div class="form-group">
                 <label for="name">{{ $t('contactName') }}</label>
-                <FormKit type="text" placeholder="Juana Perez" maxLength="30" minLength="3" v-model="name" name="name"
+                <FormKit
+                  type="text"
+                  placeholder="Juana Perez"
+                  maxLength="30"
+                  minLength="3"
+                  v-model="name"
+                  name="name"
                   validation="required" />
-            </div>
+              </div>
 
-            <div class="form-group">
+              <div class="form-group">
                 <label for="email">{{ $t('contactEmail') }}</label>
-                <FormKit type="email" placeholder="juanaperez@email.com" v-model="email" name="email"
+                <FormKit
+                  type="email"
+                  placeholder="juanaperez@email.com"
+                  v-model="email"
+                  name="email"
                   validation="required|email" />
               </div>
             </div>

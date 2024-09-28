@@ -1,8 +1,7 @@
 <script lang="ts" setup>
 import './header.scss'
-const { locale, setLocale } = useI18n()
-import { ref } from 'vue'
-
+import { ref, inject } from 'vue'
+import { useI18n } from 'vue-i18n'
 import UseSetTheme from '~/components/hooks/useSetTheme.vue'
 import SliderTopNav from '~/components/organisms/menus/sliders/top-nav/index.vue'
 import Dropdown from '~/components/organisms/menus/dropdown/desktop/index.vue'
@@ -15,9 +14,23 @@ import TelephoneSvg from '~/components/icons/TelephoneSvg.vue'
 
 const isSliderTopNavOpen = ref<boolean | undefined>(undefined)
 
+
 const toggleSliderTopNav = () => {
   isSliderTopNavOpen.value = !isSliderTopNavOpen.value
 }
+
+const { locale } = useI18n({ useScope: 'global' })
+const config = inject(Symbol.for('FormKitConfig')) as { locale: string } | undefined
+
+const setLanguage = (language: string) => {
+  locale.value = language
+  // localStorage.setItem('locale', language)
+
+  if (config !== undefined) {
+    config.locale = language
+  }
+}
+
 
 </script>
 
@@ -51,8 +64,8 @@ const toggleSliderTopNav = () => {
       <div class="details">
 
         <div class="language-switcher">
-          <button :class="{ 'active': locale === 'en' }" @click="setLocale('en')">en</button>
-          <button :class="{ 'active': locale === 'es' }" @click="setLocale('es')">es</button>
+          <button :class="{ 'active': locale === 'en' }" @click="setLanguage('en')">en</button>
+          <button :class="{ 'active': locale === 'es' }" @click="setLanguage('es')">es</button>
         </div>
 
         <UseSetTheme class="dark-mode-icons" />
