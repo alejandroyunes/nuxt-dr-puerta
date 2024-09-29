@@ -11,7 +11,6 @@
   "contactUs": "Contact Us",
   "readMore": "Read more",
 
-
   "siteLocale": "en_US",
   "homeTitle": "Dr. Jorge Puerta",
   "homeDescription": "Medical and Surgeon, specialist in Otorhinolaryngology of the University of Antioquia.",
@@ -130,6 +129,7 @@
   "studiesDownload": "Download PDF",
 
   "contactTitle": "Contact Us",
+  "weWrite": "We write you",
   "contactDescription": "To help us process your request as quickly as possible, please complete all the fields below.",
   "contactGoogle": "View in Google Maps",
   "contactWaze": "View in Waze",

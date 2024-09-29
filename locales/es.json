@@ -11,6 +11,7 @@
   "contactUs": "Contáctanos",
   "readMore": "Leer más",
 
+
   "siteLocale": "es_CO",
   "homeMetaTitle": "Dr. Jorge Puerta",
   "homeMetaDescription": "Médico y Cirujano, especialista en Otorrinolaringología de la Universidad de Antioquia.",
@@ -131,6 +132,7 @@
   "studiesDownload": "Descargar PDF",
 
   "contactTitle": "Envíanos tu consulta",
+  "weWrite": "Te escribimos",
   "contactDescription": "Para ayudarnos a procesar rápidamente su solicitud, complete todos los campos a continuación.",
   "contactGoogle": "Ver en Google Maps",
   "contactWaze": "Ver en Waze",

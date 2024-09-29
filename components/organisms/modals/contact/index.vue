@@ -1,15 +1,18 @@
 <script lang="ts" setup>
 import './contact-modal.scss'
 import { ref } from 'vue'
+import { reset } from '@formkit/core'
+import { AxiosError } from 'axios'
 import Loading from '~/components/atoms/loading/loading-1/index.vue'
 import CrossSvg from '~/components/icons/CrossSvg.vue'
-
+import { formPost } from '~/utils/apis/FormPostMethod'
+import type { FormModel } from '~/utils/models/FormModel'
 
 const name = ref('')
-const email = ref('')
+const email = ref(undefined)
 const phone = ref('')
+const message = ref(undefined)
 
-const isModalOpen = ref(false)
 const isResponseError = ref(false)
 const isRequestError = ref(false)
 const isSuccess = ref(false)
@@ -18,9 +21,8 @@ const isLoading = ref(false)
 
 
 type Props = {
-  email: string
-  password: string
-  confirmPassword: string
+  name: string
+  phone: string
 }
 
 const { toggleModal } = defineProps<{
@@ -29,7 +31,41 @@ const { toggleModal } = defineProps<{
 
 const submitHandler = async (createForm: Props) => {
   isLoading.value = true
-  await new Promise(resolve => setTimeout(resolve, 3000))
+
+  const form = {
+    name: name.value,
+    phone: phone.value,
+    email: email.value,
+    message: message.value
+  }
+
+  try {
+    isSuccess.value = false
+    isRequestError.value = false
+    isResponseError.value = false
+
+    const res = await formPost(form as unknown as FormModel)
+    console.log(res)
+
+    isLoading.value = false
+    isFormSubmitting.value = false
+    isSuccess.value = true
+
+    reset('contact-form')
+
+  } catch (error) {
+    isLoading.value = false
+    isFormSubmitting.value = false
+
+    const axiosError = error as AxiosError<Error>
+
+    if (axiosError.response) {
+      isResponseError.value = true
+    } else if (axiosError.request) {
+      isRequestError.value = true
+    }
+  }
+
   isLoading.value = false
   toggleModal()
 }
@@ -57,12 +93,6 @@ const submitHandler = async (createForm: Props) => {
               <label for="name">{{ $t('contactName') }}</label>
               <FormKit type="text" placeholder="Juana Pérez" maxLength="30" minLength="3" v-model="name" name="name"
                 validation="required" />
-            </div>
-
-            <div class="form-group">
-              <label for="email">{{ $t('contactEmail') }}</label>
-              <FormKit type="email" placeholder="juanaperez@email.com" v-model="email" name="email"
-                validation="required|email" />
             </div>
 
             <div class="form-group">
