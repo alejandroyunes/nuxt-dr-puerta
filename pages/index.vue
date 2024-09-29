@@ -83,7 +83,7 @@ const iconCards2 = [
     link: '/estudios'
   },
 ]
-const apiAccessToken = import.meta.env.VITE_API
+const apiAccessToken = import.meta.env.API_ACCESS_TOKEN
 console.log(import.meta.env)
 console.log(import.meta)
 console.log(apiAccessToken)
