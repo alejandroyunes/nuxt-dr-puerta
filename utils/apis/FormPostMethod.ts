@@ -3,7 +3,7 @@ import type { FormModel } from '../models/FormModel'
 
 const apiAccessToken = import.meta.env.API
 
-const api = 'http://35.171.97.13:8000'
+const api = 'https://api.paginasprofesionales.co'
 
 export const formPost = (data: FormModel) => {
   return axios
