@@ -84,7 +84,7 @@ const iconCards2 = [
   },
 ]
 const apiAccessToken = import.meta.env.API_ACCESS_TOKEN
-console.log(import.meta.env)
+console.log(import.meta.env.local)
 console.log(import.meta)
 console.log(apiAccessToken)
 
