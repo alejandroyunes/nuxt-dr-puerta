@@ -1,7 +1,7 @@
 import axios from 'axios'
 import type { FormModel } from '../models/FormModel'
 
-const apiAccessToken = import.meta.env.API
+const apiAccessToken = import.meta.env.VITE_API_ACCESS_TOKEN
 
 const api = 'https://api.paginasprofesionales.co'
 
