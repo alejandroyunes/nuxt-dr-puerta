@@ -86,6 +86,7 @@ const iconCards2 = [
 const apiAccessToken = import.meta.env.VITE_API_ACCESS_TOKEN
 
 console.log(apiAccessToken)
+console.log('Api', import.meta.env.API)
 
 </script>
 
