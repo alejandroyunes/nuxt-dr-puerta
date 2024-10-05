@@ -55,7 +55,7 @@ const setLanguage = (language: string) => {
           alt="Logo Dr. Puerta"
           densities="x1"
           class="logo"
-          sizes="100vw sm:50vw md:168px"
+          sizes="xs:168px"
         />
       </NuxtLink>
 
