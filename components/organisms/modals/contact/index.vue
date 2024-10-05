@@ -103,6 +103,17 @@ const submitHandler = async (createForm: Props) => {
                 placeholder="301 456 7890" />
             </div>
 
+            <div class="form-group">
+              <label for="message">{{ $t('contactMessage') }}</label>
+              <FormKit
+                type="textarea"
+                name="message"
+                placeholder="Mensaje"
+                maxLength="85"
+                v-model="message"
+                validation="required" />
+            </div>
+
             <button :class="['btn-submit', { 'btn-disabled': !state.valid }]" type="submit">
               <span>{{ $t('contactSubmit') }}</span>
             </button>
