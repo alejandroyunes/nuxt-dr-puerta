@@ -129,7 +129,7 @@ const submitHandler = async (createForm: Props) => {
         <h3 v-show="isRequestError" class="modal-title">{{ $t("contactModalRequestErrorTitle") }}</h3>
         <p v-show="isRequestError" class="modal-description">{{ $t("contactModalRequestErrorInfo") }}</p>
 
-        <Button v-show="!isLoading" class="btn-submit" :text="$t('close')" />
+        <Button v-show="!isLoading && !isSuccess" class="btn-submit" :text="$t('close')" @click="isConfirmInfoVisible = false" />
 
       </div>
 
