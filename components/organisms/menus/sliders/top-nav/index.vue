@@ -25,7 +25,7 @@ const navLinks = [
   },
   {
     title: 'drPuerta',
-    link: '/dr-puerta',
+    link: '/drpuerta',
     icon: UniversitySvg,
     iconAlt: 'Diseño web',
   },

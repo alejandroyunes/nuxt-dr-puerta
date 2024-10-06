@@ -40,7 +40,7 @@
         <h3 class="">{{ $t('footerLinks') }}</h3>
           <ul>
             <li><NuxtLink to="/">{{ $t('home') }}</NuxtLink></li>
-            <li><NuxtLink to="/dr-puerta">{{ $t('drPuerta') }}</NuxtLink></li>
+            <li><NuxtLink to="/drpuerta">{{ $t('drPuerta') }}</NuxtLink></li>
             <li><NuxtLink to="/estudios">{{ $t('studies') }}</NuxtLink></li>
             <li><NuxtLink to="/contacto">{{ $t('contact') }}</NuxtLink></li>
         </ul>

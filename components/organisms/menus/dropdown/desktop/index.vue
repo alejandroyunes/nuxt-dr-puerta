@@ -20,7 +20,7 @@ const itemClicked = () => {
 const supportLinks = [
   {
     title: 'education',
-    link: '/dr-puerta',
+    link: '/drpuerta',
     icon: UniversitySvg,
     iconAlt: 'Diseño web',
   },

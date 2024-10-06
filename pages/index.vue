@@ -66,7 +66,7 @@ const iconCards2 = [
     btnText: 'iconCards2Button',
     icon: HandPlusSvg,
     iconAlt: 'iconCards2Alt',
-    link: '/dr-puerta'
+    link: '/drpuerta'
   },
   {
     title: 'iconCards2Title2',
