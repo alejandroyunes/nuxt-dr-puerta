@@ -1,7 +1,7 @@
 import { defineNuxtConfig } from "nuxt/config"
 
 export default defineNuxtConfig({
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   css: ["~/assets/main.scss"],
   modules: [    
   '@formkit/nuxt',
