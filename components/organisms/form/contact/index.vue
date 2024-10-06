@@ -93,7 +93,7 @@ const submitHandler = async (createForm: Props) => {
           </div>
 
           <div class="form-group">
-            <label for="message">{{ $t('contactMessage') }}</label>
+            <label for="message">{{ $t('contactMessageLabel') }}</label>
             <FormKit
               type="textarea"
               name="message"

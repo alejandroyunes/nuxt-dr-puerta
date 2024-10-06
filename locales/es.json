@@ -151,5 +151,6 @@
   "contactEmail": "Email",
   "contactPhone": "Teléfono",
   "contactMessage": "Escribe tu mensaje",
-  "contactWriteUs": "Escribenos"
+  "contactWriteUs": "Escribenos",
+  "contactMessageLabel": "Mensaje"
 }

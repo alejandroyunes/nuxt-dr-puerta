@@ -144,10 +144,11 @@
   "contactWaze": "View in Waze",
   "contactHowTo": "How to get there?",
   "contactHowToDescription": "From the west by the Gilberto Echeverry bridge take the left road and from carrera 43c in both directions arrive at the 4th street.",
-  "contactSubmit": "Send",
+  
   "contactName": "Name",
   "contactEmail": "Email",
   "contactPhone": "Phone",
   "contactMessage": "Write your message",
-  "contactWriteUs": "Reach Out to Us"
+  "contactWriteUs": "Reach Out to Us",
+  "contactMessageLabel": "Message"
 }
