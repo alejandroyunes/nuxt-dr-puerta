@@ -11,12 +11,12 @@ useSeoMeta({
   ogSiteName: t('estudiosMetaName'),
   ogTitle: t('estudiosMetaTitle'),
   ogDescription: t('estudiosMetaDescription'),
-  ogImage: t('estudiosMetaImage'),
+  ogImage: '/meta/default.webp',
   ogUrl: t('estudiosMetaUrl'),
   ogLocale: t('siteLocale'),
   twitterTitle: t('estudiosMetaTitle'),
   twitterDescription: t('estudiosMetaDescription'),
-  twitterImage: t('estudiosMetaImage'),
+  twitterImage: '/meta/default.webp',
   twitterCard: 'summary_large_image',
 })
 

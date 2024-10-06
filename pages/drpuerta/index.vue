@@ -12,12 +12,12 @@ useSeoMeta({
   ogSiteName: t('drPuertaMetaName'),
   ogTitle: t('drPuertaMetaTitle'),
   ogDescription: t('drPuertaMetaDescription'),
-  ogImage: t('drPuertaMetaImage'),
+  ogImage: '/meta/default.webp',
   ogUrl: t('drPuertaMetaUrl'),
   ogLocale: t('siteLocale'),
   twitterTitle: t('drPuertaMetaTitle'),
   twitterDescription: t('drPuertaMetaDescription'),
-  twitterImage: t('drPuertaMetaImage'),
+  twitterImage: '/meta/default.webp',
   twitterCard: 'summary_large_image',
 })
 

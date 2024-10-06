@@ -10,14 +10,15 @@ useSeoMeta({
   ogSiteName: t('contactoMetaName'),
   ogTitle: t('contactoMetaTitle'),
   ogDescription: t('contactoMetaDescription'),
-  ogImage: t('contactoMetaImage'),
+  ogImage: '/meta/default.webp',
   ogUrl: t('contactoMetaUrl'),
   ogLocale: t('siteLocale'),
   twitterTitle: t('contactoMetaTitle'),
   twitterDescription: t('contactoMetaDescription'),
-  twitterImage: t('contactoMetaImage'),
+  twitterImage: '/meta/default.webp',
   twitterCard: 'summary_large_image',
 })
+
 </script>
 
 <template>
