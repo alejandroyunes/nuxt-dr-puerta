@@ -1,16 +1,15 @@
-.contact-form {
+.contact-wrapper {
   width: 100%;
-  padding: 24px 0;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  .modal-inner {
+  .contact-form-inner {
     position: relative;
     max-width: var(--tablet-width);
     width: 100%;
 
-    .form {
+    .contact-form {
       margin: 0 auto;
       max-width: var(--tablet-width);
       padding: 40px 45px 30px;
@@ -134,6 +133,34 @@
 
       @media screen and (max-width: 758px) {
         padding: 20px 20px 30px;
+      }
+    }
+
+    .contact-form-info {
+      margin: 0 auto;
+      max-width: var(--tablet-width);
+      padding: 40px 45px 30px;
+      box-shadow: var(--shadow-card);
+
+      .modal-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--heading-soft);
+        text-align: center;
+        margin-bottom: 8px;
+        line-height: 2.5rem;
+      }
+
+      .modal-description {
+        font-size: 1rem;
+        color: var(--heading);
+        text-align: center;
+        margin-bottom: 24px;
+        line-height: 1.5rem;
+      }
+
+      .submit-btn {
+        margin-top: 32px;
       }
     }
   }

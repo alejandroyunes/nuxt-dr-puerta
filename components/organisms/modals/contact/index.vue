@@ -8,8 +8,8 @@ import CrossSvg from '~/components/icons/CrossSvg.vue'
 import Button from '~/components/atoms/buttons/fill/index.vue'
 import { formPost } from '~/utils/apis/FormPostMethod'
 
-const name = ref('')
-const phone = ref('')
+const name = ref()
+const phone = ref()
 const message = ref()
 
 const isResponseError = ref(false)
@@ -18,13 +18,10 @@ const isSuccess = ref(false)
 const isLoading = ref(false)
 const isConfirmInfoVisible = ref(false)
 
-
 type Props = {
   contact: {
     name: string
     phone: string
-    email?: string
-    message?: string
   }
 }
 
@@ -62,7 +59,6 @@ const submitHandler = async (createForm: Props) => {
   }
 
   isLoading.value = false
-
 }
 
 </script>
@@ -77,11 +73,12 @@ const submitHandler = async (createForm: Props) => {
 
       <div class="form" v-if="!isConfirmInfoVisible">
 
-        <h2 class="modal-description">{{ $t('contactTitle') }}</h2>
+        <h2 class="modal-description">{{ $t('contactUs') }}</h2>
 
-        <FormKit type="form" id="contact-form" #default="{ state }" @submit="submitHandler">
+        <FormKit type="form" id="contact-modal" #default="{ state }" @submit="submitHandler">
 
           <FormKit type="group" name="contact">
+           
             <div class="form-group">
               <label for="name">{{ $t('contactName') }}</label>
               <FormKit type="text" placeholder="Ana Perez" maxLength="30" minLength="3" v-model="name" name="name"
