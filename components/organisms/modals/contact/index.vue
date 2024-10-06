@@ -21,10 +21,12 @@ const isConfirmInfoVisible = ref(false)
 
 
 type Props = {
-  name: string
-  phone: string
-  email?: string
-  message?: string
+  contact: {
+    name: string
+    phone: string
+    email?: string
+    message?: string
+  }
 }
 
 const { toggleModal } = defineProps<{
@@ -40,7 +42,8 @@ const submitHandler = async (createForm: Props) => {
     isRequestError.value = false
     isResponseError.value = false
 
-    await formPost(createForm)
+    const { contact } = createForm
+    await formPost(contact)
 
     isLoading.value = false
     isSuccess.value = true
