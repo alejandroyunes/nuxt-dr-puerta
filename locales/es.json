@@ -30,7 +30,7 @@
   "homeMetaImage": "/images/woman.webp",
   "homeMetaUrl": "https://drpuerta.com",
 
-  "estudiosMetaTitle": "Estudios",
+  "estudiosMetaTitle": "Estudios del Dr. Puerta",
   "estudiosMetaDescription": "Estudios realizados por el Dr. Jorge Puerta en su trayectoria profesional.",
   "estudiosMetaName": "Estudios",
   "estudiosMetaImage": "/images/woman.webp",
@@ -42,7 +42,7 @@
   "drPuertaMetaImage": "/images/woman.webp",
   "drPuertaMetaUrl": "https://drpuerta.com/dr-puerta",
 
-  "contactoMetaTitle": "Contacto",
+  "contactoMetaTitle": "Contacto Dr. Puerta",
   "contactoMetaDescription": "Contacto con el Dr. Jorge Puerta",
   "contactoMetaName": "Contacto",
   "contactoMetaImage": "/images/woman.webp",
@@ -150,5 +150,6 @@
   "contactName": "Nombre",
   "contactEmail": "Email",
   "contactPhone": "Teléfono",
-  "contactMessage": "Mensaje"
+  "contactMessage": "Escribe tu mensaje",
+  "contactWriteUs": "Escribenos"
 }

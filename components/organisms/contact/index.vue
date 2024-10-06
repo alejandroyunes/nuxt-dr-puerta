@@ -51,7 +51,7 @@
     </div>
 
     <div class="contact-form">
-      <h2 class="contact-form-title">{{ $t('contactUs') }}</h2>
+      <h2 class="contact-form-title">{{ $t('contactWriteUs') }}</h2>
       <ContactForm />
     </div>
 

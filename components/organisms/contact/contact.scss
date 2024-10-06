@@ -1,5 +1,6 @@
 .contact-page {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   max-width: var(--max-width);
   margin: 0 auto;
   gap: 24px;
@@ -10,7 +11,6 @@
     flex-direction: column;
     justify-content: center;
     gap: 16px;
-    width: 50%;
     
     .contact-content {
       display: flex;
@@ -49,13 +49,12 @@
     align-items: center;
     gap: 24px;
 
-
     .contact-form-title {
       font-size: 2rem;
     }
   }
 
   @media (max-width: 1024px) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }

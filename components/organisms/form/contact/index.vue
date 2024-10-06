@@ -56,9 +56,6 @@ const submitHandler = async (createForm: Props) => {
   isLoading.value = false
 }
 
-// const closeInfo = () => {
-//   isConfirmInfoVisible.value = false
-// }
 </script>
 
 <template>
@@ -100,7 +97,7 @@ const submitHandler = async (createForm: Props) => {
               <FormKit
                 type="textarea"
                 name="message"
-                placeholder="Mensaje"
+                :placeholder="$t('contactMessage')"
                 maxLength="85"
                 v-model="message"
                 validation="required" />
@@ -137,7 +134,5 @@ const submitHandler = async (createForm: Props) => {
 
     </div>
 
-    
-    
   </section>
 </template>

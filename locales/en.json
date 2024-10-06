@@ -24,13 +24,13 @@
   "contactModalRequestErrorInfo": "Sorry, we're experiencing difficulties communicating with the server. Please ensure you have a stable internet connection and try again. If the problem persists, please contact support for assistance.",
 
   "siteLocale": "en_US",
-  "homeTitle": "Dr. Jorge Puerta",
-  "homeDescription": "Medical and Surgeon, specialist in Otorhinolaryngology of the University of Antioquia.",
-  "homeName": "Dr. Puerta homepage",
-  "homeImage": "/images/woman.webp",
-  "homeUrl": "https://drpuerta.com",
+  "homeMetaTitle": "Dr. Jorge Puerta",
+  "homeMetaDescription": "Medical and Surgeon, specialist in Otorhinolaryngology of the University of Antioquia.",
+  "homeMetaName": "Dr. Puerta homepage",
+  "homeMetaImage": "/images/woman.webp",
+  "homeMetaUrl": "https://drpuerta.com",
 
-  "estudiosMetaTitle": "Studies",
+  "estudiosMetaTitle": "Studies of Dr. Puerta",
   "estudiosMetaDescription": "Studies made by Dr. Jorge Puerta in his professional career.",
   "estudiosMetaName": "Studies",
   "estudiosMetaImage": "/images/woman.webp",
@@ -42,7 +42,7 @@
   "drPuertaMetaImage": "/images/woman.webp",
   "drPuertaMetaUrl": "https://drpuerta.com/dr-puerta",
 
-  "contactoMetaTitle": "Contact",
+  "contactoMetaTitle": "Contact Dr. Puerta",
   "contactoMetaDescription": "Contact with Dr. Jorge Puerta",
   "contactoMetaName": "Contact",
   "contactoMetaImage": "/images/woman.webp",
@@ -148,5 +148,6 @@
   "contactName": "Name",
   "contactEmail": "Email",
   "contactPhone": "Phone",
-  "contactMessage": "Message"
+  "contactMessage": "Write your message",
+  "contactWriteUs": "Reach Out to Us"
 }
