@@ -11,10 +11,10 @@ const name = ref('')
 const email = ref('')
 const message = ref('')
 
-const isResponseError = ref(false)
+const isResponseError = ref(true)
 const isRequestError = ref(false)
 const isSuccess = ref(false)
-const isLoading = ref(true)
+const isLoading = ref(false)
 const isConfirmInfoVisible = ref(false)
 
 type Props = {
