@@ -6,13 +6,13 @@
   gap: 24px;
   padding: 148px 24px 0;
 
-  .contact-info {
+  .contact-page-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 16px;
 
-    .contact-content {
+    .contact-page-content {
       display: flex;
       flex-direction: column;
       gap: 16px;
@@ -47,14 +47,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
 
     .contact-form-title {
       font-size: 2rem;
     }
   }
 
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(auto, auto);
-  }
 }

@@ -73,7 +73,7 @@ const submitHandler = async (createForm: Props) => {
 
       <div class="contact-modal-form" v-if="!isConfirmInfoVisible">
 
-        <h2 class="modal-description">{{ $t('contactUs') }}</h2>
+        <h2 class="contact-modal-title">{{ $t('contactUs') }}</h2>
 
         <FormKit type="form" id="contact-modal-form" #default="{ state }" @submit="submitHandler">
 
@@ -104,27 +104,27 @@ const submitHandler = async (createForm: Props) => {
                 validation="required" />
             </div>
 
-            <Button :class="['btn-submit', { 'btn-disabled': !state.valid }]" type="submit" :text="$t('send')" />
+            <Button :disabled="!state.valid" type="submit" :text="$t('send')" />
           </FormKit>
 
         </FormKit>
 
       </div>
 
-      <div v-else class="modal-info">
+      <div v-else class="contact-modal-info">
 
-        <h3 v-show="isLoading" class="modal-title">{{ $t("contactModalLoadingTitle") }}</h3>
-        <p v-show="isLoading" class="modal-description">{{ $t("contactModalLoadingInfo") }}</p>
+        <h3 v-show="isLoading" class="contact-modal-title">{{ $t("contactModalLoadingTitle") }}</h3>
+        <p v-show="isLoading" class="contact-modal-description">{{ $t("contactModalLoadingInfo") }}</p>
         <Loading v-show="isLoading" />
 
-        <h3 v-show="isSuccess" class="modal-title">{{ $t("contactModalTitle") }}</h3>
-        <p v-show="isSuccess" class="modal-description">{{ $t("contactModalDescription") }}</p>
+        <h3 v-show="isSuccess" class="contact-modal-title">{{ $t("contactModalTitle") }}</h3>
+        <p v-show="isSuccess" class="contact-modal-description">{{ $t("contactModalDescription") }}</p>
 
-        <h3 v-show="isResponseError" class="modal-title">{{ $t("contactModalResponseErrorTitle") }}</h3>
-        <p v-show="isResponseError" class="modal-description">{{ $t("contactModalResponseErrorInfo") }}</p>
+        <h3 v-show="isResponseError" class="contact-modal-title">{{ $t("contactModalResponseErrorTitle") }}</h3>
+        <p v-show="isResponseError" class="contact-modal-description">{{ $t("contactModalResponseErrorInfo") }}</p>
         
-        <h3 v-show="isRequestError" class="modal-title">{{ $t("contactModalRequestErrorTitle") }}</h3>
-        <p v-show="isRequestError" class="modal-description">{{ $t("contactModalRequestErrorInfo") }}</p>
+        <h3 v-show="isRequestError" class="contact-modal-title">{{ $t("contactModalRequestErrorTitle") }}</h3>
+        <p v-show="isRequestError" class="contact-modal-description">{{ $t("contactModalRequestErrorInfo") }}</p>
 
         <Button v-show="!isLoading" class="btn-submit" @click="toggleModal" :text="$t('close')" />
 

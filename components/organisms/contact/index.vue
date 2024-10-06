@@ -11,9 +11,9 @@
 <template>
   <div class="contact-page">
 
-    <div class="contact-info">
+    <div class="contact-page-info">
 
-      <div class="contact-content">
+      <div class="contact-page-content">
         <div class="column">
           <LocationSvg class="icon" />
           <p>Cl. 4 Sur #43a-195 - {{ $t('footerOffice') }} 165 – Medellín Colombia</p>
@@ -25,7 +25,7 @@
         </div>
       </div>
 
-      <div class="contact-content">
+      <div class="contact-page-content">
 
         <NuxtLink to="https://www.google.com/maps/place/The+Executive+Center/@6.2008251,-75.5781225,17z/data=!3m1!4b1!4m6!3m5!1s0x8e46827d9522146f:0x9cb4fb2387c83dc8!8m2!3d6.2008198!4d-75.5755476!16s%2Fg%2F11f30d2qqg?shorturl=1" target="_blank">
           <div class="column">
@@ -42,7 +42,7 @@
         </NuxtLink>
       </div>
 
-      <div class="contact-content">
+      <div class="contact-page-content">
         <p>{{ $t('contactHowTo') }}</p>
         <p>{{ $t('contactHowToDescription') }}</p>
       </div>

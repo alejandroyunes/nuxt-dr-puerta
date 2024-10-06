@@ -51,6 +51,15 @@
       margin-top: 40px;
       width: 100%;
 
+      .contact-modal-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--heading);
+        text-align: center;
+        margin-bottom: 28px;
+        line-height: 2.5rem;
+      }
+
       .formkit-form .formkit-actions {
         display: none;
       }
@@ -127,21 +136,12 @@
     
         }
       }
-  
-      .modal-description {
-        font-size: 2rem;
-        font-weight: 700;
-        color: var(--heading);
-        text-align: center;
-        margin-bottom: 28px;
-        line-height: 2.5rem;
-      }
     }
 
-    .modal-info {
+    .contact-modal-info {
       margin-top: 40px;
 
-      .modal-title {
+      .contact-modal-title {
         font-size: 2rem;
         font-weight: 700;
         color: var(--heading-soft);
@@ -150,7 +150,7 @@
         line-height: 2.5rem;
       }
 
-      .modal-description {
+      .contact-modal-description {
         font-size: 1rem;
         color: var(--heading);
         text-align: center;

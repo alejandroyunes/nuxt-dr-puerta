@@ -60,78 +60,73 @@ const submitHandler = async (createForm: Props) => {
 </script>
 
 <template>
-  <section class="contact-wrapper">
-    <div class="contact-form-inner">
+  <section class="contact-form-inner">
 
-      <div class="contact-form" v-if="!isConfirmInfoVisible">
+    <div class="contact-form" v-if="!isConfirmInfoVisible">
 
-        <FormKit type="form" id="contact-page" #default="{ state }" @submit="submitHandler">
+      <FormKit type="form" id="contact-page" #default="{ state }" @submit="submitHandler">
 
-          <FormKit type="group" name="contact">
+        <FormKit type="group" name="contact">
 
-            <div class="form-group-inline">
-              <div class="form-group">
-                <label for="name">{{ $t('contactName') }}</label>
-                <FormKit
-                  type="text"
-                  placeholder="Ana Perez"
-                  maxLength="30"
-                  minLength="3"
-                  v-model="name"
-                  name="name"
-                  validation="required" />
-              </div>
-
-              <div class="form-group">
-                <label for="email">{{ $t('contactEmail') }}</label>
-                <FormKit
-                  type="email"
-                  placeholder="juanaperez@email.com"
-                  v-model="email"
-                  name="email"
-                  validation="required|email" />
-              </div>
-            </div>
-
+          <div class="form-group-inline">
             <div class="form-group">
-              <label for="message">{{ $t('contactMessage') }}</label>
+              <label for="name">{{ $t('contactName') }}</label>
               <FormKit
-                type="textarea"
-                name="message"
-                :placeholder="$t('contactMessage')"
-                maxLength="85"
-                v-model="message"
+                type="text"
+                placeholder="Ana Perez"
+                maxLength="30"
+                minLength="3"
+                v-model="name"
+                name="name"
                 validation="required" />
             </div>
 
-            <button :class="['btn-submit', { 'btn-disabled': !state.valid }]" type="submit">
-              <span>{{ $t('send') }}</span>
-            </button>
+            <div class="form-group">
+              <label for="email">{{ $t('contactEmail') }}</label>
+              <FormKit
+                type="email"
+                placeholder="juanaperez@email.com"
+                v-model="email"
+                name="email"
+                validation="required|email" />
+            </div>
+          </div>
 
-          </FormKit>
+          <div class="form-group">
+            <label for="message">{{ $t('contactMessage') }}</label>
+            <FormKit
+              type="textarea"
+              name="message"
+              :placeholder="$t('contactMessage')"
+              maxLength="85"
+              v-model="message"
+              validation="required" />
+          </div>
+
+          <Button :disabled="!state.valid" :text="$t('send')" type="submit" /> 
 
         </FormKit>
 
-      </div>
+      </FormKit>
 
-      <div v-else class="contact-form-info">
+    </div>
 
-        <h3 v-show="isLoading" class="modal-title">{{ $t("contactModalLoadingTitle") }}</h3>
-        <p v-show="isLoading" class="modal-description">{{ $t("contactModalLoadingInfo") }}</p>
-        <Loading v-show="isLoading" />
+    <div v-else class="contact-form-info">
 
-        <h3 v-show="isSuccess" class="modal-title">{{ $t("contactModalTitle") }}</h3>
-        <p v-show="isSuccess" class="modal-description">{{ $t("contactModalDescription") }}</p>
+      <h3 v-show="isLoading" class="contact-form-title">{{ $t("contactModalLoadingTitle") }}</h3>
+      <p v-show="isLoading" class="contact-form-description">{{ $t("contactModalLoadingInfo") }}</p>
+      <Loading v-show="isLoading" />
 
-        <h3 v-show="isResponseError" class="modal-title">{{ $t("contactModalResponseErrorTitle") }}</h3>
-        <p v-show="isResponseError" class="modal-description">{{ $t("contactModalResponseErrorInfo") }}</p>
+      <h3 v-show="isSuccess" class="contact-form-title">{{ $t("contactModalTitle") }}</h3>
+      <p v-show="isSuccess" class="contact-form-description">{{ $t("contactModalDescription") }}</p>
 
-        <h3 v-show="isRequestError" class="modal-title">{{ $t("contactModalRequestErrorTitle") }}</h3>
-        <p v-show="isRequestError" class="modal-description">{{ $t("contactModalRequestErrorInfo") }}</p>
+      <h3 v-show="isResponseError" class="contact-form-title">{{ $t("contactModalResponseErrorTitle") }}</h3>
+      <p v-show="isResponseError" class="contact-form-description">{{ $t("contactModalResponseErrorInfo") }}</p>
 
-        <Button v-show="!isLoading && !isSuccess" class="btn-submit" :text="$t('close')" @click="isConfirmInfoVisible = false" />
+      <h3 v-show="isRequestError" class="contact-form-title">{{ $t("contactModalRequestErrorTitle") }}</h3>
+      <p v-show="isRequestError" class="contact-form-description">{{ $t("contactModalRequestErrorInfo") }}</p>
 
-      </div>
+      <Button v-show="!isLoading && !isSuccess" :text="$t('close')" @click="isConfirmInfoVisible = false" />
 
     </div>
 

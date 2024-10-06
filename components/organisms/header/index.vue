@@ -56,6 +56,7 @@ const setLanguage = (language: string) => {
           densities="x1"
           class="logo"
           sizes="168px"
+          width="168"
         />
       </NuxtLink>
 
