@@ -1,5 +1,4 @@
 .contact-wrapper {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,14 +6,13 @@
   .contact-form-inner {
     position: relative;
     max-width: var(--tablet-width);
-    width: 100%;
 
     .contact-form {
       margin: 0 auto;
       max-width: var(--tablet-width);
       padding: 40px 45px 30px;
       box-shadow: var(--shadow-card);
-   
+
       .formkit-form .formkit-actions {
         display: none;
       }
@@ -30,17 +28,11 @@
         display: flex;
         align-items: flex-start;
         gap: 24px;
-
-        @media screen and (max-width: 758px) {
-          flex-direction: column;
-          gap: 0;
-        }
       }
 
       .form-group {
         position: relative;
         margin: 20px 0 28px;
-        width: 100%;
 
         label {
           position: absolute;
@@ -130,10 +122,6 @@
         opacity: 0.7;
         cursor: not-allowed;
       }
-
-      @media screen and (max-width: 758px) {
-        padding: 20px 20px 30px;
-      }
     }
 
     .contact-form-info {
@@ -141,7 +129,7 @@
       max-width: var(--tablet-width);
       padding: 40px 45px 30px;
       box-shadow: var(--shadow-card);
-
+      
       .modal-title {
         font-size: 1.5rem;
         font-weight: 700;
@@ -161,6 +149,18 @@
 
       .submit-btn {
         margin-top: 32px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 758px) {
+
+    .contact-form-inner {
+      .contact-form {
+        .form-group-inline {
+          flex-direction: column;
+          gap: 0;
+        }
       }
     }
   }

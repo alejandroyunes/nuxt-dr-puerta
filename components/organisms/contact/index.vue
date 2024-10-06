@@ -1,6 +1,5 @@
 <script setup lang="ts">
   import './contact.scss'
-  import Title from '~/components/atoms/title-description/index.vue'
   import ContactForm from '~/components/organisms/form/contact/index.vue'
   //icons
   import LocationSvg from '~/components/icons/LocationSvg.vue'
@@ -50,7 +49,7 @@
 
     </div>
 
-    <div class="contact-form">
+    <div class="contact-page-form">
       <h2 class="contact-form-title">{{ $t('contactWriteUs') }}</h2>
       <ContactForm />
     </div>

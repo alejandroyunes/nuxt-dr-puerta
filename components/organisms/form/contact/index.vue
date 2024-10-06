@@ -5,6 +5,7 @@ import { AxiosError } from 'axios'
 import { reset } from '@formkit/core'
 import Loading from '~/components/atoms/loading/loading-icon/index.vue'
 import { formPost } from '~/utils/apis/FormPostMethod'
+import Button from '~/components/atoms/buttons/fill/index.vue'
 
 const name = ref('')
 const email = ref('')
@@ -128,7 +129,7 @@ const submitHandler = async (createForm: Props) => {
         <h3 v-show="isRequestError" class="modal-title">{{ $t("contactModalRequestErrorTitle") }}</h3>
         <p v-show="isRequestError" class="modal-description">{{ $t("contactModalRequestErrorInfo") }}</p>
 
-        <Button v-show="!isLoading" class="btn-submit"  :text="$t('close')" />
+        <Button v-show="!isLoading" class="btn-submit" :text="$t('close')" />
 
       </div>
 

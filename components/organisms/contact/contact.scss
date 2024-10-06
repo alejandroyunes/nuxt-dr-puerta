@@ -1,6 +1,6 @@
 .contact-page {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   max-width: var(--max-width);
   margin: 0 auto;
   gap: 24px;
@@ -11,13 +11,13 @@
     flex-direction: column;
     justify-content: center;
     gap: 16px;
-    
+
     .contact-content {
       display: flex;
       flex-direction: column;
       gap: 16px;
       color: var(--heading);
-
+      
       p {
         font-size: 1rem;
       }
@@ -43,7 +43,7 @@
     }
   }
 
-  .contact-form {
+  .contact-page-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,6 +55,6 @@
   }
 
   @media (max-width: 1024px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto, auto);
   }
 }

@@ -44,7 +44,7 @@ const submitHandler = async (createForm: Props) => {
     isLoading.value = false
     isSuccess.value = true
 
-    reset('contact-form')
+    reset('contact-modal-form')
 
   } catch (error) {
     isLoading.value = false
@@ -65,17 +65,17 @@ const submitHandler = async (createForm: Props) => {
 
 <template>
   <section class="contact-modal">
-    <div class="modal-inner">
+    <div class="contact-modal-inner">
       
-      <div @click="toggleModal" class="btn-close">
+      <div @click="toggleModal" class="contact-modal-btn-close">
         <CrossSvg />
       </div>
 
-      <div class="form" v-if="!isConfirmInfoVisible">
+      <div class="contact-modal-form" v-if="!isConfirmInfoVisible">
 
         <h2 class="modal-description">{{ $t('contactUs') }}</h2>
 
-        <FormKit type="form" id="contact-modal" #default="{ state }" @submit="submitHandler">
+        <FormKit type="form" id="contact-modal-form" #default="{ state }" @submit="submitHandler">
 
           <FormKit type="group" name="contact">
            

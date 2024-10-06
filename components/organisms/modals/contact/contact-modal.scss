@@ -10,7 +10,7 @@
   background-color: var(--black-transparent);
   z-index: 11;
 
-  .modal-inner {
+  .contact-modal-inner {
     background-color: var(--background);
     padding: 10px 45px 48px;
     border-radius: 15px;
@@ -24,7 +24,7 @@
     border: 1px solid var(--border);
     margin: 0 20px;
 
-    .btn-close {
+    .contact-modal-btn-close {
       cursor: pointer;
       position: absolute;
       top: 16px;
@@ -47,7 +47,7 @@
       }
     }
   
-    .form {
+    .contact-modal-form {
       margin-top: 40px;
       width: 100%;
 
