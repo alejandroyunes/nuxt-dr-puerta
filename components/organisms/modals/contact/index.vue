@@ -9,14 +9,13 @@ import Button from '~/components/atoms/buttons/fill/index.vue'
 import { formPost } from '~/utils/apis/FormPostMethod'
 
 const name = ref('')
-const email = ref()
 const phone = ref('')
 const message = ref()
 
 const isResponseError = ref(false)
 const isRequestError = ref(false)
 const isSuccess = ref(false)
-const isLoading = ref(true)
+const isLoading = ref(false)
 const isConfirmInfoVisible = ref(false)
 
 
@@ -66,7 +65,6 @@ const submitHandler = async (createForm: Props) => {
 
 }
 
-
 </script>
 
 <template>
@@ -81,7 +79,7 @@ const submitHandler = async (createForm: Props) => {
 
         <h2 class="modal-description">{{ $t('contactTitle') }}</h2>
 
-        <FormKit type="form" id="contact-form" #default="{ value, state }" @submit="submitHandler">
+        <FormKit type="form" id="contact-form" #default="{ state }" @submit="submitHandler">
 
           <FormKit type="group" name="contact">
             <div class="form-group">
