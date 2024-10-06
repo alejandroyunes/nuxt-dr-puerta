@@ -10,7 +10,18 @@
   "contact": "Contacto",
   "contactUs": "Contáctanos",
   "readMore": "Leer más",
+  "thankyou": "Gracias",
+  "send": "Enviar",
+  "close": "Cerrar",
 
+  "contactModalLoadingTitle": "Enviando...",
+  "contactModalLoadingInfo": "Estamos procesando tu mensaje, por favor espera.",
+  "contactModalTitle": "Hemos recibido tu mensaje",
+  "contactModalDescription": "Te contactaremos lo más pronto posible.",
+  "contactModalResponseErrorTitle": "Hubo un error con el envío",
+  "contactModalResponseErrorInfo": "Por favor intenta nuevamente más tarde",
+  "contactModalRequestErrorTitle": "Error de comunicación",
+  "contactModalRequestErrorInfo": "Lo sentimos, estamos experimentando dificultades para comunicarnos con el servidor. Por favor, asegúrate de tener una conexión de internet estable y vuelve a intentarlo. Si el problema persiste, por favor contacta al soporte para obtener asistencia.",
 
   "siteLocale": "es_CO",
   "homeMetaTitle": "Dr. Jorge Puerta",
@@ -138,7 +149,7 @@
   "contactWaze": "Ver en Waze",
   "contactHowTo": "¿Cómo llegar?",
   "contactHowToDescription": "Desde el occidente por el puente Gilberto Echeverry tomar calzada izquierda y desde carrera 43c en ambas direcciones llegan a la calle 4 sur.",
-  "contactSubmit": "Enviar",
+
   "contactName": "Nombre",
   "contactEmail": "Email",
   "contactPhone": "Teléfono",

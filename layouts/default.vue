@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Header from '~/components/organisms/header/index.vue'
 import Footer from '~/components/organisms/footer/index.vue'
-import Loading from '~/components/atoms/loading/loading-1/index.vue'
+import Loading from '~/components/atoms/loading/loading-background/index.vue'
 
 const loading = ref(true)
 

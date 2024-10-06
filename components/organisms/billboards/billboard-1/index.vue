@@ -37,5 +37,6 @@ const toggleModal = () => {
     />
 
     <ContactModal v-if="isModalOpen" :toggleModal="toggleModal"/>
+
   </section>
 </template>

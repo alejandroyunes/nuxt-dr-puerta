@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import './contact-form.scss'
 import { ref } from 'vue'
-import Loading from '~/components/atoms/loading/loading-1/index.vue'
+import Loading from '~/components/atoms/loading/loading-icon/index.vue'
 
 const name = ref('')
 const email = ref('')

@@ -1,0 +1,20 @@
+.fill-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  color: var(--white);
+  margin-top: 32px;
+  width: 100%;
+  max-width: 300px;
+  padding: 15px;
+  border-radius: 48px;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+  
+  span {
+    padding-left: 12px;
+    font-size: 1rem;
+  }
+}

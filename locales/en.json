@@ -10,6 +10,18 @@
   "contact": "Contact",
   "contactUs": "Contact Us",
   "readMore": "Read more",
+  "thankyou": "Thank you!",
+  "send": "Send",
+  "close": "Close",
+
+  "contactModalLoadingTitle": "Sending...",
+  "contactModalLoadingInfo": "We are processing your message, please wait.",
+  "contactModalTitle": "We have received your message",
+  "contactModalDescription": "We will contact you as soon as possible.",
+  "contactModalResponseErrorTitle": "There was an error with the submission",
+  "contactModalResponseErrorInfo": "Please try again later",
+  "contactModalRequestErrorTitle": "Communication Error",
+  "contactModalRequestErrorInfo": "Sorry, we're experiencing difficulties communicating with the server. Please ensure you have a stable internet connection and try again. If the problem persists, please contact support for assistance.",
 
   "siteLocale": "en_US",
   "homeTitle": "Dr. Jorge Puerta",
