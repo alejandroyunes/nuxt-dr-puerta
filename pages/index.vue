@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { useSeoMeta } from '@unhead/vue'
 import Billboard from '~/components/organisms/billboards/billboard-1/index.vue'
 import SubTitle from '~/components/atoms/subtitle-description/index.vue'
 import IconCards from '~/components/organisms/cards/icon-cards/index.vue'
