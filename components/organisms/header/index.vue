@@ -54,7 +54,7 @@ const setLanguage = (language: string) => {
           src="/logo.webp"
           alt="Logo Dr. Puerta"
           class="logo"
-          sizes="xs:168px"
+          sizes="xs:140px sm:140px md:168px lg:168px xl:168px xxl:168px xxxl:168px"
           format="webp"
         />
       </NuxtLink>
