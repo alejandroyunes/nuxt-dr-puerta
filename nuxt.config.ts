@@ -68,11 +68,11 @@ gtm: {
   compatibility: false,
   enabled: true,
   debug: false,
-  loadScript: true,
+  loadScript: false,
   enableRouterSync: true,
   ignoredViews: ['homepage'],
   trackOnNextTick: false,
-  devtools: true,
+  devtools: false,
 },
   compatibilityDate: "2024-07-11",
 })
