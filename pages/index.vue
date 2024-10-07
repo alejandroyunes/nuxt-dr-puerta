@@ -25,12 +25,12 @@ useSeoMeta({
   ogSiteName: t('homeMetaName'),
   ogTitle: t('homeMetaTitle'),
   ogDescription: t('homeMetaDescription'),
-  ogImage: t('homeMetaImage'),
+  ogImage: '/meta/default.webp',
   ogUrl: t('homeMetaUrl'),
   ogLocale: t('siteLocale'),
   twitterTitle: t('homeMetaTitle'),
   twitterDescription: t('homeMetaDescription'),
-  twitterImage: t('homeMetaImage'),
+  twitterImage: '/meta/default.webp',
   twitterCard: 'summary_large_image',
 })
 

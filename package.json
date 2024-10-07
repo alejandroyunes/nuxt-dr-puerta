@@ -16,13 +16,13 @@
     "@formkit/i18n": "^1.6.5",
     "@formkit/nuxt": "^1.6.5",
     "@formkit/vue": "^1.6.5",
-    "@nuxt/image": "^1.7.0",
-    "@nuxtjs/i18n": "^8.3.1",
-    "@nuxtjs/seo": "^2.0.0-rc.11",
+    "@nuxt/image": "^1.8.1",
+    "@nuxtjs/i18n": "^8.5.5",
+    "@nuxtjs/seo": "^2.0.0-rc.23",
     "@pinia/nuxt": "^0.5.1",
     "axios": "^1.7.7",
-    "nuxt": "^3.12.2",
-    "vue": "latest"
+    "nuxt": "^3.13.2",
+    "vue": "^3.4.31"
   },
   "devDependencies": {
     "@zadigetvoltaire/nuxt-gtm": "^0.0.13",
