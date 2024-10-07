@@ -9,24 +9,24 @@
     "dev": "nuxt dev --port 3003",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": ""
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@formkit/core": "^1.6.7",
-    "@formkit/i18n": "^1.6.7",
-    "@formkit/nuxt": "^1.6.7",
-    "@formkit/vue": "^1.6.7",
-    "@nuxt/image": "^1.8.1",
-    "@nuxtjs/i18n": "^8.5.5",
-    "@nuxtjs/seo": "^2.0.0-rc.23",
-    "@pinia/nuxt": "^0.5.5",
+    "@formkit/core": "^1.6.5",
+    "@formkit/i18n": "^1.6.5",
+    "@formkit/nuxt": "^1.6.5",
+    "@formkit/vue": "^1.6.5",
+    "@nuxt/image": "^1.7.0",
+    "@nuxtjs/i18n": "^8.3.1",
+    "@nuxtjs/seo": "^2.0.0-rc.11",
+    "@pinia/nuxt": "^0.5.1",
     "axios": "^1.7.7",
-    "nuxt": "^3.13.2",
-    "vue": "^3.5.11"
+    "nuxt": "^3.12.2",
+    "vue": "latest"
   },
   "devDependencies": {
     "@zadigetvoltaire/nuxt-gtm": "^0.0.13",
-    "prettier": "^3.3.3",
-    "sass": "^1.79.4"
+    "prettier": "^3.3.2",
+    "sass": "^1.76.0"
   }
 }
