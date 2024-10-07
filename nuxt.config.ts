@@ -68,7 +68,7 @@ gtm: {
   compatibility: false,
   enabled: true,
   debug: false,
-  loadScript: false,
+  loadScript: true,
   enableRouterSync: true,
   ignoredViews: ['homepage'],
   trackOnNextTick: false,
