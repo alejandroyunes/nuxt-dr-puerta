@@ -7,7 +7,7 @@ import ArrowDownSvg from '~/components/icons/ArrowDownSvg.vue'
 import DiplomaSvg from '~/components/icons/DiplomadoSvg.vue'
 import GallerySvg from '~/components/icons/GallerySvg.vue'
 import HomeSvg from '~/components/icons/HomeSvg.vue'
-import HospitalTwoSvg from '~/components/icons/HospitalSvg.vue'
+import HospitalSvg from '~/components/icons/HospitalSvg.vue'
 
 const isClicked = ref(false)
 
@@ -22,7 +22,7 @@ const supportLinks = [
   {
     title: 'education',
     link: '/drpuerta',
-    icon: HospitalTwoSvg,
+    icon: HospitalSvg,
     iconAlt: 'Dr. Puerta universidad',
   },
   {

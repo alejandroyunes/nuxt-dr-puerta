@@ -5,11 +5,13 @@ import UseSetTheme from '~/components/hooks/useSetTheme.vue'
 
 //icons
 import ExitSvg from '@/components/icons/ExitSvg.vue'
-import UniversitySvg from '~/components/icons/UnivercitySvg.vue'
 import DiplomaSvg from '~/components/icons/DiplomadoSvg.vue'
 import WhatsAppSvg from '~/components/icons/social/WhatsAppSvg.vue'
 import InstagramSvg from '~/components/icons/social/InstagramSvg.vue'
 import HomeSvg from '~/components/icons/HomeSvg.vue'
+import HospitalSvg from '~/components/icons/HospitalSvg.vue' 
+import GallerySvg from '~/components/icons/GallerySvg.vue'
+import ContactSvg from '~/components/icons/ContactSvg.vue'
 
 const { toggle, isOpen } = defineProps<{
   toggle: () => void
@@ -26,8 +28,14 @@ const navLinks = [
   {
     title: 'drPuerta',
     link: '/drpuerta',
-    icon: UniversitySvg,
+    icon: HospitalSvg,
     iconAlt: 'Diseño web',
+  },
+  {
+    title: 'gallery',
+    link: '/galeria',
+    icon: GallerySvg,
+    iconAlt: 'Dr. Puerta galeria',
   },
   {
     title: 'studies',
@@ -38,7 +46,7 @@ const navLinks = [
   {
     title: 'contact',
     link: '/contacto',
-    icon: DiplomaSvg,
+    icon: ContactSvg,
     iconAlt: 'ícono de Contacto'
   },
 ]
@@ -65,7 +73,6 @@ const socialLinks = [
           src="/logo.webp"
           alt="Logo Dr. Puerta"
           densities="x1"
-          loading="lazy"
           sizes="xs:140px md:168px xl:168px"
           format="webp"
         />
@@ -81,8 +88,8 @@ const socialLinks = [
       <nav class="top-nav-list">
         <ul>
           <li v-for="(link, index) in navLinks" :key="index">
-            <NuxtLink :to="link.link" class="item" @click="toggle()">
-              <component :is="link.icon" class="icon" :alt="link.iconAlt" />
+            <NuxtLink :to="link.link" class="top-nav-item" @click="toggle()">
+              <component :is="link.icon" :alt="link.iconAlt" />
               <p>{{ $t(link.title) }}</p>
             </NuxtLink>
           </li>

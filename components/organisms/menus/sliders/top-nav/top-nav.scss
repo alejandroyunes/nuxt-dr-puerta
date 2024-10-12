@@ -64,7 +64,7 @@
       }
 
       li {
-        .item {
+        .top-nav-item {
           display: flex;
           align-items: center;
           margin-bottom: 6px;
@@ -82,9 +82,9 @@
           }
   
           svg {
-            width: 24px;
+            width: 26px;
             margin:0 1rem 0 1.5rem;
-  
+            stroke: var(--heading);
             @media (max-width: 768px) {
               margin:0 1rem 0 .5rem;
             }
