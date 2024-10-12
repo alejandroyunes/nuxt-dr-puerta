@@ -4,11 +4,10 @@ import { ref } from 'vue'
 import './menu.scss'
 
 import ArrowDownSvg from '~/components/icons/ArrowDownSvg.vue'
-
-import UniversitySvg from '~/components/icons/UnivercitySvg.vue'
 import DiplomaSvg from '~/components/icons/DiplomadoSvg.vue'
 import GallerySvg from '~/components/icons/GallerySvg.vue'
 import HomeSvg from '~/components/icons/HomeSvg.vue'
+import HospitalTwoSvg from '~/components/icons/HospitalSvg.vue'
 
 const isClicked = ref(false)
 
@@ -23,7 +22,7 @@ const supportLinks = [
   {
     title: 'education',
     link: '/drpuerta',
-    icon: UniversitySvg,
+    icon: HospitalTwoSvg,
     iconAlt: 'Dr. Puerta universidad',
   },
   {
@@ -42,7 +41,7 @@ const homeLinks = [
     iconAlt: 'Dr. Puerta inicio',
   },
   {
-    title: 'galeria',
+    title: 'gallery',
     link: '/galeria',
     icon: GallerySvg,
     iconAlt: 'Dr. Puerta galeria',

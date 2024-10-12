@@ -10,11 +10,12 @@ import Billboard2 from '~/components/organisms/billboards/billboard-2/index.vue'
 // Icons
 import CollegeSvg from '~/components/icons/CollegeSvg.vue'
 import UniversitySvg from '~/components/icons/UnivercitySvg.vue'
-import DiplomaSvg from '~/components/icons/DiplomadoSvg.vue'
+import PostgradoSvg from '~/components/icons/PostgradoSvg.vue'
 import GraduationSvg from '~/components/icons/GraduateSvg.vue'
 import HandPlusSvg from '~/components/icons/HandPlusSvg.vue'
 import WorldSnakeSvg from '~/components/icons/WorldSnakeSvg.vue'
 import MedicalSvg from '~/components/icons/MedicalSvg.vue'
+import HospitalBook from '~/components/icons/HospitalBook.vue'
 
 const { t } = useI18n()
 
@@ -48,7 +49,7 @@ const iconCards = [
   },
   {
     title: 'diplomado',
-    icon: DiplomaSvg,
+    icon: HospitalBook,
     description: 'iconCardsDescription3',
     iconAlt: 'iconCardsAlt3',
   },

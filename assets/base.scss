@@ -1,6 +1,6 @@
 :root {
   --primary: rgb(22, 66, 91);
-  --primary-soft: rgb(121, 146, 192);
+  --primary-soft: rgb(67, 94, 110);
   
   --secondary: rgb(62, 138, 158);
   --secondary-soft: rgb(113, 156, 168);
@@ -87,6 +87,9 @@
 
   --button-transparent: var(--black-transparent);
   --button-transparent-base: var(--black-transparent-base);
+
+  --icon-color: var(--primary);
+  --icon-color-opposite: var(--white);
 }
 
 :root[data-color-scheme="dark"] {
@@ -117,6 +120,9 @@
 
   --button-transparent: var(--white-transparent);
   --button-transparent-base: var(--white-transparent-base);
+
+  --icon-color: var(--white);
+  --icon-color-opposite: var(--primary);
 }
 
 *,

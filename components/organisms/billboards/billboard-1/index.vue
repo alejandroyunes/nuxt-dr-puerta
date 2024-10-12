@@ -34,7 +34,6 @@ const toggleModal = () => {
       densities="x1"
       class="image"
       sizes="xs:400px md:400px xl:100vw" 
-      loading="lazy"
       format="webp"
     />
 
