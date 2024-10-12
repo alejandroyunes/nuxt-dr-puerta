@@ -33,7 +33,7 @@ const toggleModal = () => {
       :alt="$t('billboard1Alt')"
       densities="x1"
       class="image"
-      sizes="100vw md:100vw lg:100vw"
+      sizes="xs:400px sm:400px md:400px lg:400px xl:400px xxl:400px xxxl:400px"
       loading="lazy"
       format="webp"
     />
