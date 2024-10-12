@@ -1,12 +1,12 @@
 .menu {
   padding: 0;
 
-  .items {
+  .menu-items {
     display: flex;
     padding: 0;
     gap: 20px;
 
-    .item {
+    .menu-item {
       display: flex;
       cursor: pointer;
       color: var(--heading);
@@ -58,7 +58,7 @@
         visibility: hidden;
         
         .sub-item {
-          .link {
+          .item {
             display: flex;
             justify-content: flex-start;
             z-index: 1000;

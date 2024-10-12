@@ -7,6 +7,8 @@ import ArrowDownSvg from '~/components/icons/ArrowDownSvg.vue'
 
 import UniversitySvg from '~/components/icons/UnivercitySvg.vue'
 import DiplomaSvg from '~/components/icons/DiplomadoSvg.vue'
+import GallerySvg from '~/components/icons/GallerySvg.vue'
+import HomeSvg from '~/components/icons/HomeSvg.vue'
 
 const isClicked = ref(false)
 
@@ -22,13 +24,28 @@ const supportLinks = [
     title: 'education',
     link: '/drpuerta',
     icon: UniversitySvg,
-    iconAlt: 'Diseño web',
+    iconAlt: 'Dr. Puerta universidad',
   },
   {
     title: 'studies',
     link: '/estudios',
     icon: DiplomaSvg,
-    iconAlt: 'Diseño gráfico'
+    iconAlt: 'Dr. Puerta diplomado',
+  },
+]
+
+const homeLinks = [
+  {
+    title: 'home',
+    link: '/',
+    icon: HomeSvg,
+    iconAlt: 'Dr. Puerta inicio',
+  },
+  {
+    title: 'galeria',
+    link: '/galeria',
+    icon: GallerySvg,
+    iconAlt: 'Dr. Puerta galeria',
   },
 ]
 
@@ -38,22 +55,31 @@ const supportLinks = [
 
   <nav class="menu">
 
-    <ul class="items">
+    <ul class="menu-items">
       
       <NuxtLink to="/">
-        <li class="item">
+        <li class="menu-item">
           <h3 class="title">{{ $t('home') }}</h3>
           <ArrowDownSvg class="icon arrow-icon" />
+
+          <ul :class="['sub-items', { 'clicked': isClicked }]" @click="itemClicked">
+          <li v-for="(item, index) in homeLinks" :key="index" class="sub-item">
+            <NuxtLink class="item" :to="item.link">
+              <component :is="item.icon" class="icon" :alt="item.iconAlt" />
+              <p>{{ $t(item.title) }}</p>
+            </NuxtLink>
+          </li>
+        </ul>
         </li>
       </NuxtLink>
 
-      <li class="item">
+      <li class="menu-item">
         <h3 class="title">{{ $t('drPuerta') }}</h3>
         <ArrowDownSvg class="icon arrow-icon" />
 
         <ul :class="['sub-items', { 'clicked': isClicked }]" @click="itemClicked">
           <li v-for="(item, index) in supportLinks" :key="index" class="sub-item">
-            <NuxtLink class="link" :to="item.link">
+            <NuxtLink class="item" :to="item.link">
               <component :is="item.icon" class="icon" :alt="item.iconAlt" />
               <p>{{ $t(item.title) }}</p>
             </NuxtLink>

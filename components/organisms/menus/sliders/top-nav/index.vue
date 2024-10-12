@@ -50,7 +50,6 @@ const socialLinks = [
 
 </script>
 
-
 <template>
 
   <div
@@ -67,7 +66,7 @@ const socialLinks = [
           alt="Logo Dr. Puerta"
           densities="x1"
           loading="lazy"
-          sizes="xs:140px sm:140px md:168px lg:168px xl:168px xxl:168px xxxl:168px"
+          sizes="xs:140px md:168px xl:168px"
           format="webp"
         />
       </NuxtLink>

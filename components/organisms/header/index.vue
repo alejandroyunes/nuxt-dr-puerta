@@ -54,7 +54,7 @@ const setLanguage = (language: string) => {
           src="/logo.webp"
           alt="Logo Dr. Puerta"
           class="logo"
-          sizes="xs:140px sm:140px md:168px lg:168px xl:168px xxl:168px xxxl:168px"
+          sizes="xs:140px md:168px xl:168px"
           format="webp"
         />
       </NuxtLink>
@@ -71,7 +71,7 @@ const setLanguage = (language: string) => {
         <Dropdown class="desktop-only" />
 
         <NuxtLink to="/contacto">
-          <Button :text="$t('contact')" class="contact-button desktop-only" aria-label="Ir a la sección de contacto" />
+          <Button :text="$t('contact')" class="contact-button desktop-only" primaryHover aria-label="Ir a la sección de contacto" />
         </NuxtLink>
 
         <div class="hamburger-menu mobile-only" @click="toggleSliderTopNav">
