@@ -24,19 +24,19 @@
   <footer class="footer">
 
     <div class="footer-content">
-      <div class="item">
+      <div class="footer-item">
         <h3 class="">{{ $t('drPuertaFull') }}</h3>
         
         <p>{{ $t('drPuertaDescription') }}</p>
 
         <div class="social-links">
           <NuxtLink v-for="link in socialLinks" :to="link.to" target="_blank">
-            <component :is="link.icon" class="icon"/>
+            <component :is="link.icon" />
           </NuxtLink> 
         </div>
       </div>
 
-      <div class="item">
+      <div class="footer-item">
         <h3 class="">{{ $t('footerLinks') }}</h3>
           <ul>
             <li><NuxtLink to="/">{{ $t('home') }}</NuxtLink></li>
@@ -46,7 +46,7 @@
         </ul>
       </div>
       
-      <div class="item">
+      <div class="footer-item">
         <h3 class="">{{ $t('contactUs') }}</h3>
         <ul>
           <li>+6 04 268 5436</li>

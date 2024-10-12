@@ -1,6 +1,6 @@
 .contact-form-inner {
   width: 100%;
-
+  
   .contact-form {
     margin: 0 auto;
     padding: 40px 24px 30px;
@@ -45,6 +45,7 @@
           .formkit-inner {
             display: flex;
             align-items: center;
+            background-color: var(--background);
 
             input:-webkit-autofill {
               -webkit-text-fill-color: var(--heading);

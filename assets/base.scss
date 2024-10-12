@@ -53,7 +53,6 @@
   --box-shadow-img-white: 0 0 10px rgba(255, 255, 255, 0.26);
   --box-shadow-img-black: 0 0 10px rgrgba(0, 0, 0, 0.2);
 
-
   --max-width: 1280px;
   --tablet-width: 1024px;
   --mobile-width: 768px;
@@ -83,7 +82,7 @@
   --shadow-card: var( --box-shadow-card-black);
   --shadow-img: var(--box-shadow-card-black);
 
-  --border: var(--border-black);
+  --border: var(--gray-base);
 
   --button-transparent: var(--black-transparent);
   --button-transparent-base: var(--black-transparent-base);
@@ -116,7 +115,7 @@
   --shadow-card: var( --box-shadow-card-white);
   --shadow-img: var(--box-shadow-img-white);
 
-  --border: var(--border-white);
+  --border: var(--white-base);
 
   --button-transparent: var(--white-transparent);
   --button-transparent-base: var(--white-transparent-base);

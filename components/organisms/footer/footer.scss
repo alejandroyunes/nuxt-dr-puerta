@@ -11,7 +11,7 @@
     max-width: var(--max-width);
     margin: 60px auto 0; 
 
-    .item {
+    .footer-item {
       h3 {
         font-size: 1.2rem;
         color: var(--heading);
@@ -55,7 +55,6 @@
       svg {
         width: 32px;
         height: 100%;
-        fill: var(--heading);
       }
     }
 
