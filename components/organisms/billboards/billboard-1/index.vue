@@ -34,6 +34,8 @@ const toggleModal = () => {
       densities="x1"
       class="image"
       sizes="100vw md:100vw lg:100vw"
+      loading="lazy"
+      format="webp"
     />
 
     <ContactModal v-if="isModalOpen" :toggleModal="toggleModal"/>
