@@ -80,13 +80,13 @@ const submitHandler = async (createForm: Props) => {
 
           <FormKit type="group" name="contact">
            
-            <div class="form-group">
+            <div class="form-group-input">
               <label for="name">{{ $t('contactName') }}</label>
               <FormKit type="text" placeholder="Ana" maxLength="30" minLength="3" v-model="name" name="name"
                 validation="required" />
             </div>
 
-            <div class="form-group">
+            <div class="form-group-input">
               <label for="tel">{{ $t('contactPhone') }}</label>
               <FormKit maxLength="10" minLength="10" inputmode="numeric" name="phone"
                 oninput="this.value = this.value.replace(/\D/g, '')"
@@ -94,7 +94,7 @@ const submitHandler = async (createForm: Props) => {
                 placeholder="301 456 7890" />
             </div>
 
-            <div class="form-group">
+            <div class="form-group-textarea">
               <label for="message">{{ $t('contactMessageLabel') }}</label>
               <FormKit
                 type="textarea"

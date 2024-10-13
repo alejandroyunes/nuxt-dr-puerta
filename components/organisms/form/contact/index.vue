@@ -69,7 +69,7 @@ const submitHandler = async (createForm: Props) => {
         <FormKit type="group" name="contact">
 
           <div class="form-group-inline">
-            <div class="form-group">
+            <div class="form-group-input">
               <label for="name">{{ $t('contactName') }}</label>
               <FormKit
                 type="text"
@@ -81,7 +81,7 @@ const submitHandler = async (createForm: Props) => {
                 validation="required" />
             </div>
 
-            <div class="form-group">
+            <div class="form-group-input">
               <label for="email">{{ $t('contactEmail') }}</label>
               <FormKit
                 type="email"
@@ -92,7 +92,7 @@ const submitHandler = async (createForm: Props) => {
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="form-group-textarea">
             <label for="message">{{ $t('contactMessageLabel') }}</label>
             <FormKit
               type="textarea"

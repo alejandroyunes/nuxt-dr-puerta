@@ -10,7 +10,6 @@ import Billboard2 from '~/components/organisms/billboards/billboard-2/index.vue'
 // Icons
 import CollegeSvg from '~/components/icons/CollegeSvg.vue'
 import UniversitySvg from '~/components/icons/UnivercitySvg.vue'
-import PostgradoSvg from '~/components/icons/PostgradoSvg.vue'
 import GraduationSvg from '~/components/icons/GraduateSvg.vue'
 import HandPlusSvg from '~/components/icons/HandPlusSvg.vue'
 import MedicalSvg from '~/components/icons/MedicalSvg.vue'

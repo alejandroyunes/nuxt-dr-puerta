@@ -23,7 +23,7 @@
       gap: 24px;
     }
 
-    .form-group {
+    .form-group-input {
       position: relative;
       margin: 20px 0 28px;
       width: 100%;
@@ -39,6 +39,7 @@
       }
 
       .formkit-outer {
+        height: 52px;
 
         .formkit-wrapper {
 
@@ -52,8 +53,7 @@
               -webkit-box-shadow: 0 0 0 100px var(--background) inset;
             }
 
-            input,
-            textarea {
+            input {
               cursor: pointer;
               padding: 10px;
               width: 100%;
@@ -76,8 +76,69 @@
               }
             }
 
+          }
+        }
+
+        .formkit-messages {
+          text-align: left;
+          padding-left: 5px;
+          margin-bottom: -15px;
+        }
+
+      }
+    }
+
+    .form-group-textarea {
+      position: relative;
+      margin: 20px 0 28px;
+      width: 100%;
+
+      label {
+        position: absolute;
+        top: -11px;
+        padding: 0px 5px;
+        background-color: var(--background);
+        left: 10px;
+        font-size: .9rem;
+        color: var(--background-opposite);
+      }
+
+      .formkit-outer {
+        height: 144px;
+
+        .formkit-wrapper {
+
+          .formkit-inner {
+            display: flex;
+            align-items: center;
+            background-color: var(--background);
+
+            input:-webkit-autofill {
+              -webkit-text-fill-color: var(--heading);
+              -webkit-box-shadow: 0 0 0 100px var(--background) inset;
+            }
+
             textarea {
+              cursor: pointer;
+              padding: 10px;
+              width: 100%;
+              border-radius: 4px;
+              color: var(--heading);
+              background-color: transparent;
+              border: 1px solid var(--border);
+              border-radius: 5px;
               height: 120px;
+              font-size: 1rem;
+
+              &:hover {
+                background-color: var(--background);
+                outline: none;
+              }
+
+              &::placeholder {
+                color: var(--gray-base);
+                font-size: .9rem;
+              }
             }
 
           }

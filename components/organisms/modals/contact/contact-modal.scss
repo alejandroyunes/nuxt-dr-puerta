@@ -12,7 +12,7 @@
 
   .contact-modal-inner {
     background-color: var(--background);
-    padding: 10px 45px 48px;
+    padding: 10px 45px 32px;
     border-radius: 15px;
     box-shadow: var(--shadow-card);
     width: 100%;
@@ -71,7 +71,7 @@
         text-align: center;
       }
     
-      .form-group {
+      .form-group-input {
         position: relative;
         margin: 20px 0 40px;
         width: 100%;
@@ -87,20 +87,20 @@
         }
     
         .formkit-outer {
-    
+          height: 52px;
+
           .formkit-wrapper {
-    
+            
             .formkit-inner {
               display: flex;
               align-items: center;
-    
+              
               input:-webkit-autofill {
                 -webkit-text-fill-color: var(--heading);
                 -webkit-box-shadow: 0 0 0 100px var(--background) inset;
               }
     
-              input,
-              textarea {
+              input {
                 cursor: pointer;
                 padding: 10px;
                 width: 100%;
@@ -122,8 +122,63 @@
                   font-size: .9rem;
                 }
               }
+            }
+          }
+    
+          .formkit-messages {
+            text-align: left;
+            padding-left: 5px;
+            margin-bottom: 0px;
+          }
+    
+        }
+      }
+
+      .form-group-textarea {
+        position: relative;
+        margin: 20px 0 24px;
+        width: 100%;
+        
+        label {
+          position: absolute;
+          top: -11px;
+          padding: 0px 5px;
+          background-color: var(--background);
+          left: 10px;
+          font-size: .9rem;
+          color: var(--background-opposite);
+        }
+    
+        .formkit-outer {
+          height: 144px;
+
+          .formkit-wrapper {
+            
+            .formkit-inner {
+              display: flex;
+              align-items: center;
+              
               textarea {
+                cursor: pointer;
+                padding: 10px;
+                width: 100%;
+                border-radius: 4px;
+                color: var(--heading);
+                background-color: transparent;
+                border: 1px solid var(--gray);
+                border-radius: 5px;
                 height: 120px;
+                font-size: 1rem;
+    
+                &:hover {
+                  background-color: var(--background);
+                  outline: none;
+                }
+    
+                &::placeholder {
+                  color: var(--gray-base);
+                  font-size: .9rem;
+                }
               }
             }
           }
