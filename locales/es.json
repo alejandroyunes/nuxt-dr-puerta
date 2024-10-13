@@ -16,6 +16,9 @@
   "send": "Enviar",
   "close": "Cerrar",
   "viewInstagram": "Ver en Instagram",
+  "pageNotFound": "Página no encontrada",
+  "goBackHome": "Volver al inicio",
+  "errorMessage": "Ocurrió un error",
 
   "contactModalLoadingTitle": "Enviando...",
   "contactModalLoadingInfo": "Estamos procesando tu mensaje, por favor espera.",
