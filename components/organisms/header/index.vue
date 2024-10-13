@@ -8,7 +8,7 @@ import Dropdown from '~/components/organisms/menus/dropdown/desktop/index.vue'
 
 import Button from '~/components/atoms/buttons/default/index.vue'
 
-import HamburgerVerticalSvg from '~/components/icons/header/HamburgerSvg.vue'
+import HamburgerSvg from '~/components/icons/header/HamburgerSvg.vue'
 import LocationSvg from '~/components/icons/LocationSvg.vue'
 import TelephoneSvg from '~/components/icons/TelephoneSvg.vue'
 
@@ -75,7 +75,7 @@ const setLanguage = (language: string) => {
         </NuxtLink>
 
         <div class="hamburger-menu mobile-only" @click="toggleSliderTopNav">
-          <HamburgerVerticalSvg class="icon" aria-label="Abrir menú de navegación" />
+          <HamburgerSvg class="icon" aria-label="Abrir menú de navegación" />
         </div>
 
         <SliderTopNav :toggle="toggleSliderTopNav" :isOpen="isSliderTopNavOpen" />
