@@ -13,9 +13,9 @@ import UniversitySvg from '~/components/icons/UnivercitySvg.vue'
 import PostgradoSvg from '~/components/icons/PostgradoSvg.vue'
 import GraduationSvg from '~/components/icons/GraduateSvg.vue'
 import HandPlusSvg from '~/components/icons/HandPlusSvg.vue'
-import WorldSnakeSvg from '~/components/icons/WorldSnakeSvg.vue'
 import MedicalSvg from '~/components/icons/MedicalSvg.vue'
 import HospitalBook from '~/components/icons/HospitalBook.vue'
+import WorldSnakeSvg from '~/components/icons/WorldSnakeSvg.vue'
 
 const { t } = useI18n()
 
