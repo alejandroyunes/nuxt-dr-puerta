@@ -21,7 +21,7 @@
 
         <div class="column">
           <TelephoneSvg class="icon" />
-          <p>{{ $t('footerTel') }}: <a href="tel:+6042685436">+6 04 268 5436</a> – Cel: <a href="3188981046">318 898 1046</a></p>
+          <p>{{ $t('footerTel') }}: <a href="tel:+6042685436">+6 04 268 5436</a> – Cel: 318 898 1046</p>
         </div>
       </div>
 
