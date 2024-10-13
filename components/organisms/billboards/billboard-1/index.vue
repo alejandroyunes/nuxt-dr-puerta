@@ -29,7 +29,7 @@ const toggleModal = () => {
     </div>
 
     <NuxtPicture
-      src="/images/woman.webp"
+      src="/images/woman-medium.webp"
       :alt="$t('billboard1Alt')"
       densities="x1"
       class="image"
