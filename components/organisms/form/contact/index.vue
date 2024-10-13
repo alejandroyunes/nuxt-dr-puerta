@@ -73,7 +73,7 @@ const submitHandler = async (createForm: Props) => {
               <label for="name">{{ $t('contactName') }}</label>
               <FormKit
                 type="text"
-                placeholder="Ana Perez"
+                placeholder="Ana"
                 maxLength="30"
                 minLength="3"
                 v-model="name"
@@ -85,7 +85,7 @@ const submitHandler = async (createForm: Props) => {
               <label for="email">{{ $t('contactEmail') }}</label>
               <FormKit
                 type="email"
-                placeholder="juanaperez@email.com"
+                placeholder="ana@email.com"
                 v-model="email"
                 name="email"
                 validation="required|email" />

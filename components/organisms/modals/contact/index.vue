@@ -81,7 +81,7 @@ const submitHandler = async (createForm: Props) => {
            
             <div class="form-group">
               <label for="name">{{ $t('contactName') }}</label>
-              <FormKit type="text" placeholder="Ana Perez" maxLength="30" minLength="3" v-model="name" name="name"
+              <FormKit type="text" placeholder="Ana" maxLength="30" minLength="3" v-model="name" name="name"
                 validation="required" />
             </div>
 

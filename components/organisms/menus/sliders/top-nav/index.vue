@@ -7,7 +7,7 @@ import UseSetTheme from '~/components/hooks/useSetTheme.vue'
 import ExitSvg from '@/components/icons/ExitSvg.vue'
 import DiplomaSvg from '~/components/icons/DiplomadoSvg.vue'
 import WhatsAppSvg from '~/components/icons/social/WhatsAppSvg.vue'
-import InstagramSvg from '~/components/icons/social/InstagramSvg.vue'
+import InstagramMobileMenuSvg from '~/components/icons/social/InstagramMobileMenuSvg.vue'
 import HomeSvg from '~/components/icons/HomeSvg.vue'
 import HospitalSvg from '~/components/icons/HospitalSvg.vue' 
 import GallerySvg from '~/components/icons/GallerySvg.vue'
@@ -52,7 +52,7 @@ const navLinks = [
 ]
 
 const socialLinks = [
-  { icon: InstagramSvg, to: 'https://www.instagram.com/cirugiafacial_jorgepuerta/' },
+  { icon: InstagramMobileMenuSvg, to: 'https://www.instagram.com/cirugiafacial_jorgepuerta/' },
   { icon: WhatsAppSvg, to: 'https://api.whatsapp.com/send/?phone=573188981046&text&type=phone_number&app_absent=0' },
 ]
 
