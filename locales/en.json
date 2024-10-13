@@ -8,12 +8,14 @@
   "diplomado": "Diplomado",
   "postgraduate": "Posgrado",
   "gallery": "Gallery",
+  "galleryDescription": "To see more images, please visit our Instagram page.",
   "contact": "Contact",
   "contactUs": "Contact Us",
   "readMore": "Read more",
   "thankyou": "Thank you!",
   "send": "Send",
   "close": "Close",
+  "viewInstagram": "View in Instagram",
 
   "contactModalLoadingTitle": "Sending...",
   "contactModalLoadingInfo": "We are processing your message, please wait.",
@@ -39,6 +41,11 @@
   "drPuertaMetaDescription": "Medical and Surgeon, specialist in Otorhinolaryngology of the University of Antioquia.",
   "drPuertaMetaName": "Dr. Puerta",
   "drPuertaMetaUrl": "https://drpuerta.com/drpuerta",
+
+  "galleryMetaTitle": "Gallery of Dr. Jorge Puerta",
+  "galleryMetaDescription": "Gallery of images of Dr. Jorge Puerta",
+  "galleryMetaName": "Gallery",
+  "galleryMetaUrl": "https://drpuerta.com/galeria",
 
   "contactoMetaTitle": "Contact Dr. Puerta",
   "contactoMetaDescription": "Contact with Dr. Jorge Puerta",
@@ -135,7 +142,13 @@
   "studiesFig3": "Figure 2. Solid-State HA at 1 month in rabbit model, Alcian Blue stain, 20x mag.",
   "studiesTitle6": "CONCLUSION: ",
   "studiesDescription3": "This novel HA technology has significant advantages compared to injectable fillers. The HA thread can be placed in exactly the depth and position desired for treating a wrinkle with additional benefits in speed, predictability and reversibility not found with current injectables. Surprisingly, deposition of solid-state HA was significantly less painful than existing techniques. In addition, there is no risk of embolization which holds the potential to decrease complications. Further studie...",
-  "studiesDownload": "Download PDF",
+
+  "gallery1Alt": "Image of the gallery 1",
+  "gallery2Alt": "Image of the gallery 2",
+  "gallery3Alt": "Image of the gallery 3",
+  "gallery4Alt": "Image of the gallery 4",
+  "gallery5Alt": "Image of the gallery 5",
+  "gallery6Alt": "Image of the gallery 6",
 
   "contactGoogle": "View in Google Maps",
   "contactWaze": "View in Waze",

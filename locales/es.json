@@ -8,12 +8,14 @@
   "diplomado": "Diplomado",
   "postgraduate": "Posgrado",
   "gallery": "Galería",
+  "galleryDescription": "Para ver más imágenes, por favor visita nuestra página de Instagram.",
   "contact": "Contacto",
   "contactUs": "Contáctanos",
   "readMore": "Leer más",
   "thankyou": "Gracias",
   "send": "Enviar",
   "close": "Cerrar",
+  "viewInstagram": "Ver en Instagram",
 
   "contactModalLoadingTitle": "Enviando...",
   "contactModalLoadingInfo": "Estamos procesando tu mensaje, por favor espera.",
@@ -39,6 +41,11 @@
   "drPuertaMetaDescription": "Médico y Cirujano, especialista en Otorrinolaringología de la Universidad de Antioquia.",
   "drPuertaMetaName": "Dr. Puerta",
   "drPuertaMetaUrl": "https://drpuerta.com/drpuerta",
+
+  "galleryMetaTitle": "Galería del Dr. Jorge Puerta",
+  "galleryMetaDescription": "Galería de imágenes del Dr. Jorge Puerta",
+  "galleryMetaName": "Galería",
+  "galleryMetaUrl": "https://drpuerta.com/galeria",
 
   "contactoMetaTitle": "Contacto Dr. Puerta",
   "contactoMetaDescription": "Contacto con el Dr. Jorge Puerta",
@@ -137,7 +144,13 @@
   "studiesFig3": "Figure 2. Solid-State HA at 1 month in rabbit model, Alcian Blue stain, 20x mag.",
   "studiesTitle6": "CONCLUSIÓN: ",
   "studiesDescription3": "Esta nueva tecnología de HA tiene ventajas significativas en comparación con los rellenadores inyectables. La hebra de HA puede colocarse en la profundidad y posición exacta deseada para tratar una arruga con beneficios adicionales en velocidad, predicibilidad y reversibilidad no encontrados con los rellenadores actuales. Sorprendentemente, la deposición de HA sólida fue significativamente menos dolorosa que las técnicas existentes. Además, no hay riesgo de embolización, lo que podría disminuir las complicaciones. Estudios posteriores...",
-  "studiesDownload": "Descargar PDF",
+
+  "gallery1Alt": "Imagen de la galeria 1",
+  "gallery2Alt": "Imagen de la galeria 2",
+  "gallery3Alt": "Imagen de la galeria 3",
+  "gallery4Alt": "Imagen de la galeria 4",
+  "gallery5Alt": "Imagen de la galeria 5",
+  "gallery6Alt": "Imagen de la galeria 6",
 
   "contactGoogle": "Ver en Google Maps",
   "contactWaze": "Ver en Waze",
