@@ -21,7 +21,7 @@ const toggleModal = () => {
         <p class="description">{{ $t('surgeryDescription') }}</p>
         <Buttons
           class="button-cta"
-          :text="$t('contactUs')" 
+          :text="$t('weContactYou')" 
           :active="true" 
           @click="toggleModal"
         />

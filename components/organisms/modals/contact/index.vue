@@ -74,7 +74,7 @@ const submitHandler = async (createForm: Props) => {
 
       <div class="contact-modal-form" v-if="!isConfirmInfoVisible">
 
-        <h2 class="contact-modal-title">{{ $t('contactUs') }}</h2>
+        <h2 class="contact-modal-title">{{ $t('weContactYouDescription') }}</h2>
 
         <FormKit type="form" id="contact-modal-form" #default="{ state }" @submit="submitHandler">
 
@@ -92,17 +92,6 @@ const submitHandler = async (createForm: Props) => {
                 oninput="this.value = this.value.replace(/\D/g, '')"
                 :validation="[['matches', /^.{10,10}$/], ['required']]" v-model.number="phone" type="text"
                 placeholder="301 456 7890" />
-            </div>
-
-            <div class="form-group-textarea">
-              <label for="message">{{ $t('contactMessageLabel') }}</label>
-              <FormKit
-                type="textarea"
-                name="message"
-                :placeholder="$t('contactMessage')"
-                maxLength="85"
-                v-model="message"
-                validation="required" />
             </div>
 
             <Button :disabled="!state.valid" type="submit" :text="$t('send')" />

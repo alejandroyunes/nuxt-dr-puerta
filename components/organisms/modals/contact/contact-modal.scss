@@ -52,12 +52,12 @@
       width: 100%;
 
       .contact-modal-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 700;
         color: var(--heading);
         text-align: center;
         margin-bottom: 28px;
-        line-height: 2.5rem;
+        line-height: 2rem;
       }
 
       .formkit-form .formkit-actions {
@@ -110,65 +110,6 @@
                 border: 1px solid var(--gray);
                 border-radius: 5px;
                 height: 44px;
-                font-size: 1rem;
-    
-                &:hover {
-                  background-color: var(--background);
-                  outline: none;
-                }
-    
-                &::placeholder {
-                  color: var(--gray-base);
-                  font-size: .9rem;
-                }
-              }
-            }
-          }
-    
-          .formkit-messages {
-            text-align: left;
-            list-style-type: none;
-            color: var(--danger);
-            padding: 4px 0 0 0;
-          }
-    
-        }
-      }
-
-      .form-group-textarea {
-        position: relative;
-        margin: 20px 0 24px;
-        width: 100%;
-        
-        label {
-          position: absolute;
-          top: -11px;
-          padding: 0px 5px;
-          background-color: var(--background);
-          left: 10px;
-          font-size: .9rem;
-          color: var(--background-opposite);
-        }
-    
-        .formkit-outer {
-          height: 144px;
-
-          .formkit-wrapper {
-            
-            .formkit-inner {
-              display: flex;
-              align-items: center;
-              
-              textarea {
-                cursor: pointer;
-                padding: 10px;
-                width: 100%;
-                border-radius: 4px;
-                color: var(--heading);
-                background-color: transparent;
-                border: 1px solid var(--gray);
-                border-radius: 5px;
-                height: 120px;
                 font-size: 1rem;
     
                 &:hover {
