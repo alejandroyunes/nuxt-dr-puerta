@@ -15,7 +15,6 @@ const toggleModal = () => {
   <section class="billboard-1">
 
     <div class="details">
-      
       <div class="details-content">
         <h1 class="title">{{ $t('surgery') }}<br/> {{ $t('surgeryTitle') }}</h1>
         <p class="description">{{ $t('surgeryDescription') }}</p>

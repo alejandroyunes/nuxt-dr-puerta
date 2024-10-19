@@ -2,6 +2,7 @@
 import Header from '~/components/organisms/header/index.vue'
 import Footer from '~/components/organisms/footer/index.vue'
 import Loading from '~/components/atoms/loading/loading-background/index.vue'
+import FloatingWhatsapp from '~/components/atoms/buttons/floating-whatapp/index.vue'
 
 const loading = ref(true)
 
@@ -44,5 +45,7 @@ useHead({
       <NuxtPage />
     </article>
     <Footer />
+
+    <FloatingWhatsapp />
   </div>
 </template>
