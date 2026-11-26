@@ -1,6 +1,5 @@
 <script setup>
   import { ref } from 'vue'
-  import './footer.scss'
   import InstagramSvg from '~/components/icons/social/InstagramSvg.vue'
   import WhatsAppSvg from '~/components/icons/social/WhatsAppSvg.vue'
 

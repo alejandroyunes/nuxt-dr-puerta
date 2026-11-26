@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import './floating-whatapp.scss'
 import WhatsappSvg from '~/components/icons/social/WhatsAppSvg.vue'
 
 const handleClick = () => {

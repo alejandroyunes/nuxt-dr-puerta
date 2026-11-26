@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import './billboard-4.scss'
 import Button from '@/components/atoms/buttons/fill/index.vue'
 
 defineProps<{

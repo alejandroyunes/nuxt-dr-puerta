@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import './transparent.scss'
 
 type ButtonProps = {
   text: string

@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import './contact-form.scss'
 import { ref } from 'vue'
 import { AxiosError } from 'axios'
 import { reset } from '@formkit/core'

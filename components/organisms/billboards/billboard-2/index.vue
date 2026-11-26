@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import './billboard-2.scss'
 
 type Props = {
   data: {

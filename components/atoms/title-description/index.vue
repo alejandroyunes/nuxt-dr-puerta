@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import './title-description.scss'
 
 type Props = {
   title: string

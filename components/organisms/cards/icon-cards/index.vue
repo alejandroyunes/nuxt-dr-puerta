@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import './icon-cards.scss'	
 
 import Button from '~/components/atoms/buttons/default/index.vue'
 

@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import './loading-1.scss'
 </script>
 
 <!-- sticks to the first relative element -->

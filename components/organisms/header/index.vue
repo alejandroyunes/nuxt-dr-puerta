@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import './header.scss'
 import { ref, inject, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import UseSetTheme from '~/components/hooks/useSetTheme.vue'

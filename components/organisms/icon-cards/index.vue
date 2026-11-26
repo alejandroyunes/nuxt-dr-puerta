@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import './icon-cards.scss'
 type IconTitleProps = {
   data: {
     icon: Component

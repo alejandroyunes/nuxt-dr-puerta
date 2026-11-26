@@ -2,12 +2,6 @@ import { defineNuxtConfig } from "nuxt/config"
 
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  css: ["~/assets/main.scss"],
-  vite: {
-    build: {
-      cssCodeSplit: false,
-    },
-  },
   site: {
     url: 'https://drpuerta.com',
     name: 'Dr. Puerta',

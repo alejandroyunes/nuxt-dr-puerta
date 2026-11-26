@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import './investigation.scss'
 
 const studies = [
   {

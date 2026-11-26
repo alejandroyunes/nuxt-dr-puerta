@@ -1,7 +1,6 @@
 <script setup lang='ts'>
 import { ref } from 'vue'
 
-import './menu.scss'
 
 import ArrowDownSvg from '~/components/icons/ArrowDownSvg.vue'
 import DiplomaSvg from '~/components/icons/DiplomadoSvg.vue'

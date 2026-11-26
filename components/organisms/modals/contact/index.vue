@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import './contact-modal.scss'
 import { ref } from 'vue'
 import { reset } from '@formkit/core'
 import { AxiosError } from 'axios'

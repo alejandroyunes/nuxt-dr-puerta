@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import './icon-cards-2.scss'
 import ButtonTransparentEffect from '~/components/atoms/buttons/transparent-effect/index.vue'
 
 type IconTitleProps = {

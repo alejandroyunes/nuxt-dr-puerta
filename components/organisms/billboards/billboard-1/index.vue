@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import './billboard-1.scss'
 import Buttons from '~/components/atoms/buttons/default/index.vue'
 import ContactModal from '~/components/organisms/modals/contact/index.vue'
 

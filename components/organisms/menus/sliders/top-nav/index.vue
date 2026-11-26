@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import './top-nav.scss'
 
 import UseSetTheme from '~/components/hooks/useSetTheme.vue'
 

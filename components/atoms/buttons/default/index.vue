@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import './default.scss'
 
 type ButtonProps = {
   text: string
