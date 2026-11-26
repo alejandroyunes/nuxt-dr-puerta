@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n'
 import Billboard from '~/components/organisms/billboards/billboard-1/index.vue'
 import SubTitle from '~/components/atoms/subtitle-description/index.vue'
 import IconCards from '~/components/organisms/cards/icon-cards/index.vue'
@@ -16,21 +15,10 @@ import MedicalSvg from '~/components/icons/MedicalSvg.vue'
 import HospitalBook from '~/components/icons/HospitalBook.vue'
 import WorldSnakeSvg from '~/components/icons/WorldSnakeSvg.vue'
 
-const { t } = useI18n()
-
-useSeoMeta({
-  title: t('homeMetaTitle'),
-  description: t('homeMetaDescription'),
-  ogSiteName: t('homeMetaName'),
-  ogTitle: t('homeMetaTitle'),
-  ogDescription: t('homeMetaDescription'),
-  ogImage: '/meta/default.webp',
-  ogUrl: t('homeMetaUrl'),
-  ogLocale: t('siteLocale'),
-  twitterTitle: t('homeMetaTitle'),
-  twitterDescription: t('homeMetaDescription'),
-  twitterImage: '/meta/default.webp',
-  twitterCard: 'summary_large_image',
+usePageSeo({
+  title: 'homeMetaTitle',
+  description: 'homeMetaDescription',
+  siteName: 'homeMetaName',
 })
 
 const iconCards = [

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import './header.scss'
-import { ref, inject } from 'vue'
+import { ref, inject, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import UseSetTheme from '~/components/hooks/useSetTheme.vue'
 import SliderTopNav from '~/components/organisms/menus/sliders/top-nav/index.vue'
@@ -21,12 +21,18 @@ const toggleSliderTopNav = () => {
 
 const { locale } = useI18n({ useScope: 'global' })
 const config = inject(Symbol.for('FormKitConfig')) as { locale: string } | undefined
+const switchLocalePath = useSwitchLocalePath()
 
-const setLanguage = (language: string) => {
-  locale.value = language
-
+watch(locale, (language) => {
   if (config !== undefined) {
     config.locale = language
+  }
+}, { immediate: true })
+
+const setLanguage = async (language: 'en' | 'es') => {
+  const localizedPath = switchLocalePath(language)
+  if (localizedPath) {
+    await navigateTo(localizedPath)
   }
 }
 
@@ -49,7 +55,7 @@ const setLanguage = (language: string) => {
     </div>
 
     <div class="container">
-      <NuxtLink to="/" class="logo">
+      <NuxtLinkLocale to="/" class="logo">
         <NuxtPicture
           src="/logo.webp"
           alt="Logo Dr. Puerta"
@@ -57,7 +63,7 @@ const setLanguage = (language: string) => {
           sizes="xs:140px md:168px xl:168px"
           format="webp"
         />
-      </NuxtLink>
+      </NuxtLinkLocale>
 
       <div class="details">
 
@@ -70,9 +76,9 @@ const setLanguage = (language: string) => {
 
         <Dropdown class="desktop-only" />
 
-        <NuxtLink to="/contacto">
+        <NuxtLinkLocale to="/contacto">
           <Button :text="$t('contact')" class="contact-button desktop-only" primaryHover aria-label="Ir a la sección de contacto" />
-        </NuxtLink>
+        </NuxtLinkLocale>
 
         <div class="hamburger-menu mobile-only" @click="toggleSliderTopNav">
           <HamburgerSvg class="icon" aria-label="Abrir menú de navegación" />

@@ -67,7 +67,7 @@ const socialLinks = [
     
     <div class="top-nav-header">
 
-      <NuxtLink @click="toggle" to="/" class="top-nav-logo">
+      <NuxtLinkLocale @click="toggle" to="/" class="top-nav-logo">
         <NuxtPicture
           class="image"
           src="/logo.webp"
@@ -76,7 +76,7 @@ const socialLinks = [
           sizes="xs:140px md:168px xl:168px"
           format="webp"
         />
-      </NuxtLink>
+      </NuxtLinkLocale>
 
       <div @click="toggle" class="animation-exit">
         <ExitSvg class=" exit-icon" />
@@ -88,10 +88,10 @@ const socialLinks = [
       <nav class="top-nav-list">
         <ul>
           <li v-for="(link, index) in navLinks" :key="index">
-            <NuxtLink :to="link.link" class="top-nav-item" @click="toggle()">
+            <NuxtLinkLocale :to="link.link" class="top-nav-item" @click="toggle()">
               <component :is="link.icon" :alt="link.iconAlt" />
               <p>{{ $t(link.title) }}</p>
-            </NuxtLink>
+            </NuxtLinkLocale>
           </li>
         </ul>
       </nav>

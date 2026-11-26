@@ -1,24 +1,11 @@
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n'
-
 import Title from '~/components/atoms/title-description/index.vue'
 import Billboard4 from '~/components/organisms/billboards/billboard-4/index.vue'
 
-const { t } = useI18n()
-
-useSeoMeta({
-  title: t('galleryMetaTitle'),
-  description: t('galleryMetaDescription'),
-  ogSiteName: t('galleryMetaName'),
-  ogTitle: t('galleryMetaTitle'),
-  ogDescription: t('galleryMetaDescription'),
-  ogImage: '/meta/default.webp',
-  ogUrl: t('galleryMetaUrl'),
-  ogLocale: t('siteLocale'),
-  twitterTitle: t('galleryMetaTitle'),
-  twitterDescription: t('galleryMetaDescription'),
-  twitterImage: '/meta/default.webp',
-  twitterCard: 'summary_large_image',
+usePageSeo({
+  title: 'galleryMetaTitle',
+  description: 'galleryMetaDescription',
+  siteName: 'galleryMetaName',
 })
 
 const gallery = [

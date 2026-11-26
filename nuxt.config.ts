@@ -3,6 +3,10 @@ import { defineNuxtConfig } from "nuxt/config"
 export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ["~/assets/main.scss"],
+  site: {
+    url: 'https://drpuerta.com',
+    name: 'Dr. Puerta',
+  },
   modules: [    
   '@formkit/nuxt',
   '@pinia/nuxt',
@@ -13,7 +17,6 @@ export default defineNuxtConfig({
 ],
 app: {
   head: {
-    htmlAttrs: { lang: 'es' },
     title: 'Dr. Puerta Otorrinolaringología',
     titleTemplate: '%s',
     link: [
@@ -42,17 +45,17 @@ i18n: {
   langDir: "locales/",
   defaultLocale: "es",
   detectBrowserLanguage: false,
-  strategy: "no_prefix",
+  strategy: "prefix_except_default",
   lazy: false,
-  baseUrl: "/",
+  baseUrl: "https://drpuerta.com",
   locales: [
     {
-      iso: "es-CO",
+      language: "es-CO",
       code: "es",
       file: "es.json",
     },
     {
-      iso: "en-US",
+      language: "en-US",
       code: "en",
       file: "en.json",
     }

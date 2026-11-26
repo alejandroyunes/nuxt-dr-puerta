@@ -39,11 +39,11 @@
       <div class="footer-item">
         <h3 class="">{{ $t('footerLinks') }}</h3>
           <ul>
-            <li><NuxtLink to="/">{{ $t('home') }}</NuxtLink></li>
-            <li><NuxtLink to="/drpuerta">{{ $t('drPuerta') }}</NuxtLink></li>
-            <li><NuxtLink to="/estudios">{{ $t('studies') }}</NuxtLink></li>
-            <li><NuxtLink to="/galeria">{{ $t('gallery') }}</NuxtLink></li>
-            <li><NuxtLink to="/contacto">{{ $t('contact') }}</NuxtLink></li>
+            <li><NuxtLinkLocale to="/">{{ $t('home') }}</NuxtLinkLocale></li>
+            <li><NuxtLinkLocale to="/drpuerta">{{ $t('drPuerta') }}</NuxtLinkLocale></li>
+            <li><NuxtLinkLocale to="/estudios">{{ $t('studies') }}</NuxtLinkLocale></li>
+            <li><NuxtLinkLocale to="/galeria">{{ $t('gallery') }}</NuxtLinkLocale></li>
+            <li><NuxtLinkLocale to="/contacto">{{ $t('contact') }}</NuxtLinkLocale></li>
         </ul>
       </div>
       

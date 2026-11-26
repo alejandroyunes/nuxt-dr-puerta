@@ -8,12 +8,13 @@ type ButtonProps = {
 }
 
 const router = useRouter()
+const localePath = useLocalePath()
 
 const { text, link, onClick } = defineProps<ButtonProps>()
 
 const handleClick = () => {
   if (link) {
-    router.push(link)
+    router.push(localePath(link))
   }
 
   if (onClick) {

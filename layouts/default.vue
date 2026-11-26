@@ -5,6 +5,22 @@ import Loading from '~/components/atoms/loading/loading-background/index.vue'
 import FloatingWhatsapp from '~/components/atoms/buttons/floating-whatapp/index.vue'
 
 const loading = ref(true)
+const i18nHead = useLocaleHead({ addSeoAttributes: true })
+
+useHead(() => ({
+  htmlAttrs: {
+    lang: i18nHead.value.htmlAttrs?.lang,
+  },
+  link: i18nHead.value.link,
+  meta: i18nHead.value.meta,
+}))
+
+useSchemaOrg([
+  defineWebSite({
+    name: 'Dr. Puerta',
+    url: 'https://drpuerta.com',
+  }),
+])
 
 onMounted(() => {
   if (typeof window !== 'undefined') {
@@ -22,9 +38,6 @@ onMounted(() => {
 })
 
 useHead({
-  htmlAttrs: {
-    lang: 'es'
-  },
   link: [
     {
       rel: 'icon',
@@ -39,7 +52,7 @@ useHead({
 <template>
   <Loading v-if="loading" />
 
-  <div v-else>
+  <div>
     <Header />
     <article>
       <NuxtPage />
