@@ -18,6 +18,8 @@ defineProps<{
         <NuxtPicture
           :src="item.image"
           :alt="item.alt"
+          width="317"
+          height="304"
           densities="x1"
           sizes="xs:100vw md:100vw xl:100vw"
           format="webp"

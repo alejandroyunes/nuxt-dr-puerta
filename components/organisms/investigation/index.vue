@@ -59,6 +59,8 @@ const studies2 = [
       <NuxtPicture
         src="/images/estudio-1.webp"
         alt="HA in rabbit model"
+        width="497"
+        height="373"
         densities="x1"
         class="image"
       />
@@ -69,6 +71,8 @@ const studies2 = [
       <NuxtPicture
         src="/images/estudio-2.webp"
         alt="HA in rabbit model"
+        width="494"
+        height="371"
         densities="x1"
         class="image"
       />
