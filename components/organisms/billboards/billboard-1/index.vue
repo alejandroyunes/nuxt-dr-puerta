@@ -34,6 +34,8 @@ const closeModal = () => {
     <NuxtPicture
       src="/images/woman-medium.webp"
       :alt="$t('billboard1Alt')"
+      width="400"
+      height="606"
       densities="x1"
       class="image"
       sizes="xs:400px md:400px xl:100vw" 
