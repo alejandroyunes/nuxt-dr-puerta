@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { reset } from '@formkit/core'
-import { AxiosError } from 'axios'
+import type { AxiosError } from 'axios'
 import Loading from '~/components/atoms/loading/loading-icon/index.vue'
 import CrossSvg from '~/components/icons/CrossSvg.vue'
 
@@ -18,16 +18,16 @@ const isSuccess = ref(false)
 const isLoading = ref(false)
 const isConfirmInfoVisible = ref(false)
 
+const { toggleModal } = defineProps<{
+  toggleModal: () => void
+}>()
+
 type Props = {
   contact: {
     name: string
     phone: string
   }
 }
-
-const { toggleModal } = defineProps<{
-  toggleModal: () => void
-}>()
 
 const submitHandler = async (createForm: Props) => {
   isLoading.value = true

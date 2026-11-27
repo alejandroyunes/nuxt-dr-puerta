@@ -1,11 +1,16 @@
 <script lang="ts" setup>
+import { defineAsyncComponent } from 'vue'
 import Buttons from '~/components/atoms/buttons/default/index.vue'
-import ContactModal from '~/components/organisms/modals/contact/index.vue'
 
+const ContactModal = defineAsyncComponent(() => import('~/components/organisms/modals/contact/index.vue'))
 const isModalOpen = ref(false)
 
-const toggleModal = () => {
-  isModalOpen.value = !isModalOpen.value
+const openModal = () => {
+  isModalOpen.value = true
+}
+
+const closeModal = () => {
+  isModalOpen.value = false
 }
 
 </script>
@@ -21,7 +26,7 @@ const toggleModal = () => {
           class="button-cta"
           :text="$t('weContactYou')" 
           :active="true" 
-          @click="toggleModal"
+          @click="openModal"
         />
       </div>
     </div>
@@ -35,7 +40,7 @@ const toggleModal = () => {
       format="webp"
     />
 
-    <ContactModal v-if="isModalOpen" :toggleModal="toggleModal"/>
+    <component :is="ContactModal" v-if="isModalOpen" :toggleModal="closeModal" />
 
   </section>
 </template>

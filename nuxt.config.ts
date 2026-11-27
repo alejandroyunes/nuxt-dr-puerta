@@ -2,6 +2,13 @@ import { defineNuxtConfig } from "nuxt/config"
 
 export default defineNuxtConfig({
   devtools: { enabled: false },
+  experimental: {
+    defaults: {
+      nuxtLink: {
+        prefetch: false,
+      },
+    },
+  },
   site: {
     url: 'https://drpuerta.com',
     name: 'Dr. Puerta',
@@ -14,6 +21,9 @@ export default defineNuxtConfig({
   '@nuxtjs/i18n',
   '@zadigetvoltaire/nuxt-gtm'
 ],
+formkit: {
+  autoImport: true,
+},
 app: {
   head: {
     title: 'Dr. Puerta Otorrinolaringología',
@@ -64,7 +74,7 @@ gtm: {
   id: 'GTM-WB3N45XT',
   defer: false,
   compatibility: false,
-  enabled: true,
+  enabled: false,
   debug: false,
   loadScript: true,
   enableRouterSync: true,

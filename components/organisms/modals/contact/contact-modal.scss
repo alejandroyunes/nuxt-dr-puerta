@@ -63,14 +63,14 @@
       .formkit-form .formkit-actions {
         display: none;
       }
-    
+
       .formkit-messages {
         list-style-type: none;
         color: var(--danger);
         padding: 8px 0 0 0;
         text-align: center;
       }
-    
+
       .form-group-input {
         position: relative;
         margin: 20px 0 40px;
@@ -90,33 +90,32 @@
           height: 52px;
 
           .formkit-wrapper {
-            
+
             .formkit-inner {
               display: flex;
               align-items: center;
-              
+
               input:-webkit-autofill {
                 -webkit-text-fill-color: var(--heading);
                 -webkit-box-shadow: 0 0 0 100px var(--background) inset;
               }
-    
+
               input {
                 cursor: pointer;
                 padding: 10px;
                 width: 100%;
-                border-radius: 4px;
                 color: var(--heading);
                 background-color: transparent;
                 border: 1px solid var(--gray);
                 border-radius: 5px;
                 height: 44px;
                 font-size: 1rem;
-    
+
                 &:hover {
                   background-color: var(--background);
                   outline: none;
                 }
-    
+
                 &::placeholder {
                   color: var(--gray-base);
                   font-size: .9rem;
@@ -124,14 +123,14 @@
               }
             }
           }
-    
+
           .formkit-messages {
             text-align: left;
             list-style-type: none;
             color: var(--danger);
             padding: 4px 0 0 0;
           }
-    
+
         }
       }
     }
