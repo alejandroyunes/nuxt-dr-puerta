@@ -5,27 +5,34 @@
   align-items: center;
   gap: 0;
   color: var(--heading);
-  padding: 148px 20px 0;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 168px 24px 56px;
   text-align: center;
+  border-bottom: 1px solid var(--border);
 
   .title {
-    font-size: 2rem;
-    line-height: 3.1rem;
-    padding-bottom: .5rem;
+    max-width: 850px;
+    font-size: clamp(2.6rem, 5vw, 4.25rem);
+    line-height: 1.05;
+    letter-spacing: -.035em;
+    padding-bottom: 18px;
   }
 
   .description {
     font-weight: 300;
-    font-size: 1.2rem;
-    max-width: var(--tablet-width);
+    font-size: 1.12rem;
+    line-height: 1.75;
+    max-width: 720px;
+    color: var(--text-soft);
   }
 
   @media (max-width: 756px) {
-    padding: 120px 20px 0;
+    padding: 132px 18px 40px;
 
     .description {
-      line-height: 1.6rem;
-      padding-top: 16px;
+      line-height: 1.65;
+      padding-top: 8px;
     }
   }
 }

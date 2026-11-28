@@ -4,7 +4,8 @@
   .contact-form {
     margin: 0 auto;
     padding: 40px 24px 30px;
-    box-shadow: var(--shadow-card);
+    border-radius: 14px;
+    background: var(--background);
 
     .formkit-form .formkit-actions {
       display: none;
