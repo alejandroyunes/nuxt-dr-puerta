@@ -9,12 +9,12 @@
     {
       icon: InstagramSvg,
       to: 'https://www.instagram.com/cirugiafacial_jorgepuerta/',
-      label: 'Visítanos en Instagram',
+      label: 'footerInstagramLink',
     },
     {
       icon: WhatsAppSvg,
       to: 'https://api.whatsapp.com/send/?phone=573188981046&text&type=phone_number&app_absent=0',
-      label: 'Contáctanos por WhatsApp',
+      label: 'footerWhatsappLink',
     },
   ]
 </script>
@@ -29,7 +29,7 @@
         <p>{{ $t('drPuertaDescription') }}</p>
 
         <div class="social-links">
-          <NuxtLink v-for="link in socialLinks" :to="link.to" target="_blank">
+          <NuxtLink v-for="link in socialLinks" :to="link.to" :aria-label="$t(link.label)" target="_blank">
             <component :is="link.icon" />
           </NuxtLink> 
         </div>

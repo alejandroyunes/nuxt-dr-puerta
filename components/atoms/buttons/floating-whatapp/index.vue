@@ -7,7 +7,7 @@ const handleClick = () => {
 
 <template>
   <div class="floating-whatapp">
-      <NuxtLink to="https://api.whatsapp.com/send/?phone=573188981046&text&type=phone_number&app_absent=0" target="_blank" class="floating-whatapp-content">  
+      <NuxtLink to="https://api.whatsapp.com/send/?phone=573188981046&text&type=phone_number&app_absent=0" target="_blank" class="floating-whatapp-content" :aria-label="$t('floatingWhatsappLink')">
         <WhatsappSvg />
       </NuxtLink>
   </div>

@@ -51,8 +51,8 @@ const navLinks = [
 ]
 
 const socialLinks = [
-  { icon: InstagramMobileMenuSvg, to: 'https://www.instagram.com/cirugiafacial_jorgepuerta/' },
-  { icon: WhatsAppSvg, to: 'https://api.whatsapp.com/send/?phone=573188981046&text&type=phone_number&app_absent=0' },
+  { icon: InstagramMobileMenuSvg, to: 'https://www.instagram.com/cirugiafacial_jorgepuerta/', label: 'menuInstagramLink' },
+  { icon: WhatsAppSvg, to: 'https://api.whatsapp.com/send/?phone=573188981046&text&type=phone_number&app_absent=0', label: 'menuWhatsappLink' },
 ]
 
 </script>
@@ -101,7 +101,7 @@ const socialLinks = [
 
         <ul class="social-links">
           <li class="item" v-for="socialLink in socialLinks" :key="socialLink.to">
-            <NuxtLink :to="socialLink.to" target="_blank">
+            <NuxtLink :to="socialLink.to" :aria-label="$t(socialLink.label)" target="_blank">
             <component :is="socialLink.icon" />
           </NuxtLink>
           </li>
