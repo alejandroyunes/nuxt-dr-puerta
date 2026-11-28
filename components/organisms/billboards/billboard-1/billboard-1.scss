@@ -28,12 +28,12 @@
 
     .eyebrow {
       width: fit-content;
-      color: var(--secondary);
+      color: var(--secondary-contrast);
       font-size: .78rem;
       font-weight: 800;
       letter-spacing: .16em;
       text-transform: uppercase;
-      border-left: 3px solid var(--secondary);
+      border-left: 3px solid var(--secondary-contrast);
       padding-left: 10px;
     }
 

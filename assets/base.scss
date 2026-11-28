@@ -62,6 +62,7 @@
 
 :root,
 :root[data-color-scheme="light"] {
+  --secondary-contrast: #286b7c;
   --background: #fbfaf7;
   --background-soft: #f4f1ea;
   --background-base: #ece7dc;
@@ -75,7 +76,7 @@
   --heading-base: #756f68;
 
   --text: #4b4640;
-  --text-soft: #756f68;
+  --text-soft: #6f6861;
   --text-base: var(--gray);
 
   --card-background: var(--blue-base);
@@ -95,6 +96,7 @@
 }
 
 :root[data-color-scheme="dark"] {
+  --secondary-contrast: #6fb4c3;
   --background: var(--black);
   --background-soft: var(--black-soft);
   --background-base: var(--black-base);
