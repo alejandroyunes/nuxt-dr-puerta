@@ -5,7 +5,8 @@
     padding: 0 20px;
     z-index: 10;
     position: fixed;
-    background: linear-gradient(to bottom, rgba(255,255,255,.92), rgba(255,255,255,.72));
+    background-color: var(--background);
+    background-color: color-mix(in srgb, var(--background) 90%, transparent);
     backdrop-filter: blur(16px);
 
     .contact-top {
@@ -42,7 +43,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background-color: var(--background-base);
+      background-color: var(--background-soft);
+      border: 1px solid var(--border);
       box-shadow: var(--shadow-base);
       max-width: var(--max-width);
       border-radius: 18px;
@@ -84,7 +86,7 @@
           }
 
           button:not(.active):hover {
-            background-color: #f0f0f0;
+            background-color: var(--background-base);
           }
 
           button.active {
@@ -93,11 +95,11 @@
           }
 
           button:first-child {
-            border-right: 1px solid #ccc;
+            border-right: 1px solid var(--border);
           }
 
           button:last-child {
-            border-left: 1px solid #ccc;
+            border-left: 1px solid var(--border);
           }
         }
 
@@ -135,7 +137,8 @@
 
     @media (max-width: 848px) {
       padding: 0;
-      background: linear-gradient(to bottom, rgba(255,255,255,.96), rgba(255,255,255,.82));
+      background-color: var(--background);
+      background-color: color-mix(in srgb, var(--background) 94%, transparent);
       backdrop-filter: blur(12px);
 
       .contact-top {
@@ -176,3 +179,9 @@
       }
     }
   }
+
+:root[data-color-scheme="dark"] .header .container > .logo {
+  padding: 3px 8px;
+  border-radius: 8px;
+  background-color: var(--white);
+}

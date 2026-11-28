@@ -29,9 +29,9 @@
   --black-transparent: rgba(0, 0, 0, 0.5);
   --black-transparent-base: rgba(0, 0, 0, 0.1);
 
-  --gray: rgb(70, 70, 70);
-  --gray-soft: rgb(109, 100, 100);
-  --gray-base: rgb(167, 154, 154);
+  --gray: #756f68;
+  --gray-soft: #8d8378;
+  --gray-base: #b7aca0;
 
   --blue: rgb(39 67 85);
   --blue-soft: rgb(109, 183, 233);
@@ -69,12 +69,12 @@
   --background-opposite-soft: var(--black-soft);
   --background-opposite-base: var(--black-base);
 
-  --heading: var(--black);
-  --heading-soft: var(--black-soft);
-  --heading-base: var(--black-base);
+  --heading: #39342f;
+  --heading-soft: #4b443d;
+  --heading-base: #756f68;
 
-  --text: var(--black-soft);
-  --text-soft: var(--black-base);
+  --text: #4b4640;
+  --text-soft: #756f68;
   --text-base: var(--gray);
 
   --card-background: var(--blue-base);
@@ -84,7 +84,7 @@
   --shadow-card: var( --box-shadow-card-black);
   --shadow-img: var(--box-shadow-card-black);
 
-  --border: var(--gray-base);
+  --border: #ded7ce;
 
   --button-transparent: var(--black-transparent);
   --button-transparent-base: var(--black-transparent-base);
@@ -102,22 +102,22 @@
   --background-opposite-soft: var(--white-soft);
   --background-opposite-base: var(--white-base);
 
-  --heading: var(--white);
-  --heading-soft: var(--white-soft);
-  --heading-base: var(--white-base);
+  --heading: #f1ece5;
+  --heading-soft: #e2dacf;
+  --heading-base: #c7bdb1;
 
-  --text: var(--white-soft);
-  --text-soft: var(--white-base);
-  --text-base: var(--gray);
+  --text: #e2dacf;
+  --text-soft: #c7bdb1;
+  --text-base: #b5aaa0;
 
   --card-background: var(--blue);
 
   --shadow: var(--box-shadow-softer);
-  --shadow-base: var(--shadow-base);
+  --shadow-base: 0 8px 24px rgba(0, 0, 0, .34);
   --shadow-card: var( --box-shadow-card-white);
   --shadow-img: var(--box-shadow-img-white);
 
-  --border: var(--white-base);
+  --border: #5c544b;
 
   --button-transparent: var(--white-transparent);
   --button-transparent-base: var(--white-transparent-base);
