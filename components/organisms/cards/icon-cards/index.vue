@@ -17,7 +17,7 @@ const { data } = defineProps<IconTitleProps>()
 
 <template>
 
-  <section class="icon-cards">
+  <section class="cards-icon-cards">
 
     <div class="cards-container">
 
