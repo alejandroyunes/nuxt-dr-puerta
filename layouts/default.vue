@@ -54,9 +54,9 @@ useHead({
 
   <div>
     <Header />
-    <article>
+    <main>
       <NuxtPage />
-    </article>
+    </main>
     <Footer />
 
     <FloatingWhatsapp />
