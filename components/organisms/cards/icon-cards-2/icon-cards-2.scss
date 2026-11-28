@@ -1,81 +1,258 @@
 .icon-cards-2 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin: 72px auto 0;
-  gap: 16px;
-  padding: 0 32px;
+  gap: 24px;
   max-width: var(--max-width);
+  margin: 80px auto 0;
+  padding: 0 32px;
 
   .card {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    gap: 4px;
-    text-align: center;
-    color: var(--heading);
+    position: relative;
+    display: flex;
+    min-width: 0;
+    min-height: 300px;
     flex-direction: column;
-    background-color: var(--background);
-    border: 1px solid rgba(22, 66, 91, .08);
-    border-radius: 20px;
-    min-height: 260px;
-    padding: 18px;
-    box-shadow: 0 18px 50px rgba(22, 66, 91, .07);
+    align-items: center;
+    padding: 28px 24px 22px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, .16);
+    border-radius: 24px;
+    background-color: var(--primary);
+    background-image:
+      radial-gradient(circle at 88% 12%, color-mix(in srgb, var(--secondary) 24%, transparent), transparent 36%),
+      radial-gradient(circle at 6% 96%, color-mix(in srgb, var(--secondary) 10%, transparent), transparent 34%),
+      linear-gradient(135deg, var(--primary) 0%, color-mix(in srgb, var(--primary) 72%, var(--secondary)) 100%);
+    box-shadow: 0 16px 36px rgba(22, 66, 91, .16);
+    color: var(--white);
+    text-align: center;
+    transition: transform .25s ease, box-shadow .25s ease;
 
-    &:first-child {
-      background: linear-gradient(145deg, var(--primary), rgb(35, 86, 112));
+    &::before {
+      position: absolute;
+      top: -112px;
+      right: -76px;
+      width: 220px;
+      height: 220px;
+      border: 1px solid color-mix(in srgb, var(--secondary) 42%, transparent);
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 22px color-mix(in srgb, var(--secondary) 9%, transparent),
+        0 0 0 46px color-mix(in srgb, var(--secondary) 5%, transparent);
+      content: "";
+      pointer-events: none;
     }
+
+    &::after {
+      position: absolute;
+      right: 24px;
+      bottom: 0;
+      left: 24px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--secondary) 78%, var(--white)), transparent);
+      content: "";
+      pointer-events: none;
+    }
+
     &:nth-child(2) {
-      background-color: #306f80;
+      background-color: var(--primary-soft);
+      background-image:
+        radial-gradient(circle at 88% 12%, color-mix(in srgb, var(--secondary) 24%, transparent), transparent 36%),
+        radial-gradient(circle at 6% 96%, color-mix(in srgb, var(--secondary) 10%, transparent), transparent 34%),
+        linear-gradient(135deg, var(--primary-soft) 0%, var(--secondary) 100%);
     }
+
     &:nth-child(3) {
       background-color: var(--tertiary);
+      background-image:
+        radial-gradient(circle at 88% 12%, color-mix(in srgb, var(--secondary) 22%, transparent), transparent 36%),
+        radial-gradient(circle at 6% 96%, color-mix(in srgb, var(--secondary) 10%, transparent), transparent 34%),
+        linear-gradient(135deg, var(--tertiary) 0%, var(--primary-soft) 100%);
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 22px 42px rgba(22, 66, 91, .22);
+      }
     }
 
     .card-icon {
-      margin: 0 auto;
-      padding-top: 16px;
+      display: grid;
+      width: 76px;
+      height: 76px;
+      flex: 0 0 76px;
+      place-items: center;
+      border: 1px solid color-mix(in srgb, var(--secondary) 58%, var(--white));
+      border-radius: 50%;
+      background: linear-gradient(145deg, rgba(255, 255, 255, .17), rgba(255, 255, 255, .07));
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .18), 0 8px 24px rgba(8, 35, 44, .12);
+      backdrop-filter: blur(8px);
+      position: relative;
+      z-index: 1;
 
       svg {
-        width: 72px;
-        height: 100%;
+        width: 38px;
+        height: 38px;
       }
     }
 
     .details {
+      position: relative;
+      z-index: 1;
       display: flex;
+      width: 100%;
+      flex: 1;
       flex-direction: column;
-      justify-content: space-between;
       align-items: center;
-      padding: 8px 0 32px 0;
-      
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 20px;
+
       .details-content {
         display: flex;
-        flex-direction: column;
         align-items: center;
+        justify-content: center;
+        flex: 1;
         padding: 0 8px;
 
         .title {
-          font-size: 1.2rem;
-          font-weight: 600;
-          line-height: 1.8rem;
-          letter-spacing: 1px;
           color: var(--white);
-          height: 58px;
-          margin-bottom: 16px;
+          font-size: 1.15rem;
+          font-weight: 600;
+          line-height: 1.55;
+          letter-spacing: .01em;
         }
       }
 
+      .btn-transparent {
+        width: auto;
+        min-width: 148px;
+        height: 46px;
+        padding: 0 24px;
+        border: 1px solid color-mix(in srgb, var(--secondary) 62%, var(--white));
+        border-radius: 999px;
+        line-height: 44px;
+        transition: background-color .2s ease, border-color .2s ease;
+
+        .btn-text {
+          font-size: .95rem;
+          font-weight: 600;
+        }
+
+        &::before {
+          border-radius: inherit;
+          background-color: rgba(255, 255, 255, .12);
+        }
+
+        &::after {
+          border-radius: inherit;
+        }
+
+        @media (hover: hover) {
+          &:hover {
+            border-color: color-mix(in srgb, var(--secondary) 48%, var(--white));
+            background-color: color-mix(in srgb, var(--secondary) 14%, transparent);
+          }
+        }
+      }
     }
   }
 
-  @media (max-width: 1100px) and (min-width: 900px) {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  @media (max-width: 900px) and (min-width: 700px) {
+  @media (max-width: 900px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
   }
 
-  @media (max-width: 756px) {
+  @media (max-width: 640px) {
     grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 56px;
+    padding: 0 18px;
+
+    .card {
+      min-height: 260px;
+      padding: 24px 20px 20px;
+      border-radius: 20px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card {
+      transition: none;
+
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+
+  :root[data-color-scheme="dark"] & {
+    .card {
+      border-color: color-mix(in srgb, var(--border) 32%, transparent);
+      background-color: var(--background);
+      background-image:
+        radial-gradient(circle at 88% 12%, color-mix(in srgb, var(--secondary) 7%, transparent), transparent 36%),
+        linear-gradient(135deg, color-mix(in srgb, var(--background) 84%, var(--primary)), color-mix(in srgb, var(--background) 88%, var(--tertiary)));
+      box-shadow: 0 14px 32px rgba(0, 0, 0, .24);
+
+      &::before {
+        border-color: color-mix(in srgb, var(--secondary) 12%, transparent);
+        box-shadow:
+          0 0 0 22px color-mix(in srgb, var(--secondary) 2%, transparent),
+          0 0 0 46px color-mix(in srgb, var(--secondary) 1%, transparent);
+      }
+
+      &::after {
+        background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--secondary) 22%, transparent), transparent);
+      }
+
+      &:nth-child(2) {
+        background-color: var(--background);
+        background-image:
+          radial-gradient(circle at 88% 12%, color-mix(in srgb, var(--secondary) 7%, transparent), transparent 36%),
+          linear-gradient(135deg, color-mix(in srgb, var(--background) 87%, var(--primary-soft)), color-mix(in srgb, var(--background) 84%, var(--secondary)));
+      }
+
+      &:nth-child(3) {
+        background-color: var(--background);
+        background-image:
+          radial-gradient(circle at 88% 12%, color-mix(in srgb, var(--secondary) 6%, transparent), transparent 36%),
+          linear-gradient(135deg, color-mix(in srgb, var(--background) 86%, var(--tertiary)), color-mix(in srgb, var(--background) 88%, var(--primary)));
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          box-shadow: 0 18px 34px rgba(0, 0, 0, .32);
+        }
+      }
+
+      .card-icon {
+        border-color: color-mix(in srgb, var(--secondary) 18%, transparent);
+        background: color-mix(in srgb, var(--background) 82%, var(--background-opposite));
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, .06), 0 6px 18px rgba(0, 0, 0, .12);
+        backdrop-filter: none;
+      }
+
+      .details {
+        .details-content .title {
+          color: var(--heading);
+        }
+
+        .btn-transparent {
+          border-color: color-mix(in srgb, var(--secondary) 20%, transparent);
+
+          &::before {
+            background-color: color-mix(in srgb, var(--background-opposite) 4%, transparent);
+          }
+
+          @media (hover: hover) {
+            &:hover {
+              border-color: color-mix(in srgb, var(--secondary) 28%, transparent);
+              background-color: color-mix(in srgb, var(--secondary) 5%, transparent);
+            }
+          }
+        }
+      }
+    }
   }
 }
