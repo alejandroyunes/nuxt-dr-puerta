@@ -1,25 +1,29 @@
 .cards-icon-cards {
   max-width: var(--max-width);
-  margin: 40px auto 0;
+  margin: 56px auto 0;
 
 
   .cards-container {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    gap: 24px;
-    padding: 0 48px;
+    gap: 16px;
+    padding: 0 32px;
   
     .card {
       display: grid;
       grid-template-columns: auto 1fr;
       gap: 4px;
-      text-align: center;
+      text-align: left;
       color: var(--heading);
       flex-direction: column;
       background-color: transparent;
       position: relative;
-      border-radius: .4rem;
+      border: 1px solid rgba(22, 66, 91, .08);
+      border-radius: 18px;
+      padding: 24px 20px;
+      background: var(--background);
+      box-shadow: 0 12px 40px rgba(22, 66, 91, .06);
       
       .image {
         margin: auto 4px;

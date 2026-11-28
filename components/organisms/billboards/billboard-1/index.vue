@@ -20,14 +20,22 @@ const closeModal = () => {
 
     <div class="details">
       <div class="details-content">
+        <p class="eyebrow">{{ $t('heroEyebrow') }}</p>
         <h1 class="title">{{ $t('surgery') }}<br/> {{ $t('surgeryTitle') }}</h1>
         <p class="description">{{ $t('surgeryDescription') }}</p>
-        <Buttons
-          class="button-cta"
-          :text="$t('weContactYou')" 
-          :active="true" 
-          @click="openModal"
-        />
+        <div class="hero-actions">
+          <Buttons
+            class="button-cta"
+            :text="$t('weContactYou')" 
+            :active="true" 
+            @click="openModal"
+          />
+          <NuxtLinkLocale to="/galeria" class="gallery-link">{{ $t('viewGallery') }}</NuxtLinkLocale>
+        </div>
+        <div class="trust-row" aria-label="Experience summary">
+          <div><strong>23+</strong><span>{{ $t('heroExperience') }}</span></div>
+          <div><strong>5000+</strong><span>{{ $t('heroSurgeries') }}</span></div>
+        </div>
       </div>
     </div>
 

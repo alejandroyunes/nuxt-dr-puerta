@@ -1,9 +1,12 @@
   .header {
     width: 100%;
+    top: 0;
+    left: 0;
     padding: 0 20px;
     z-index: 10;
     position: fixed;
-    background-color: var(--background);
+    background: linear-gradient(to bottom, rgba(255,255,255,.92), rgba(255,255,255,.72));
+    backdrop-filter: blur(16px);
 
     .contact-top {
       display: flex;
@@ -42,8 +45,8 @@
       background-color: var(--background-base);
       box-shadow: var(--shadow-base);
       max-width: var(--max-width);
-      border-radius: 48px;
-      padding: 0 28px;
+      border-radius: 18px;
+      padding: 0 20px;
       height: 68px;
       margin: 5px auto 0;
 
@@ -132,8 +135,8 @@
 
     @media (max-width: 848px) {
       padding: 0;
-      background-color: transparent;
-      backdrop-filter: blur(5px);
+      background: linear-gradient(to bottom, rgba(255,255,255,.96), rgba(255,255,255,.82));
+      backdrop-filter: blur(12px);
 
       .contact-top {
         display: none;
@@ -150,6 +153,10 @@
         }
 
         .details {
+          .contact-button {
+            display: none;
+          }
+
           .language-switcher {
             button {
               padding: 8px 12px;
