@@ -52,16 +52,14 @@ const setLanguage = async (language: 'en' | 'es') => {
     </div>
 
     <div class="container">
-      <NuxtLinkLocale to="/" class="logo">
-        <NuxtPicture
-          src="/logo.webp"
-          alt="Logo Dr. Puerta"
-          width="250"
-          height="90"
-          class="logo"
-          sizes="xs:140px md:168px xl:168px"
-          format="webp"
-        />
+      <NuxtLinkLocale to="/" class="brand-logo" :aria-label="$t('home') + ' - Dr. Jorge Puerta'">
+        <span class="brand-mark-image" aria-hidden="true">
+          <img src="/drpuerta-logo.webp" alt="" width="250" height="90">
+        </span>
+        <span class="brand-copy">
+          <strong>Dr. Jorge Puerta</strong>
+          <small>{{ $t('brandTagline') }}</small>
+        </span>
       </NuxtLinkLocale>
 
       <div class="details">
