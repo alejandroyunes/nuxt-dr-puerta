@@ -66,17 +66,14 @@ const socialLinks = [
     
     <div class="top-nav-header">
 
-      <NuxtLinkLocale @click="toggle" to="/" class="top-nav-logo">
-        <NuxtPicture
-          class="image"
-          src="/logo.webp"
-          alt="Logo Dr. Puerta"
-          width="250"
-          height="90"
-          densities="x1"
-          sizes="xs:140px md:168px xl:168px"
-          format="webp"
-        />
+      <NuxtLinkLocale @click="toggle" to="/" class="top-nav-logo" :aria-label="$t('home') + ' - Dr. Jorge Puerta'">
+        <span class="brand-mark-image" aria-hidden="true">
+          <img src="/drpuerta-logo.webp" alt="" width="250" height="90">
+        </span>
+        <span class="brand-copy">
+          <strong>Dr. Jorge Puerta</strong>
+          <small>{{ $t('brandTagline') }}</small>
+        </span>
       </NuxtLinkLocale>
 
       <div @click="toggle" class="animation-exit">

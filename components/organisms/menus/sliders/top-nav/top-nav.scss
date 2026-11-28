@@ -1,4 +1,10 @@
 .top-nav {
+  --top-nav-header-background: #e8eff2;
+  --top-nav-action-background: var(--primary);
+  --top-nav-action-foreground: var(--white);
+  --top-nav-divider: #d0dde2;
+  --top-nav-hover-background: #edf2f4;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -8,6 +14,14 @@
   background-color: var(--background);
   overflow-y: auto;
 
+  :root[data-color-scheme="dark"] & {
+    --top-nav-header-background: #203744;
+    --top-nav-action-background: #6fb4c3;
+    --top-nav-action-foreground: #1c1c1c;
+    --top-nav-divider: #435661;
+    --top-nav-hover-background: #343f45;
+  }
+
   .top-nav-header {
     display: flex;
     padding: 0 18px;
@@ -15,22 +29,60 @@
     height: 80px;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--background-base);
+    background-color: var(--top-nav-header-background);
 
     .top-nav-logo {
-      img {
-        height: 100%;
-        width: 148px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      max-width: 180px;
+
+      .brand-mark-image {
+        display: block;
+        flex: 0 0 30px;
+        width: 30px;
+        height: 46px;
+        overflow: hidden;
+
+        img {
+          display: block;
+          width: auto;
+          max-width: none;
+          height: 46px;
+          object-fit: contain;
+          object-position: left center;
+        }
+      }
+
+      .brand-copy {
         display: flex;
-        align-items: center;
-        justify-content: baseline;
+        flex-direction: column;
+        gap: 2px;
+        white-space: nowrap;
+
+        strong {
+          color: var(--heading);
+          font-size: 18px;
+          font-weight: 700;
+          letter-spacing: -.025em;
+          line-height: 1.15;
+        }
+
+        small {
+          color: var(--text-soft);
+          font-family: "Avenir Next", "Segoe UI", sans-serif;
+          font-size: 12px;
+          font-weight: 600;
+          letter-spacing: .015em;
+          line-height: 1.3;
+        }
       }
     }
 
     .animation-exit {
       display: flex;
       cursor: pointer;
-      background-color: var(--background-opposite-base);
+      background-color: var(--top-nav-action-background);
       border-radius: 50%;
       align-items: center;
       justify-content: center;
@@ -38,7 +90,7 @@
       height: 40px;
 
       .exit-icon {
-        fill: var(--background);
+        fill: var(--top-nav-action-foreground);
       }
     }
 
@@ -78,7 +130,7 @@
           }
   
           &:hover {
-            background-color: var(--background-base);
+            background-color: var(--top-nav-hover-background);
           }
   
           svg {
@@ -98,7 +150,7 @@
     }
 
     .top-nav-contact {
-      border-top: 1px solid var(--background-opposite-base);
+      border-top: 1px solid var(--top-nav-divider);
       background-color: var(--background);  
       padding-bottom: 32px;
       display: flex;
@@ -120,8 +172,8 @@
           justify-content: center;
           align-items: center;
           cursor: pointer;
-          color: var(--background);
-          background-color: var(--background-opposite-base);
+          color: var(--top-nav-action-foreground);
+          background-color: var(--top-nav-action-background);
           border-radius: 50%;
           width: 40px;
           height: 40px;
@@ -136,7 +188,7 @@
           }
     
           svg {
-            fill: var(--background);
+            fill: var(--top-nav-action-foreground);
             width: 20px;
             height: 20px;
           }
