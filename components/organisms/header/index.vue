@@ -5,8 +5,6 @@ import UseSetTheme from '~/components/hooks/useSetTheme.vue'
 import SliderTopNav from '~/components/organisms/menus/sliders/top-nav/index.vue'
 import Dropdown from '~/components/organisms/menus/dropdown/desktop/index.vue'
 
-import Button from '~/components/atoms/buttons/default/index.vue'
-
 import HamburgerSvg from '~/components/icons/header/HamburgerSvg.vue'
 import LocationSvg from '~/components/icons/LocationSvg.vue'
 import TelephoneSvg from '~/components/icons/TelephoneSvg.vue'
@@ -77,8 +75,8 @@ const setLanguage = async (language: 'en' | 'es') => {
 
         <Dropdown class="desktop-only" />
 
-        <NuxtLinkLocale to="/contacto">
-          <Button :text="$t('contact')" class="contact-button desktop-only" primaryHover aria-label="Ir a la sección de contacto" />
+        <NuxtLinkLocale to="/contacto" class="btn-default btn-default-primary-hover contact-button desktop-only">
+          <span>{{ $t('contact') }}</span>
         </NuxtLinkLocale>
 
         <div class="hamburger-menu mobile-only" @click="toggleSliderTopNav">
