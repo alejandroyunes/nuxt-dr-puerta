@@ -54,13 +54,13 @@ const homeLinks = [
   <nav class="menu">
 
     <ul class="menu-items">
-      
-      <NuxtLinkLocale to="/">
-        <li class="menu-item">
+      <li class="menu-item">
+        <NuxtLinkLocale to="/" class="menu-item-link">
           <h3 class="title">{{ $t('home') }}</h3>
-          <ArrowDownSvg class="icon arrow-icon" />
+        </NuxtLinkLocale>
+        <ArrowDownSvg class="icon arrow-icon" />
 
-          <ul :class="['sub-items', { 'clicked': isClicked }]" @click="itemClicked">
+        <ul :class="['sub-items', { 'clicked': isClicked }]" @click="itemClicked">
           <li v-for="(item, index) in homeLinks" :key="index" class="sub-item">
             <NuxtLinkLocale class="item" :to="item.link">
               <component :is="item.icon" class="icon" :alt="item.iconAlt" />
@@ -68,8 +68,7 @@ const homeLinks = [
             </NuxtLinkLocale>
           </li>
         </ul>
-        </li>
-      </NuxtLinkLocale>
+      </li>
 
       <li class="menu-item">
         <h3 class="title">{{ $t('drPuerta') }}</h3>

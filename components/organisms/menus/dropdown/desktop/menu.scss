@@ -15,6 +15,11 @@
       justify-content: center;
       align-items: center;
 
+      .menu-item-link {
+        color: var(--heading);
+        text-decoration: none;
+      }
+
       &:hover {
         .arrow-icon {
           transform: rotate(90deg);
