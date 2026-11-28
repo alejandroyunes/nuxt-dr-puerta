@@ -23,9 +23,11 @@ const { data } = defineProps<IconTitleProps>()
 
       <div class="card" v-for="(item, index) in data" :key="index">
 
-        <component class="image icon" :is="item.icon" :aria-label="item.iconAlt"/>
+        <div class="timeline-marker">
+          <component class="image icon" :is="item.icon" :aria-label="item.iconAlt"/>
+        </div>
 
-          <div class="details">
+        <div class="details">
           <h3 class="title">
             {{ $t(item.title) }}
           </h3>

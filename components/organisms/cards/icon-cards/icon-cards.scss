@@ -2,83 +2,185 @@
   max-width: var(--max-width);
   margin: 56px auto 0;
 
-
   .cards-container {
+    position: relative;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    gap: 16px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
     padding: 0 32px;
-  
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 31px;
+      left: 12%;
+      right: 12%;
+      height: 1px;
+      background: var(--border);
+    }
+
     .card {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 4px;
-      text-align: left;
-      color: var(--heading);
+      display: flex;
       flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: var(--heading);
       background-color: transparent;
       position: relative;
-      border: 1px solid rgba(22, 66, 91, .08);
-      border-radius: 18px;
-      padding: 24px 20px;
-      background: var(--background);
-      box-shadow: 0 12px 40px rgba(22, 66, 91, .06);
-      
-      .image {
-        margin: auto 4px;
-        height: auto;
-        width: 70px;
+      min-width: 0;
+
+      .timeline-marker {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        place-items: center;
+        width: 64px;
+        height: 64px;
+        margin-bottom: 16px;
+        border: 1px solid var(--border);
+        border-radius: 50%;
+        background: color-mix(in srgb, var(--secondary) 6%, var(--background));
+        --icon-color: var(--secondary);
+        --icon-color-opposite: var(--background);
+        box-shadow: 0 0 0 6px var(--background);
+
+        &::before {
+          content: "";
+          position: absolute;
+          inset: -10px;
+          border: 1px dashed color-mix(in srgb, var(--secondary) 24%, transparent);
+          border-radius: 50%;
+          pointer-events: none;
+        }
+
+        .image {
+          width: 36px;
+          height: 36px;
+        }
+
+        .icon {
+          cursor: default;
+        }
       }
   
       .details {
         display: flex;
+        flex: 1;
         flex-direction: column;
-        justify-content: center;
-        padding: 0 20px 24px;
-        text-align: left;
-  
+        gap: 8px;
+        width: 100%;
+        padding: 18px 12px 12px;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+
         .title {
-          font-size: 1.2rem;
-          font-weight: 600;
-          line-height: 1.8rem;
-          letter-spacing: 1px;
+          color: var(--heading);
+          font-size: 1.05rem;
+          font-weight: 700;
+          line-height: 1.45;
         }
   
         .description {
-          font-size: 1rem;
-          letter-spacing: 0.08px;
-          line-height: 1.7rem;
+          color: var(--text);
+          font-size: .94rem;
+          line-height: 1.65;
         }
-  
       }
     }
   
     @media (max-width: 1025px) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
       padding: 0 24px;
-  
+
+      &::before {
+        display: none;
+      }
+
       .card {
-        .image {
-          width: 48px;
+        flex-direction: row;
+        gap: 14px;
+        padding: 16px;
+        background: transparent;
+
+        .timeline-marker {
+          flex: 0 0 50px;
+          width: 50px;
+          height: 50px;
+          margin: 0;
+          box-shadow: none;
+
+          .image {
+            width: 30px;
+            height: 30px;
+          }
         }
   
         .details {
-          padding: 0 0 16px 16px;
+          padding: 8px 0 0;
+          border: 0;
+          background: transparent;
         }
       }
     }
   
     @media (max-width: 756px) {
       grid-template-columns: 1fr;
-  
+      gap: 12px;
+      padding: 0 18px;
+
+      &::before {
+        display: block;
+        top: 24px;
+        bottom: 24px;
+        left: 41px;
+        right: auto;
+        width: 1px;
+        height: auto;
+      }
+
       .card {
-        .image {
-          width: 40px;
+        gap: 12px;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+
+        .timeline-marker {
+          flex-basis: 46px;
+          width: 46px;
+          height: 46px;
+          box-shadow: 0 0 0 5px var(--background);
+
+          &::before {
+            inset: -8px;
+          }
+
+          .image {
+            width: 28px;
+            height: 28px;
+          }
         }
   
         .details {
-          padding: 0 0 16px 12px;
+          gap: 6px;
+          padding: 16px 8px 8px;
+          border: 0;
+          border-radius: 0;
+          background: transparent;
+          align-items: flex-start;
+          text-align: left;
+
+          .title {
+            font-size: 1rem;
+          }
+
+          .description {
+            font-size: .9rem;
+          }
         }
       }
     }
