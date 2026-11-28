@@ -13,7 +13,7 @@
   .details {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     height: 100%;
     gap: 16px;
 
@@ -48,7 +48,7 @@
     .description {
       max-width: 560px;
       font-size: 1.25rem;
-      color: var(--text-soft);
+      color: var(--text);
       line-height: 1.65;
     }
 
@@ -79,21 +79,22 @@
 
     .trust-row {
       display: flex;
-      gap: 12px;
-      margin-top: 10px;
+
+      gap: 18px;
+      margin-top: 14px;
 
       div {
         display: grid;
         grid-template-columns: auto 1fr;
-        align-items: baseline;
-        gap: 7px;
-        padding-right: 18px;
+        align-items: center;
+        gap: 10px;
+        padding-right: 24px;
         border-right: 1px solid var(--border);
       }
 
       div:last-child { border-right: 0; }
-      strong { color: var(--secondary); font-size: 1.15rem; font-weight: 800; }
-      span { color: var(--text-soft); font-size: .78rem; }
+      strong { color: var(--secondary); font-size: 1.35rem; font-weight: 800; }
+      span { color: var(--text-soft); font-size: 1rem; }
     }
   }
 
@@ -122,8 +123,8 @@
     &::before {
       width: 460px;
       aspect-ratio: 1;
-      background: rgba(232, 239, 242, .38);
-      border: 1px solid rgba(53, 126, 145, .07);
+      background: rgba(208, 222, 226, .58);
+      border: 1px solid rgba(53, 126, 145, .12);
       transform: translate(-50%, -50%);
     }
 
@@ -225,9 +226,6 @@
         width: 100%;
       }
 
-      .trust-row {
-        justify-content: center;
-      }
     }
 
     .image {
